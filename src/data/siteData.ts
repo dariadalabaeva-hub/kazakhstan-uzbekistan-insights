@@ -71,6 +71,21 @@ export const siteInfo = {
   title: "Towards a Comparative, Interdisciplinary and Applied Ethnological Perspective on Entrepreneurship in the IT- and Green Economy Industries of Kazakhstan and Uzbekistan",
   shortTitle: "IT & Green Economy Research",
   subtitle: "A Micro-Website for Research & Collaboration",
-  missionStatement: "This interdisciplinary research project explores the dynamic landscape of entrepreneurship across two pivotal sectors—Information Technology and Green Economy—in Kazakhstan and Uzbekistan. Through comparative ethnological methods, we investigate how cultural, economic, and policy factors shape entrepreneurial practices and innovation ecosystems in Central Asia. Our work bridges academic inquiry with practical insights for policymakers and practitioners.",
+  status: "Active",
+  duration: {
+    start: "1/1/25",
+    end: "12/31/27"
+  },
+  description: "The project aspires to demonstrate that an 'ethnological perspective' can make a valuable contribution to the study of entrepreneurship. In its academic component, the project will employ a mixed methods-approach to collect comparative evidence and engage in emically inspired theory-building on entrepreneurial ecosystems in the IT and Green Economy industries of Kazakhstan and Uzbekistan. In its applied research component, the project will integrate closely with practitioners of the public and private sectors to create socioeconomic impact beyond academia, such as in the field of policy advice.",
+  keywords: [
+    "entrepreneurship",
+    "Kazakhstan & Uzbekistan",
+    "IT & Green Economy",
+    "sociocultural anthropology",
+    "mixed methods",
+    "emic theory-building",
+    "opportunity structures",
+    "applied research"
+  ],
   contactEmail: "research.centralasia@university.edu"
 };
