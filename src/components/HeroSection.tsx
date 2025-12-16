@@ -22,8 +22,17 @@ export function HeroSection() {
 
       <div className="relative container mx-auto px-4 py-32">
         <div className="max-w-5xl mx-auto">
+          {/* University Logo Placeholder - Replace src with actual logo path */}
+          <div className="flex justify-center mb-8 animate-fade-in">
+            <div className="h-20 px-6 bg-primary-foreground/10 backdrop-blur-sm rounded-lg border border-primary-foreground/20 flex items-center justify-center">
+              <span className="font-heading text-lg text-primary-foreground font-semibold">
+                Nazarbayev University
+              </span>
+            </div>
+          </div>
+
           {/* Status & Duration Info Box */}
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-8 animate-fade-in">
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full border border-primary-foreground/20">
               <CheckCircle className="w-4 h-4 text-green-300" />
               <span className="font-body text-sm font-medium text-primary-foreground">
@@ -38,12 +47,12 @@ export function HeroSection() {
             </div>
           </div>
 
-          <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-primary-foreground leading-tight text-balance animate-fade-in text-center">
+          <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-primary-foreground leading-tight text-balance animate-fade-in text-center" style={{ animationDelay: "0.2s" }}>
             {siteInfo.title}
           </h1>
           
-          <p className="mt-6 font-body text-lg sm:text-xl text-primary-foreground/80 font-light animate-fade-in text-center" style={{ animationDelay: "0.2s" }}>
-            {siteInfo.subtitle}
+          <p className="mt-6 font-body text-base sm:text-lg text-primary-foreground/70 font-normal animate-fade-in text-center" style={{ animationDelay: "0.3s" }}>
+            {siteInfo.grantInfo}
           </p>
 
           {/* Project Description */}
