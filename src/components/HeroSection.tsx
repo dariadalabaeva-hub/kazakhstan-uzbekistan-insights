@@ -1,5 +1,6 @@
 import { siteInfo } from "@/data/siteData";
 import { Calendar, CheckCircle } from "lucide-react";
+import nuLogo from "@/assets/nu-logo.png";
 
 export function HeroSection() {
   return (
@@ -22,13 +23,13 @@ export function HeroSection() {
 
       <div className="relative container mx-auto px-4 py-32">
         <div className="max-w-5xl mx-auto">
-          {/* University Logo Placeholder - Replace src with actual logo path */}
+          {/* University Logo */}
           <div className="flex justify-center mb-8 animate-fade-in">
-            <div className="h-20 px-6 bg-primary-foreground/10 backdrop-blur-sm rounded-lg border border-primary-foreground/20 flex items-center justify-center">
-              <span className="font-heading text-lg text-primary-foreground font-semibold">
-                Nazarbayev University
-              </span>
-            </div>
+            <img 
+              src={nuLogo} 
+              alt="Nazarbayev University 15 Years Anniversary" 
+              className="h-20 w-auto"
+            />
           </div>
 
           {/* Status & Duration Info Box */}
