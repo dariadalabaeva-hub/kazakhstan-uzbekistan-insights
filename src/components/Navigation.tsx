@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { siteInfo } from "@/data/siteData";
+import nuLogo from "@/assets/nu-logo.png";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -20,9 +20,13 @@ export function Navigation() {
           {/* Logo */}
           <a 
             href="#home" 
-            className="flex-shrink-0 font-heading text-sm lg:text-base font-semibold text-foreground max-w-[200px] lg:max-w-md leading-tight hover:text-primary transition-colors"
+            className="flex-shrink-0 hover:opacity-80 transition-opacity"
           >
-            {siteInfo.shortTitle}
+            <img 
+              src={nuLogo} 
+              alt="Nazarbayev University" 
+              className="h-10 lg:h-12 w-auto"
+            />
           </a>
 
           {/* Desktop Nav */}
