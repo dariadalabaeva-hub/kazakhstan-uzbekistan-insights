@@ -70,7 +70,7 @@ export const activities = [
 export const siteInfo = {
   title: "Towards a Comparative, Interdisciplinary and Applied Ethnological Perspective on Entrepreneurship in the IT- and Green Economy Industries of Kazakhstan and Uzbekistan",
   shortTitle: "IT & Green Economy Research",
-  subtitle: "A Micro-Website for Research & Collaboration",
+  grantInfo: "Grant Program: Collaborative Research Program (2025-2027)",
   status: "Active",
   duration: {
     start: "1/1/25",
