@@ -5,16 +5,21 @@ function PastEventCard({ activity }: { activity: Activity }) {
   return (
     <article className="group bg-card rounded-xl overflow-hidden shadow-card border border-border">
       {/* Conference visual */}
-      <div className="aspect-video bg-gradient-to-br from-primary/20 via-primary/10 to-secondary/20 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
-            <Users className="text-primary" size={36} />
+      <div className="aspect-video relative overflow-hidden">
+        {activity.image ? (
+          <img 
+            src={activity.image} 
+            alt={activity.title}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-primary/20 via-primary/10 to-secondary/20 flex items-center justify-center">
+            <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
+              <Users className="text-primary" size={36} />
+            </div>
           </div>
-        </div>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/10 to-transparent" />
-        {/* Decorative elements */}
-        <div className="absolute top-4 right-4 w-24 h-24 rounded-full bg-secondary/20 blur-2xl" />
-        <div className="absolute bottom-4 left-4 w-16 h-16 rounded-full bg-primary/20 blur-xl" />
       </div>
 
       {/* Content */}

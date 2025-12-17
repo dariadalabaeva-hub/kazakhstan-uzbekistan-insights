@@ -13,6 +13,9 @@ import galiyaImg from "@/assets/team/Galiya_Saktaganova.jpeg";
 import dariyaImg from "@/assets/team/Dariya_Dalabayeva.jpeg";
 import balgynImg from "@/assets/team/Balgyn_Orazaly.jpeg";
 
+// Activity images
+import conferenceImg from "@/assets/activities/Entrepreneurship_Heritage_and_Sustainability.jpeg";
+
 export const teamMembers = [
   {
     id: 1,
@@ -112,6 +115,7 @@ export interface Activity {
   location?: string;
   description: string;
   type: "past" | "upcoming";
+  image?: string;
 }
 
 export const activities: Activity[] = [
@@ -120,8 +124,9 @@ export const activities: Activity[] = [
     title: "Entrepreneurship, Heritage and Sustainability: Exploring the Nexus of Economy, Culture and Applied Research",
     date: "24-26 September 2025",
     location: "Nazarbayev University",
-    description: "This three-day event brought together academics from diverse disciplines and practitioners representing business, cultural institutions, and sustainability initiatives. The conference's mission was to provide a platform that inspires the exchange of perspectives and the fostering of new partnerships between science, applied research, and professional domains.",
+    description: "This three-day event brought together academics from diverse disciplines and practitioners from the business, cultural, and sustainability sectors. The conference's mission was to provide a platform for the exchange of perspectives and the fostering of new partnerships between science, applied research, and professional domains.",
     type: "past",
+    image: conferenceImg,
   },
   {
     id: 2,
