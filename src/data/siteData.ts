@@ -10,6 +10,8 @@ import kholidaImg from "@/assets/team/Kholida_Khaldarova.jpeg";
 import aitolkynImg from "@/assets/team/Aitolkyn_Alzhanova.jpeg";
 import ayazhanImg from "@/assets/team/Ayazhan_Temirbolat.jpeg";
 import galiyaImg from "@/assets/team/Galiya_Saktaganova.jpeg";
+import dariyaImg from "@/assets/team/Dariya_Dalabayeva.jpeg";
+import balgynImg from "@/assets/team/Balgyn_Orazaly.jpeg";
 
 export const teamMembers = [
   {
@@ -70,7 +72,7 @@ export const teamMembers = [
     id: 10,
     name: "Dariya Dalabayeva",
     role: "Graduate Research Assistant",
-    image: null, // Photo not uploaded
+    image: dariyaImg,
   },
   {
     id: 11,
@@ -82,7 +84,7 @@ export const teamMembers = [
     id: 12,
     name: "Balgyn Orazaly",
     role: "Undergraduate Research Assistant",
-    image: null, // Photo not uploaded
+    image: balgynImg,
   },
 ];
 

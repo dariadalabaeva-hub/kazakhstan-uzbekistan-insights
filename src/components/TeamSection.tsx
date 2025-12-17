@@ -12,8 +12,8 @@ export function TeamSection() {
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground">
             Our Team
           </h2>
-          <p className="mt-4 font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            An interdisciplinary team of researchers bringing expertise in anthropology, economics, and regional studies.
+          <p className="mt-4 font-body text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Our team is composed of scholars from anthropology, sociology, political science, public policy, economics, and entrepreneurship, reflecting a strongly interdisciplinary approach.
           </p>
         </div>
 
