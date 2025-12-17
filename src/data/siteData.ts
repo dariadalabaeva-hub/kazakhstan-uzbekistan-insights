@@ -105,28 +105,45 @@ export const publications = [
   }
 ];
 
-export const activities = [
+export interface Activity {
+  id: number;
+  title: string;
+  date: string;
+  location?: string;
+  description: string;
+  type: "past" | "upcoming";
+}
+
+export const activities: Activity[] = [
   {
     id: 1,
-    title: "Fieldwork in Tashkent",
-    date: "November 2024",
-    excerpt: "Our team conducted extensive interviews with green technology entrepreneurs in Uzbekistan's capital, documenting emerging sustainable business practices.",
-    image: "/placeholder.svg"
+    title: "Entrepreneurship, Heritage and Sustainability: Exploring the Nexus of Economy, Culture and Applied Research",
+    date: "24-26 September 2025",
+    location: "Nazarbayev University",
+    description: "This three-day event brought together academics from diverse disciplines and practitioners representing business, cultural institutions, and sustainability initiatives. The conference's mission was to provide a platform that inspires the exchange of perspectives and the fostering of new partnerships between science, applied research, and professional domains.",
+    type: "past",
   },
   {
     id: 2,
-    title: "Interview with IT Startup Founders",
-    date: "October 2024",
-    excerpt: "In-depth conversations with founders of three prominent tech companies in Almaty revealed unique perspectives on innovation culture in Kazakhstan.",
-    image: "/placeholder.svg"
+    title: "Upcoming Event",
+    date: "TBA",
+    description: "New research activities and fieldwork updates will be announced here soon.",
+    type: "upcoming",
   },
   {
     id: 3,
-    title: "Workshop on Comparative Methods",
-    date: "September 2024",
-    excerpt: "International workshop bringing together scholars from Germany, Kazakhstan, and Uzbekistan to discuss methodological approaches to entrepreneurship research.",
-    image: "/placeholder.svg"
-  }
+    title: "Future Research Activity",
+    date: "TBA",
+    description: "New research activities and fieldwork updates will be announced here soon.",
+    type: "upcoming",
+  },
+  {
+    id: 4,
+    title: "Future Research Activity",
+    date: "TBA",
+    description: "New research activities and fieldwork updates will be announced here soon.",
+    type: "upcoming",
+  },
 ];
 
 export const siteInfo = {
@@ -149,5 +166,5 @@ export const siteInfo = {
     "opportunity structures",
     "applied research"
   ],
-  contactEmail: "research.centralasia@university.edu"
+  contactEmail: "green-it.project@nu.edu.kz"
 };

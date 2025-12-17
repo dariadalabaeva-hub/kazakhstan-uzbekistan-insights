@@ -6,7 +6,7 @@ export function PublicationsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground">
-            Publications & Outputs
+            Publications and Outputs
           </h2>
           <p className="mt-4 font-body text-lg text-muted-foreground max-w-2xl mx-auto">
             Academic papers and research outputs from our project.
