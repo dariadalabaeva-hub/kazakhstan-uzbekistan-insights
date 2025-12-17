@@ -1,29 +1,89 @@
 // Site content data - easily editable
+
+// Team member photos
+import philippImg from "@/assets/team/Philipp_Schroeder.jpeg";
+import shumailaImg from "@/assets/team/Shumaila_Yousafzai.jpeg";
+import serikImg from "@/assets/team/Serik_Orazgaliyev.jpeg";
+import indiraImg from "@/assets/team/Indira_Alibayeva.jpeg";
+import nurlykhanImg from "@/assets/team/Nurlykhan_Aljanova.jpeg";
+import kholidaImg from "@/assets/team/Kholida_Khaldarova.jpeg";
+import aitolkynImg from "@/assets/team/Aitolkyn_Alzhanova.jpeg";
+import ayazhanImg from "@/assets/team/Ayazhan_Temirbolat.jpeg";
+import galiyaImg from "@/assets/team/Galiya_Saktaganova.jpeg";
+
 export const teamMembers = [
   {
     id: 1,
-    name: "Dr. Elena Volkov",
+    name: "Philipp Schroeder",
     role: "Principal Investigator",
-    description: "Professor of Economic Anthropology specializing in Central Asian entrepreneurship and innovation ecosystems.",
-    email: "e.volkov@research.edu",
-    image: "/placeholder.svg"
+    image: philippImg,
   },
   {
     id: 2,
-    name: "Dr. Amir Nazarov",
-    role: "Co-Investigator",
-    description: "Expert in sustainable development and green economy transitions in post-Soviet states.",
-    email: "a.nazarov@research.edu",
-    image: "/placeholder.svg"
+    name: "Shumaila Yousafzai",
+    role: "Co-Principal Investigator",
+    image: shumailaImg,
   },
   {
     id: 3,
-    name: "Madina Karimova",
-    role: "Research Associate",
-    description: "Doctoral candidate focusing on IT startup culture and digital transformation in Uzbekistan.",
-    email: "m.karimova@research.edu",
-    image: "/placeholder.svg"
-  }
+    name: "Serik Orazgaliyev",
+    role: "Co-Principal Investigator",
+    image: serikImg,
+  },
+  {
+    id: 4,
+    name: "Leila Bimendiyeva",
+    role: "Co-Principal Investigator",
+    image: null, // Placeholder with initials
+  },
+  {
+    id: 5,
+    name: "Indira Alibayeva",
+    role: "Postdoctoral Researcher",
+    image: indiraImg,
+  },
+  {
+    id: 6,
+    name: "Nurlykhan Aljanova",
+    role: "Postdoctoral Researcher",
+    image: nurlykhanImg,
+  },
+  {
+    id: 7,
+    name: "Kholida Khaldarova",
+    role: "Doctoral Researcher",
+    image: kholidaImg,
+  },
+  {
+    id: 8,
+    name: "Aitolkyn Alzhanova",
+    role: "Graduate Research Assistant",
+    image: aitolkynImg,
+  },
+  {
+    id: 9,
+    name: "Ayazhan Temirbolat",
+    role: "Undergraduate Research Assistant",
+    image: ayazhanImg,
+  },
+  {
+    id: 10,
+    name: "Dariya Dalabayeva",
+    role: "Graduate Research Assistant",
+    image: null, // Photo not uploaded
+  },
+  {
+    id: 11,
+    name: "Galiya Saktaganova",
+    role: "Graduate Research Assistant",
+    image: galiyaImg,
+  },
+  {
+    id: 12,
+    name: "Balgyn Orazaly",
+    role: "Undergraduate Research Assistant",
+    image: null, // Photo not uploaded
+  },
 ];
 
 export const publications = [
@@ -70,7 +130,7 @@ export const activities = [
 export const siteInfo = {
   title: "Towards a Comparative, Interdisciplinary and Applied Ethnological Perspective on Entrepreneurship in the IT- and Green Economy Industries of Kazakhstan and Uzbekistan",
   shortTitle: "IT & Green Economy Research",
-  grantInfo: "Grant Program: Collaborative Research Program (2025-2027)",
+  grantInfo: "Collaborative Research Program",
   status: "Active",
   duration: {
     start: "1/1/25",
