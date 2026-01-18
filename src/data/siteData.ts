@@ -121,42 +121,27 @@ export interface Activity {
 }
 
 export const activities: Activity[] = [
+  // 1. Active/Ongoing - First
   {
     id: 1,
-    title: "Entrepreneurship, Heritage and Sustainability: Exploring the Nexus of Economy, Culture and Applied Research",
+    title: "Launch of Fieldwork & Multi-Sited Data Collection",
+    date: "Ongoing",
+    location: "Almaty, Astana, and Tashkent",
+    description: "Philipp Schroeder, Indira Alibayeva, and Kholida Khaldarova have initiated comprehensive research across Kazakhstan and Uzbekistan. The team is currently conducting a series of online interviews with green entrepreneurs in Uzbekistan to map the regional entrepreneurial ecosystem.",
+    type: "active",
+  },
+  // 2. Past Events - Reverse chronological order (most recent first)
+  {
+    id: 2,
+    title: "Conference: Entrepreneurship, Heritage and Sustainability: Exploring the Nexus of Economy, Culture and Applied Research",
     date: "24-26 September 2025",
-    location: "Nazarbayev University",
+    location: "Nazarbayev University, Kazakhstan",
     description: "This three-day event brought together academics from diverse disciplines and practitioners from the business, cultural, and sustainability sectors. The conference's mission was to provide a platform for the exchange of perspectives and the fostering of new partnerships between science, applied research, and professional domains.",
     type: "past",
     image: conferenceImg,
   },
   {
-    id: 2,
-    title: "Keynote Lecture: \"Theorizing Entrepreneurship in Central Asia\"",
-    date: "22-23 July 2025",
-    location: "FU Berlin (Germany)",
-    description: "Philipp Schroeder delivered a keynote lecture at the \"Workshop on Russian and East European Politics\" held at FU Berlin. The presentation focused on developing theoretical frameworks to better understand the unique entrepreneurial landscapes within the Central Asian region.",
-    type: "past",
-  },
-  {
     id: 3,
-    title: "Crafting Identity and Nationhood: The Multifaceted Role of Artisans in Uzbekistan's Contemporary Development",
-    date: "22 July 2025",
-    location: "UCL (London, UK)",
-    description: "Indira Alibayeva presented her research at the ICCEES XI World Congress hosted by University College London. The talk explored how artisans contribute to the complex interplay of cultural heritage, national identity, and economic development in modern Uzbekistan.",
-    type: "past",
-  },
-  {
-    id: 4,
-    title: "Ethnographic Fieldwork: Green Entrepreneurs in Almaty",
-    date: "24 June – 2 July 2025",
-    location: "Almaty (Kazakhstan)",
-    description: "Indira Alibayeva conducted on-site research visiting workplaces and performing structured and semi-structured interviews. Initial analysis indicates that green entrepreneurs are predominantly driven by intrinsic motivation and ecological concerns rather than profit maximization.",
-    type: "past",
-    image: almatyFieldworkImg,
-  },
-  {
-    id: 5,
     title: "Podcast Guest Appearance: \"Why We Need Social Sciences\" (Oy-detox)",
     date: "2025",
     location: "Digital/Online",
@@ -165,13 +150,31 @@ export const activities: Activity[] = [
     image: oyDetoxImg,
   },
   {
-    id: 6,
-    title: "Launch of Fieldwork & Multi-Sited Data Collection",
-    date: "Ongoing",
-    location: "Almaty, Astana, and Tashkent",
-    description: "Philipp Schroeder, Indira Alibayeva, and Kholida Khaldarova have initiated comprehensive research across Kazakhstan and Uzbekistan. The team is currently conducting a series of online interviews with green entrepreneurs in Uzbekistan to map the regional entrepreneurial ecosystem.",
-    type: "active",
+    id: 4,
+    title: "Keynote Lecture: \"Theorizing Entrepreneurship in Central Asia\"",
+    date: "22-23 July 2025",
+    location: "FU Berlin, Germany",
+    description: "Philipp Schroeder delivered a keynote lecture at the \"Workshop on Russian and East European Politics\" held at FU Berlin. The presentation focused on developing theoretical frameworks to better understand the unique entrepreneurial landscapes within the Central Asian region.",
+    type: "past",
   },
+  {
+    id: 5,
+    title: "Crafting Identity and Nationhood: The Multifaceted Role of Artisans in Uzbekistan's Contemporary Development",
+    date: "22 July 2025",
+    location: "UCL, London, UK",
+    description: "Indira Alibayeva presented her research at the ICCEES XI World Congress hosted by University College London. The talk explored how artisans contribute to the complex interplay of cultural heritage, national identity, and economic development in modern Uzbekistan.",
+    type: "past",
+  },
+  {
+    id: 6,
+    title: "Ethnographic Fieldwork: Green Entrepreneurs in Almaty",
+    date: "24 June – 2 July 2025",
+    location: "Almaty, Kazakhstan",
+    description: "Indira Alibayeva conducted on-site research visiting workplaces and performing structured and semi-structured interviews. Initial analysis indicates that green entrepreneurs are predominantly driven by intrinsic motivation and ecological concerns rather than profit maximization.",
+    type: "past",
+    image: almatyFieldworkImg,
+  },
+  // 3. Upcoming Events - Placeholder slots at the end
   {
     id: 7,
     title: "Upcoming Event",
