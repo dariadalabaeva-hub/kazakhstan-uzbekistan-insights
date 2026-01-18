@@ -124,7 +124,7 @@ export const activities: Activity[] = [
   // 1. Active/Ongoing - First
   {
     id: 1,
-    title: "Launch of Fieldwork & Multi-Sited Data Collection",
+    title: "Launch of Fieldwork and Multi-Sited Data Collection",
     date: "Ongoing",
     location: "Almaty, Astana, and Tashkent",
     description: "Philipp Schroeder, Indira Alibayeva, and Kholida Khaldarova have initiated comprehensive research across Kazakhstan and Uzbekistan. The team is currently conducting a series of online interviews with green entrepreneurs in Uzbekistan to map the regional entrepreneurial ecosystem.",
