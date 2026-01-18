@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Users } from "lucide-react";
+import { Calendar, MapPin, Users, Presentation } from "lucide-react";
 import { activities, Activity } from "@/data/siteData";
 
 function PastEventCard({ activity }: { activity: Activity }) {
@@ -15,7 +15,7 @@ function PastEventCard({ activity }: { activity: Activity }) {
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-primary/20 via-primary/10 to-secondary/20 flex items-center justify-center">
             <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
-              <Users className="text-primary" size={36} />
+              <Presentation className="text-primary" size={36} />
             </div>
           </div>
         )}
