@@ -133,9 +133,9 @@ export const activities: Activity[] = [
   // 2. Past Events - Reverse chronological order (most recent first)
   {
     id: 2,
-    title: "Conference: Entrepreneurship, Heritage and Sustainability: Exploring the Nexus of Economy, Culture and Applied Research",
+    title: "Conference: \"Entrepreneurship, Heritage and Sustainability: Exploring the Nexus of Economy, Culture and Applied Research\"",
     date: "24-26 September 2025",
-    location: "Nazarbayev University, Kazakhstan",
+    location: "Nazarbayev University",
     description: "This three-day event brought together academics from diverse disciplines and practitioners from the business, cultural, and sustainability sectors. The conference's mission was to provide a platform for the exchange of perspectives and the fostering of new partnerships between science, applied research, and professional domains.",
     type: "past",
     image: conferenceImg,
