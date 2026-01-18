@@ -15,6 +15,8 @@ import balgynImg from "@/assets/team/Balgyn_Orazaly.jpeg";
 
 // Activity images
 import conferenceImg from "@/assets/activities/Entrepreneurship_Heritage_and_Sustainability.jpeg";
+import oyDetoxImg from "@/assets/activities/Oy-detox.png";
+import almatyFieldworkImg from "@/assets/activities/fieldwork_in_Almaty_by_Indira.png";
 
 export const teamMembers = [
   {
@@ -114,7 +116,7 @@ export interface Activity {
   date: string;
   location?: string;
   description: string;
-  type: "past" | "upcoming";
+  type: "past" | "upcoming" | "active";
   image?: string;
 }
 
@@ -146,20 +148,46 @@ export const activities: Activity[] = [
   },
   {
     id: 4,
+    title: "Ethnographic Fieldwork: Green Entrepreneurs in Almaty",
+    date: "24 June – 2 July 2025",
+    location: "Almaty (Kazakhstan)",
+    description: "Indira Alibayeva conducted on-site research visiting workplaces and performing structured and semi-structured interviews. Initial analysis indicates that green entrepreneurs are predominantly driven by intrinsic motivation and ecological concerns rather than profit maximization.",
+    type: "past",
+    image: almatyFieldworkImg,
+  },
+  {
+    id: 5,
+    title: "Podcast Guest Appearance: \"Why We Need Social Sciences\" (Oy-detox)",
+    date: "2025",
+    location: "Digital/Online",
+    description: "Indira Alibayeva featured on the \"Oy-detox\" podcast to discuss the essential role of social sciences and anthropology in understanding modern society and the motivations behind entrepreneurship.",
+    type: "past",
+    image: oyDetoxImg,
+  },
+  {
+    id: 6,
+    title: "Launch of Fieldwork & Multi-Sited Data Collection",
+    date: "Ongoing",
+    location: "Almaty, Astana, and Tashkent",
+    description: "Philipp Schroeder, Indira Alibayeva, and Kholida Khaldarova have initiated comprehensive research across Kazakhstan and Uzbekistan. The team is currently conducting a series of online interviews with green entrepreneurs in Uzbekistan to map the regional entrepreneurial ecosystem.",
+    type: "active",
+  },
+  {
+    id: 7,
     title: "Upcoming Event",
     date: "TBA",
     description: "New research activities and fieldwork updates will be announced here soon.",
     type: "upcoming",
   },
   {
-    id: 5,
+    id: 8,
     title: "Future Research Activity",
     date: "TBA",
     description: "New research activities and fieldwork updates will be announced here soon.",
     type: "upcoming",
   },
   {
-    id: 6,
+    id: 9,
     title: "Future Research Activity",
     date: "TBA",
     description: "New research activities and fieldwork updates will be announced here soon.",
