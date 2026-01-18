@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Users, Presentation } from "lucide-react";
+import { Calendar, MapPin, Users, Presentation, Search } from "lucide-react";
 import { activities, Activity } from "@/data/siteData";
 
 function PastEventCard({ activity }: { activity: Activity }) {
@@ -55,6 +55,52 @@ function PastEventCard({ activity }: { activity: Activity }) {
   );
 }
 
+function ActiveEventCard({ activity }: { activity: Activity }) {
+  return (
+    <article className="group bg-card rounded-xl overflow-hidden shadow-card border-2 border-secondary/50">
+      {/* Research visual */}
+      <div className="aspect-video relative overflow-hidden">
+        <div className="w-full h-full bg-gradient-to-br from-secondary/20 via-primary/10 to-secondary/20 flex items-center justify-center">
+          <div className="w-20 h-20 rounded-full bg-secondary/20 flex items-center justify-center animate-pulse">
+            <Search className="text-secondary" size={36} />
+          </div>
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-foreground/10 to-transparent" />
+      </div>
+
+      {/* Content */}
+      <div className="p-6">
+        <div className="flex flex-wrap items-center gap-4 text-sm">
+          <div className="flex items-center gap-2 text-secondary">
+            <Calendar size={14} />
+            <span className="font-body font-medium">{activity.date}</span>
+          </div>
+          {activity.location && (
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <MapPin size={14} />
+              <span className="font-body">{activity.location}</span>
+            </div>
+          )}
+        </div>
+
+        <h3 className="mt-4 font-heading text-lg font-semibold text-foreground leading-snug">
+          {activity.title}
+        </h3>
+
+        <p className="mt-3 font-body text-sm text-muted-foreground leading-relaxed">
+          {activity.description}
+        </p>
+
+        <div className="mt-4">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary/20 text-secondary">
+            Active Research
+          </span>
+        </div>
+      </div>
+    </article>
+  );
+}
+
 function UpcomingEventCard({ activity }: { activity: Activity }) {
   return (
     <article className="group bg-card/50 rounded-xl overflow-hidden border-2 border-dashed border-border/60 opacity-75 hover:opacity-90 transition-opacity">
@@ -92,6 +138,7 @@ function UpcomingEventCard({ activity }: { activity: Activity }) {
 
 export function ActivitiesSection() {
   const pastActivities = activities.filter((a) => a.type === "past");
+  const activeActivities = activities.filter((a) => a.type === "active");
   const upcomingActivities = activities.filter((a) => a.type === "upcoming");
 
   return (
@@ -109,6 +156,9 @@ export function ActivitiesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {pastActivities.map((activity) => (
             <PastEventCard key={activity.id} activity={activity} />
+          ))}
+          {activeActivities.map((activity) => (
+            <ActiveEventCard key={activity.id} activity={activity} />
           ))}
           {upcomingActivities.map((activity) => (
             <UpcomingEventCard key={activity.id} activity={activity} />
