@@ -18,6 +18,7 @@ import conferenceImg from "@/assets/activities/Entrepreneurship_Heritage_and_Sus
 import oyDetoxImg from "@/assets/activities/Oy-detox.png";
 import almatyFieldworkImg from "@/assets/activities/fieldwork_in_Almaty_by_Indira.png";
 import greenHydrogenImg from "@/assets/activities/Green_Hydrogen_Fieldwork.jpeg";
+import keynoteImg from "@/assets/activities/Keynote_Lecture_by_Philipp_Schroeder.jpg";
 
 export const teamMembers = [
   {
@@ -157,6 +158,7 @@ export const activities: Activity[] = [
     location: "FU Berlin, Germany",
     description: "Philipp Schroeder delivered a keynote lecture at the \"Workshop on Russian and East European Politics\" held at FU Berlin. The presentation focused on developing theoretical frameworks to better understand the unique entrepreneurial landscapes within the Central Asian region.",
     type: "past",
+    image: keynoteImg,
   },
   {
     id: 5,
