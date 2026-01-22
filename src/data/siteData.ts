@@ -17,6 +17,7 @@ import balgynImg from "@/assets/team/Balgyn_Orazaly.jpeg";
 import conferenceImg from "@/assets/activities/Entrepreneurship_Heritage_and_Sustainability.jpeg";
 import oyDetoxImg from "@/assets/activities/Oy-detox.png";
 import almatyFieldworkImg from "@/assets/activities/fieldwork_in_Almaty_by_Indira.png";
+import greenHydrogenImg from "@/assets/activities/Green_Hydrogen_Fieldwork.jpeg";
 
 export const teamMembers = [
   {
@@ -133,21 +134,21 @@ export const activities: Activity[] = [
   // 2. Past Events - Reverse chronological order (most recent first)
   {
     id: 2,
+    title: "Fieldwork on Green Hydrogen: Socio-Cultural Perceptions in Western Kazakhstan",
+    date: "November 2025",
+    location: "Atyrau and Aktau (Kazakhstan)",
+    description: "In November 2025, Dr. Philipp Schroeder and Dr. Nurlykhan Aljanova conducted data-collection in Western Kazakhstan (Atyrau and Mangystau regions). The research focused on socio-cultural perceptions of green entrepreneurship, with particular attention to the emerging opportunities and challenges surrounding green hydrogen development in the region. The team conducted a series of in-depth interviews and focus group discussions with a diverse set of expert stakeholders—industry specialists, municipal officials, environmental practitioners, and representatives of local business communities.",
+    type: "past",
+    image: greenHydrogenImg,
+  },
+  {
+    id: 3,
     title: "Conference: \"Entrepreneurship, Heritage and Sustainability: Exploring the Nexus of Economy, Culture and Applied Research\"",
     date: "24-26 September 2025",
     location: "Nazarbayev University",
     description: "This three-day event brought together academics from diverse disciplines and practitioners from the business, cultural, and sustainability sectors. The conference's mission was to provide a platform for the exchange of perspectives and the fostering of new partnerships between science, applied research, and professional domains.",
     type: "past",
     image: conferenceImg,
-  },
-  {
-    id: 3,
-    title: "Podcast Guest Appearance: \"Why We Need Social Sciences\" (Oy-detox)",
-    date: "2025",
-    location: "Digital/Online",
-    description: "Indira Alibayeva featured on the \"Oy-detox\" podcast to discuss the essential role of social sciences and anthropology in understanding modern society and the motivations behind entrepreneurship.",
-    type: "past",
-    image: oyDetoxImg,
   },
   {
     id: 4,
@@ -173,6 +174,15 @@ export const activities: Activity[] = [
     description: "Indira Alibayeva conducted on-site research visiting workplaces and performing structured and semi-structured interviews. Initial analysis indicates that green entrepreneurs are predominantly driven by intrinsic motivation and ecological concerns rather than profit maximization.",
     type: "past",
     image: almatyFieldworkImg,
+  },
+  {
+    id: 7,
+    title: "Podcast Guest Appearance: \"Why We Need Social Sciences\" (Oy-detox)",
+    date: "2025",
+    location: "Digital/Online",
+    description: "Indira Alibayeva featured on the \"Oy-detox\" podcast to discuss the essential role of social sciences and anthropology in understanding modern society and the motivations behind entrepreneurship.",
+    type: "past",
+    image: oyDetoxImg,
   },
   // 3. Upcoming Events - Placeholder slots at the end
   {
