@@ -137,7 +137,7 @@ export const activities: Activity[] = [
     id: 2,
     title: "Fieldwork on Green Hydrogen: Socio-Cultural Perceptions in Western Kazakhstan",
     date: "November 2025",
-    location: "Atyrau and Aktau regions, Kazakhstan",
+    location: "Atyrau and Aktau, Kazakhstan",
     description: "In November 2025, Philipp Schroeder and Nurlykhan Aljanova conducted data-collection in Western Kazakhstan (Atyrau and Mangystau regions). The research focused on socio-cultural perceptions of green entrepreneurship, with particular attention to the emerging opportunities and challenges surrounding green hydrogen development in the region. The team conducted a series of in-depth interviews and focus group discussions with a diverse set of expert stakeholders—industry specialists, municipal officials, environmental practitioners, and representatives of local business communities.",
     type: "past",
     image: greenHydrogenImg,
