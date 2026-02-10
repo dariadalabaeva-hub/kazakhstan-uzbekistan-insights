@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Users, Presentation, Search } from "lucide-react";
+import { Calendar, MapPin, Presentation, Search } from "lucide-react";
 import { activities, Activity } from "@/data/siteData";
 
 function PastEventCard({ activity }: { activity: Activity }) {
