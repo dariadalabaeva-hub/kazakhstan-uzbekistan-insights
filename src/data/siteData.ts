@@ -182,28 +182,6 @@ export const activities: Activity[] = [
     type: "past",
     image: oyDetoxImg,
   },
-  // 3. Upcoming Events - Placeholder slots at the end
-  {
-    id: 7,
-    title: "Upcoming Event",
-    date: "TBA",
-    description: "New research activities and fieldwork updates will be announced here soon.",
-    type: "upcoming",
-  },
-  {
-    id: 8,
-    title: "Future Research Activity",
-    date: "TBA",
-    description: "New research activities and fieldwork updates will be announced here soon.",
-    type: "upcoming",
-  },
-  {
-    id: 9,
-    title: "Future Research Activity",
-    date: "TBA",
-    description: "New research activities and fieldwork updates will be announced here soon.",
-    type: "upcoming",
-  },
 ];
 
 export const siteInfo = {
