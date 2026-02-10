@@ -160,8 +160,9 @@ export const activities: Activity[] = [
     title: "Crafting Identity and Nationhood: The Multifaceted Role of Artisans in Uzbekistan's Contemporary Development",
     date: "22 July 2025",
     location: "UCL, London, UK",
-    description: "Indira Alibayeva presented her research at the ICCEES XI World Congress hosted by University College London. The talk explored how artisans contribute to the complex interplay of cultural heritage, national identity, and economic development in modern Uzbekistan.",
+    description: "Indira Alibayeva presented her research, conducted in collaboration with Shumaila Yousafzai and Nurlykhan Aljanova, at the ICCEES XI World Congress hosted by University College London. The talk explored how artisans contribute to the complex interplay of cultural heritage, national identity, and economic development in modern Uzbekistan.",
     type: "past",
+    image: craftingIdentityImg,
   },
   {
     id: 6,
