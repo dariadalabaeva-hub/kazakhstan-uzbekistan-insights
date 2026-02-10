@@ -3,7 +3,7 @@ import { ExternalLink, Mail, ChevronDown, ChevronUp } from "lucide-react";
 import { publications } from "@/data/publicationsData";
 import { Button } from "@/components/ui/button";
 
-const INITIAL_DISPLAY_COUNT = 3;
+const INITIAL_DISPLAY_COUNT = 5;
 
 export function PublicationsSection() {
   const [showAll, setShowAll] = useState(false);
