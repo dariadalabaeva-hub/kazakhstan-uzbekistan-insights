@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
+import { ExternalLink, Mail, ChevronDown, ChevronUp } from "lucide-react";
 import { publications } from "@/data/publicationsData";
 import { Button } from "@/components/ui/button";
 
