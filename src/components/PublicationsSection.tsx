@@ -49,14 +49,21 @@ export function PublicationsSection() {
                     size="sm"
                     className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
-                    <a
-                      href={publication.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View publication
-                      <ExternalLink className="ml-2 h-4 w-4" />
-                    </a>
+                    {publication.linkType === "email" ? (
+                      <a href={publication.link}>
+                        Request via Email
+                        <Mail className="ml-2 h-4 w-4" />
+                      </a>
+                    ) : (
+                      <a
+                        href={publication.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View publication
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </a>
+                    )}
                   </Button>
                 </div>
               </div>
