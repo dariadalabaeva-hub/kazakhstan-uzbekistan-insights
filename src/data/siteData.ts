@@ -19,6 +19,7 @@ import oyDetoxImg from "@/assets/activities/Oy-detox.png";
 import almatyFieldworkImg from "@/assets/activities/fieldwork_in_Almaty_by_Indira.png";
 import greenHydrogenImg from "@/assets/activities/Green_Hydrogen_Fieldwork.jpeg";
 import keynoteImg from "@/assets/activities/Keynote_Lecture_by_Philipp_Schroeder.jpg";
+import craftingIdentityImg from "@/assets/activities/Crafting_Identity_and_Nationhood.jpeg";
 
 export const teamMembers = [
   {
@@ -38,12 +39,6 @@ export const teamMembers = [
     name: "Serik Orazgaliyev",
     role: "Co-Principal Investigator",
     image: serikImg,
-  },
-  {
-    id: 4,
-    name: "Leila Bimendiyeva",
-    role: "Co-Principal Investigator",
-    image: null, // Placeholder with initials
   },
   {
     id: 5,
