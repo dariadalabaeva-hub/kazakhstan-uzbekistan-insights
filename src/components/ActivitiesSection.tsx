@@ -124,9 +124,6 @@ export function ActivitiesSection() {
           {activeActivities.map((activity) => (
             <ActiveEventCard key={activity.id} activity={activity} />
           ))}
-          {upcomingActivities.map((activity) => (
-            <UpcomingEventCard key={activity.id} activity={activity} />
-          ))}
         </div>
       </div>
     </section>
