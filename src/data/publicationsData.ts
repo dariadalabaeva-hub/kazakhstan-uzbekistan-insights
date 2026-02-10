@@ -6,6 +6,7 @@ export interface Publication {
   authors: string;
   year: number;
   link: string;
+  linkType?: "external" | "email";
 }
 
 export const publications: Publication[] = [
