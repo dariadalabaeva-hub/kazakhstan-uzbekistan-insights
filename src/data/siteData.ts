@@ -19,6 +19,7 @@ import oyDetoxImg from "@/assets/activities/Oy-detox.png";
 import almatyFieldworkImg from "@/assets/activities/fieldwork_in_Almaty_by_Indira.png";
 import greenHydrogenImg from "@/assets/activities/Green_Hydrogen_Fieldwork.jpeg";
 import keynoteImg from "@/assets/activities/Keynote_Lecture_by_Philipp_Schroeder.jpg";
+import craftingIdentityImg from "@/assets/activities/Crafting_Identity_and_Nationhood.jpeg";
 
 export const teamMembers = [
   {
@@ -38,12 +39,6 @@ export const teamMembers = [
     name: "Serik Orazgaliyev",
     role: "Co-Principal Investigator",
     image: serikImg,
-  },
-  {
-    id: 4,
-    name: "Leila Bimendiyeva",
-    role: "Co-Principal Investigator",
-    image: null, // Placeholder with initials
   },
   {
     id: 5,
@@ -165,8 +160,9 @@ export const activities: Activity[] = [
     title: "Crafting Identity and Nationhood: The Multifaceted Role of Artisans in Uzbekistan's Contemporary Development",
     date: "22 July 2025",
     location: "UCL, London, UK",
-    description: "Indira Alibayeva presented her research at the ICCEES XI World Congress hosted by University College London. The talk explored how artisans contribute to the complex interplay of cultural heritage, national identity, and economic development in modern Uzbekistan.",
+    description: "Indira Alibayeva presented her research, conducted in collaboration with Shumaila Yousafzai and Nurlykhan Aljanova, at the ICCEES XI World Congress hosted by University College London. The talk explored how artisans contribute to the complex interplay of cultural heritage, national identity, and economic development in modern Uzbekistan.",
     type: "past",
+    image: craftingIdentityImg,
   },
   {
     id: 6,
@@ -185,28 +181,6 @@ export const activities: Activity[] = [
     description: "Indira Alibayeva featured on the \"Oy-detox\" podcast to discuss the essential role of social sciences and anthropology in understanding modern society and the motivations behind entrepreneurship.",
     type: "past",
     image: oyDetoxImg,
-  },
-  // 3. Upcoming Events - Placeholder slots at the end
-  {
-    id: 7,
-    title: "Upcoming Event",
-    date: "TBA",
-    description: "New research activities and fieldwork updates will be announced here soon.",
-    type: "upcoming",
-  },
-  {
-    id: 8,
-    title: "Future Research Activity",
-    date: "TBA",
-    description: "New research activities and fieldwork updates will be announced here soon.",
-    type: "upcoming",
-  },
-  {
-    id: 9,
-    title: "Future Research Activity",
-    date: "TBA",
-    description: "New research activities and fieldwork updates will be announced here soon.",
-    type: "upcoming",
   },
 ];
 

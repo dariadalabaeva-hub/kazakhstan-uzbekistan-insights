@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Users, Presentation, Search } from "lucide-react";
+import { Calendar, MapPin, Presentation, Search } from "lucide-react";
 import { activities, Activity } from "@/data/siteData";
 
 function PastEventCard({ activity }: { activity: Activity }) {
@@ -101,45 +101,9 @@ function ActiveEventCard({ activity }: { activity: Activity }) {
   );
 }
 
-function UpcomingEventCard({ activity }: { activity: Activity }) {
-  return (
-    <article className="group bg-card/50 rounded-xl overflow-hidden border-2 border-dashed border-border/60 opacity-75 hover:opacity-90 transition-opacity">
-      {/* Placeholder visual */}
-      <div className="aspect-video bg-muted/30 relative overflow-hidden flex items-center justify-center">
-        <div className="w-16 h-16 rounded-full bg-muted/50 flex items-center justify-center">
-          <Calendar className="text-muted-foreground/50" size={28} />
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="p-6">
-        <div className="flex items-center gap-2 text-muted-foreground/70">
-          <Calendar size={14} />
-          <span className="font-body text-sm font-medium">{activity.date}</span>
-        </div>
-
-        <h3 className="mt-3 font-heading text-lg font-semibold text-muted-foreground">
-          {activity.title}
-        </h3>
-
-        <p className="mt-2 font-body text-sm text-muted-foreground/70 leading-relaxed">
-          {activity.description}
-        </p>
-
-        <div className="mt-4">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-muted text-muted-foreground">
-            Coming Soon
-          </span>
-        </div>
-      </div>
-    </article>
-  );
-}
-
 export function ActivitiesSection() {
   const pastActivities = activities.filter((a) => a.type === "past");
   const activeActivities = activities.filter((a) => a.type === "active");
-  const upcomingActivities = activities.filter((a) => a.type === "upcoming");
 
   return (
     <section id="activities" className="py-24 gradient-subtle">
@@ -159,9 +123,6 @@ export function ActivitiesSection() {
           ))}
           {activeActivities.map((activity) => (
             <ActiveEventCard key={activity.id} activity={activity} />
-          ))}
-          {upcomingActivities.map((activity) => (
-            <UpcomingEventCard key={activity.id} activity={activity} />
           ))}
         </div>
       </div>
