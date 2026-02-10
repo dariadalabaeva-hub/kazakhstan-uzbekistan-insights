@@ -26,6 +26,22 @@ export const publications: Publication[] = [
   },
   {
     id: 3,
+    title: "Roots of Heritage: Honoring Hunarmandchilik Tradition in Uzbekistan. 17 Narratives of Craft Entrepreneurs on Preserving the Nation's Culture and Tradition",
+    authors: "Alibayeva, I., Aljanova, N., & Yousafzai, Sh.",
+    year: 2024,
+    link: "mailto:green-it.project@nu.edu.kz?subject=Publication%20Inquiry",
+    linkType: "email",
+  },
+  {
+    id: 4,
+    title: "Strength in Constraint: 33 Narratives of Women-Entrepreneurs in Kazakhstan",
+    authors: "Alibayeva, I., Yessekeyeva, E., Aljanova, N., & Yousafzai, Sh.",
+    year: 2024,
+    link: "mailto:green-it.project@nu.edu.kz?subject=Publication%20Inquiry",
+    linkType: "email",
+  },
+  {
+    id: 5,
     title: "Impact assessment: Evaluation of jobs-based programming for stability",
     authors: "Ferguson, N., Garcia, T. O., & Schröder, P.",
     year: 2024,
