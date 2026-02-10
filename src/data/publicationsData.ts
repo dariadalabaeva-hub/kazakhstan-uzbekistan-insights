@@ -34,7 +34,7 @@ export const publications: Publication[] = [
   },
   {
     id: 4,
-    title: "Strength in Constraint: 33 Narratives of Women-Entrepreneurs in Kazakhstan",
+    title: "Strength in constraint: 33 narratives of women-entrepreneurs in Kazakhstan",
     authors: "Alibayeva, I., Yessekeyeva, E., Aljanova, N., & Yousafzai, Sh.",
     year: 2024,
     link: "mailto:green-it.project@nu.edu.kz?subject=Publication%20Inquiry",
