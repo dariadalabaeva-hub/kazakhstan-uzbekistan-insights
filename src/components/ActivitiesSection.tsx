@@ -104,7 +104,6 @@ function ActiveEventCard({ activity }: { activity: Activity }) {
 export function ActivitiesSection() {
   const pastActivities = activities.filter((a) => a.type === "past");
   const activeActivities = activities.filter((a) => a.type === "active");
-  const upcomingActivities = activities.filter((a) => a.type === "upcoming");
 
   return (
     <section id="activities" className="py-24 gradient-subtle">
