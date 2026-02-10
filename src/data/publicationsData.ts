@@ -26,7 +26,7 @@ export const publications: Publication[] = [
   },
   {
     id: 3,
-    title: "Roots of Heritage: Honoring Hunarmandchilik Tradition in Uzbekistan. 17 Narratives of Craft Entrepreneurs on Preserving the Nation's Culture and Tradition",
+    title: "Roots of heritage: Honoring hunarmandchilik tradition in Uzbekistan. 17 narratives of craft entrepreneurs on preserving the nation's culture and tradition",
     authors: "Alibayeva, I., Aljanova, N., & Yousafzai, Sh.",
     year: 2024,
     link: "mailto:green-it.project@nu.edu.kz?subject=Publication%20Inquiry",
