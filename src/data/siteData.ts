@@ -20,6 +20,7 @@ import almatyFieldworkImg from "@/assets/activities/fieldwork_in_Almaty_by_Indir
 import greenHydrogenImg from "@/assets/activities/Green_Hydrogen_Fieldwork.jpeg";
 import keynoteImg from "@/assets/activities/Keynote_Lecture_by_Philipp_Schroeder.jpg";
 import craftingIdentityImg from "@/assets/activities/Crafting_Identity_and_Nationhood.jpeg";
+import fieldworkImg from "@/assets/activities/fieldwork.jpg";
 
 export const teamMembers = [
   {
@@ -126,6 +127,7 @@ export const activities: Activity[] = [
     location: "Almaty, Astana, and Tashkent",
     description: "Philipp Schroeder, Indira Alibayeva, and Kholida Khaldarova have initiated comprehensive research across Kazakhstan and Uzbekistan. The team is currently conducting a series of online interviews with green entrepreneurs in Uzbekistan to map the regional entrepreneurial ecosystem.",
     type: "active",
+    image: fieldworkImg,
   },
   // 2. Past Events - Reverse chronological order (most recent first)
   {
