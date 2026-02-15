@@ -60,11 +60,19 @@ function ActiveEventCard({ activity }: { activity: Activity }) {
     <article className="group bg-card rounded-xl overflow-hidden shadow-card border-2 border-secondary/50">
       {/* Research visual */}
       <div className="aspect-video relative overflow-hidden">
-        <div className="w-full h-full bg-gradient-to-br from-secondary/20 via-primary/10 to-secondary/20 flex items-center justify-center">
-          <div className="w-20 h-20 rounded-full bg-secondary/20 flex items-center justify-center animate-pulse">
-            <Search className="text-secondary" size={36} />
+        {activity.image ? (
+          <img 
+            src={activity.image} 
+            alt={activity.title}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-secondary/20 via-primary/10 to-secondary/20 flex items-center justify-center">
+            <div className="w-20 h-20 rounded-full bg-secondary/20 flex items-center justify-center animate-pulse">
+              <Search className="text-secondary" size={36} />
+            </div>
           </div>
-        </div>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/10 to-transparent" />
       </div>
 
@@ -117,7 +125,7 @@ export function ActivitiesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {pastActivities.map((activity) => (
             <PastEventCard key={activity.id} activity={activity} />
           ))}
