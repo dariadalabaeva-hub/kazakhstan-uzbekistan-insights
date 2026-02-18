@@ -30,7 +30,7 @@ export function PartnersSection() {
   return (
     <section id="partners" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="font-heading text-2xl sm:text-3xl font-semibold text-foreground text-center mb-14">
+        <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground text-center mb-14">
           Partners
         </h2>
 
@@ -47,7 +47,7 @@ export function PartnersSection() {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-14 sm:h-16 w-auto object-contain opacity-60 grayscale group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-300"
+                className="h-14 sm:h-16 w-auto object-contain group-hover:scale-105 transition-all duration-300"
               />
             </a>
           ))}
