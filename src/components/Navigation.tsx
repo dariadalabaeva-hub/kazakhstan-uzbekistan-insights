@@ -4,6 +4,7 @@ import nuLogo from "@/assets/nu-logo.png";
 
 const navLinks = [
   { href: "#home", label: "Home" },
+  { href: "#partners", label: "Partners" },
   { href: "#team", label: "Team" },
   { href: "#publications", label: "Publications" },
   { href: "#activities", label: "Activities" },
