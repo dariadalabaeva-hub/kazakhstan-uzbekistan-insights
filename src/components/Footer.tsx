@@ -19,6 +19,9 @@ export function Footer() {
             <a href="#team" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
               Team
             </a>
+            <a href="#activities" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
+              Activities
+            </a>
             <a href="#publications" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
               Publications
             </a>
