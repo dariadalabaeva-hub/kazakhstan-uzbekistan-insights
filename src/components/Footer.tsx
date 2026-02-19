@@ -13,9 +13,6 @@ export function Footer() {
             <a href="#home" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
               Home
             </a>
-            <a href="#partners" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
-              Partners
-            </a>
             <a href="#team" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
               Team
             </a>
@@ -24,6 +21,9 @@ export function Footer() {
             </a>
             <a href="#publications" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
               Publications
+            </a>
+            <a href="#partners" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
+              Partners
             </a>
             <a href="#contact" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
               Contact
