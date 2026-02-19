@@ -4,10 +4,10 @@ import nuLogo from "@/assets/nu-logo.png";
 
 const navLinks = [
   { href: "#home", label: "Home" },
-  { href: "#partners", label: "Partners" },
   { href: "#team", label: "Team" },
   { href: "#activities", label: "Activities" },
   { href: "#publications", label: "Publications" },
+  { href: "#partners", label: "Partners" },
   { href: "#contact", label: "Contact" },
 ];
 
