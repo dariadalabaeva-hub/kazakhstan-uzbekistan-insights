@@ -47,10 +47,12 @@ export function HeroSection() {
           </p>
 
           {/* Project Description */}
-          <div className="mt-12 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            <p className="font-body text-base sm:text-lg text-primary-foreground/90 leading-relaxed text-center">
-              {siteInfo.description}
-            </p>
+          <div className="mt-12 max-w-3xl mx-auto animate-fade-in space-y-4" style={{ animationDelay: "0.4s" }}>
+            {(Array.isArray(siteInfo.description) ? siteInfo.description : [siteInfo.description]).map((paragraph, i) => (
+              <p key={i} className="font-body text-base sm:text-lg text-primary-foreground/90 leading-relaxed text-center">
+                {paragraph}
+              </p>
+            ))}
           </div>
 
           {/* Keywords Tags */}

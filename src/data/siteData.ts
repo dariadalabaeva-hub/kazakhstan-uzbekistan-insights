@@ -217,7 +217,11 @@ export const siteInfo = {
     start: "1/1/25",
     end: "12/31/27"
   },
-  description: "The project aspires to demonstrate that an 'ethnological perspective' can make a valuable contribution to the study of entrepreneurship. In its academic component, the project will employ a mixed methods-approach to collect comparative evidence and engage in emically inspired theory-building on entrepreneurial ecosystems in the IT and Green Economy industries of Kazakhstan and Uzbekistan. In its applied research component, the project will integrate closely with practitioners of the public and private sectors to create socioeconomic impact beyond academia, such as in the field of policy advice.",
+  description: [
+    "Our project argues that an \"ethnological perspective\"—a focus on cultural practice and social relations—can make an important contribution to a better understanding of entrepreneurship.",
+    "In its academic component, the project collects comparative evidence on the emerging IT and Green Economy industries of Kazakhstan and Uzbekistan. We use a mixed-methods approach that moves from fieldwork observations and in-depth interviews to survey instruments developed from those findings, linking qualitative narratives with quantitative measures. Building on this empirical work, the project develops theory about entrepreneurship in Central Asia that centers on locally relevant notions and practices, such as \"success\", \"confidence\", or \"networking\".",
+    "In its applied component, the project works closely with practitioners from the public and private sectors in both countries. Entrepreneurs, industry organizations, and policymakers are involved early through expert interviews and joint workshops, helping shape research questions around real challenges. The project then produces practical outputs—policy briefs, impact assessments, and training materials—to support evidence-based decisions and strengthen entrepreneurial ecosystems."
+  ],
   keywords: [
     "entrepreneurship",
     "Kazakhstan & Uzbekistan",
