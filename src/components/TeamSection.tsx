@@ -65,6 +65,7 @@ export function TeamSection() {
                       rel="noopener noreferrer"
                       title="NU Research Portal"
                       className="opacity-70 hover:opacity-100 hover:-translate-y-0.5 transition-all duration-200"
+                      onClick={(e) => e.stopPropagation()}
                     >
                       <img src={researchNuIcon} alt="Research Portal" className="h-5 w-auto" />
                     </a>
@@ -76,6 +77,7 @@ export function TeamSection() {
                       rel="noopener noreferrer"
                       title="LinkedIn"
                       className="opacity-70 hover:opacity-100 hover:-translate-y-0.5 transition-all duration-200"
+                      onClick={(e) => e.stopPropagation()}
                     >
                       <img src={linkedinIcon} alt="LinkedIn" className="h-5 w-auto" />
                     </a>
