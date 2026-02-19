@@ -22,48 +22,67 @@ import keynoteImg from "@/assets/activities/Keynote_Lecture_by_Philipp_Schroeder
 import craftingIdentityImg from "@/assets/activities/Crafting_Identity_and_Nationhood.jpeg";
 import fieldworkImg from "@/assets/activities/fieldwork.jpg";
 
-export const teamMembers = [
+export interface TeamMember {
+  id: number;
+  name: string;
+  role: string;
+  image: string;
+  linkedin?: string;
+  researchPortal?: string;
+}
+
+export const teamMembers: TeamMember[] = [
   {
     id: 1,
     name: "Philipp Schroeder",
     role: "Principal Investigator",
     image: philippImg,
+    researchPortal: "https://research.nu.edu.kz/en/persons/philipp-schroeder/",
+    linkedin: "https://www.linkedin.com/in/philipp-schröder-84032b25/",
   },
   {
     id: 2,
     name: "Shumaila Yousafzai",
     role: "Co-Principal Investigator",
     image: shumailaImg,
+    researchPortal: "https://research.nu.edu.kz/en/persons/shumaila-yousafzai/",
+    linkedin: "https://www.linkedin.com/in/shumaila-yousafzai-83ab021b3/",
   },
   {
     id: 3,
     name: "Serik Orazgaliyev",
     role: "Co-Principal Investigator",
     image: serikImg,
+    researchPortal: "https://research.nu.edu.kz/en/persons/serik-orazgaliyev-2/",
+    linkedin: "https://www.linkedin.com/in/serik-orazgaliyev-44181677/",
   },
   {
     id: 5,
     name: "Indira Alibayeva",
     role: "Postdoctoral Researcher",
     image: indiraImg,
+    linkedin: "https://www.linkedin.com/in/indira-alibayeva-phd-650a85123/",
   },
   {
     id: 6,
     name: "Nurlykhan Aljanova",
     role: "Postdoctoral Researcher",
     image: nurlykhanImg,
+    linkedin: "https://www.linkedin.com/in/nurlykhan-aljanova-217a561a1/",
   },
   {
     id: 7,
     name: "Kholida Khaldarova",
     role: "Doctoral Researcher",
     image: kholidaImg,
+    linkedin: "https://www.linkedin.com/in/kholida-khaldarova-117792b3/",
   },
   {
     id: 8,
     name: "Aitolkyn Alzhanova",
     role: "Graduate Research Assistant",
     image: aitolkynImg,
+    linkedin: "https://www.linkedin.com/in/aitolkyn-alzhanova-457b2b1b4/",
   },
   {
     id: 9,
@@ -76,18 +95,21 @@ export const teamMembers = [
     name: "Dariya Dalabayeva",
     role: "Graduate Research Assistant",
     image: dariyaImg,
+    linkedin: "https://www.linkedin.com/in/dariya-dalabayeva-59501423b/",
   },
   {
     id: 11,
     name: "Galiya Saktaganova",
     role: "Graduate Research Assistant",
     image: galiyaImg,
+    linkedin: "https://www.linkedin.com/in/galiya-saktaganova-937815216/",
   },
   {
     id: 12,
     name: "Balgyn Orazaly",
     role: "Undergraduate Research Assistant",
     image: balgynImg,
+    linkedin: "https://www.linkedin.com/in/balgyn-orazaly-1152002a9/",
   },
 ];
 

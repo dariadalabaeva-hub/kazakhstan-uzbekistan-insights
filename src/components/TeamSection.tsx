@@ -1,4 +1,6 @@
 import { teamMembers } from "@/data/siteData";
+import linkedinIcon from "@/assets/icons/linkedin.png";
+import researchNuIcon from "@/assets/icons/research-nu.png";
 
 export function TeamSection() {
   const getInitials = (name: string) => {
@@ -21,7 +23,7 @@ export function TeamSection() {
           {teamMembers.map((member, index) => (
             <div
               key={member.id}
-              className="group bg-card rounded-xl p-6 shadow-card hover:shadow-elevated transition-all duration-300 border border-border hover:border-primary/20"
+              className="group bg-card rounded-xl p-6 shadow-card hover:shadow-elevated transition-all duration-300 border border-border hover:border-primary/20 flex flex-col"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
               {/* Avatar */}
@@ -44,7 +46,7 @@ export function TeamSection() {
               </div>
 
               {/* Info */}
-              <div className="text-center">
+              <div className="text-center flex-1">
                 <h3 className="font-heading text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                   {member.name}
                 </h3>
@@ -52,6 +54,34 @@ export function TeamSection() {
                   {member.role}
                 </p>
               </div>
+
+              {/* Social Links */}
+              {(member.researchPortal || member.linkedin) && (
+                <div className="flex items-center justify-center gap-3 mt-4 pt-3 border-t border-border">
+                  {member.researchPortal && (
+                    <a
+                      href={member.researchPortal}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="NU Research Portal"
+                      className="opacity-70 hover:opacity-100 hover:-translate-y-0.5 transition-all duration-200"
+                    >
+                      <img src={researchNuIcon} alt="Research Portal" className="h-5 w-auto" />
+                    </a>
+                  )}
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="LinkedIn"
+                      className="opacity-70 hover:opacity-100 hover:-translate-y-0.5 transition-all duration-200"
+                    >
+                      <img src={linkedinIcon} alt="LinkedIn" className="h-5 w-auto" />
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           ))}
         </div>
