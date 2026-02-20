@@ -59,28 +59,26 @@ export function TeamSection() {
               {(member.researchPortal || member.linkedin) && (
                 <div className="flex items-center justify-center gap-3 mt-4 pt-3 border-t border-border">
                   {member.researchPortal && (
-                    <button
+                    <a
+                      href={member.researchPortal}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       title="NU Research Portal"
-                      className="opacity-70 hover:opacity-100 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        window.open(member.researchPortal, '_blank', 'noopener,noreferrer');
-                      }}
+                      className="opacity-70 hover:opacity-100 hover:-translate-y-0.5 transition-all duration-200"
                     >
                       <img src={researchNuIcon} alt="Research Portal" className="h-5 w-auto" />
-                    </button>
+                    </a>
                   )}
                   {member.linkedin && (
-                    <button
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       title="LinkedIn"
-                      className="opacity-70 hover:opacity-100 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        window.open(member.linkedin, '_blank', 'noopener,noreferrer');
-                      }}
+                      className="opacity-70 hover:opacity-100 hover:-translate-y-0.5 transition-all duration-200"
                     >
                       <img src={linkedinIcon} alt="LinkedIn" className="h-5 w-auto" />
-                    </button>
+                    </a>
                   )}
                 </div>
               )}
