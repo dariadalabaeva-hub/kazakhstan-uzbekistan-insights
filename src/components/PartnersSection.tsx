@@ -5,17 +5,17 @@ import bmuLogo from "@/assets/partners/British_Management_University.png";
 
 const partners = [
   {
-    name: "Nazarbayev University's Research Centre for Entrepreneurship (NURCE)",
+    name: "Nazarbayev University's Research Center for Entrepreneurship",
     url: "https://nurce.kz",
     logo: nurceLogo,
   },
   {
-    name: "Humboldt University, Central Asian Seminar",
+    name: "Department of Asian and African Studies, Central Asian Seminar",
     url: "https://www.iaaw.hu-berlin.de/en/region/centralasia/central-asian-seminar-1",
     logo: casSeminarLogo,
   },
   {
-    name: "International Security and Development Center (ISDC)",
+    name: "International Security and Development Center, Berlin",
     url: "https://isdc.org/",
     logo: isdcLogo,
   },
@@ -34,21 +34,23 @@ export function PartnersSection() {
           Partners
         </h2>
 
-        <div className="flex flex-wrap items-center justify-center gap-12 sm:gap-16 lg:gap-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
           {partners.map((partner) => (
             <a
               key={partner.name}
               href={partner.url}
               target="_blank"
               rel="noopener noreferrer"
-              title={partner.name}
-              className="group relative"
+              className="group flex flex-col items-center text-center gap-4"
             >
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-14 sm:h-16 w-auto object-contain group-hover:scale-105 transition-all duration-300"
+                className="h-16 sm:h-[72px] w-auto object-contain group-hover:scale-105 transition-transform duration-300"
               />
+              <span className="text-sm sm:text-[15px] leading-snug font-medium text-[hsl(220,50%,20%)] group-hover:text-primary transition-colors duration-300">
+                {partner.name}
+              </span>
             </a>
           ))}
         </div>
