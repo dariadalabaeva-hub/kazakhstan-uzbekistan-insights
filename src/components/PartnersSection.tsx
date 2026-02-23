@@ -1,5 +1,5 @@
 import nurceLogo from "@/assets/partners/NURCE.png";
-import casSeminarLogo from "@/assets/partners/Central_Asian_Seminar.png";
+import casSeminarLogo from "@/assets/partners/Humboldt_University_of_Berlin.png";
 import isdcLogo from "@/assets/partners/ISDC.png";
 import bmuLogo from "@/assets/partners/British_Management_University.png";
 
