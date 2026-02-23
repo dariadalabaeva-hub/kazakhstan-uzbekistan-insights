@@ -1,4 +1,5 @@
-import { Calendar, MapPin, Presentation, Search } from "lucide-react";
+import { useState } from "react";
+import { Calendar, MapPin, Presentation, Search, ChevronDown, ChevronUp } from "lucide-react";
 import { activities, Activity } from "@/data/siteData";
 
 function PastEventCard({ activity }: { activity: Activity }) {
@@ -110,8 +111,16 @@ function ActiveEventCard({ activity }: { activity: Activity }) {
 }
 
 export function ActivitiesSection() {
-  const pastActivities = activities.filter((a) => a.type === "past");
-  const activeActivities = activities.filter((a) => a.type === "active");
+  const [showAll, setShowAll] = useState(false);
+  const INITIAL_COUNT = 6;
+
+  const allActivities = [
+    ...activities.filter((a) => a.type === "active"),
+    ...activities.filter((a) => a.type === "past"),
+  ];
+
+  const visibleActivities = showAll ? allActivities : allActivities.slice(0, INITIAL_COUNT);
+  const hasMore = allActivities.length > INITIAL_COUNT;
 
   return (
     <section id="activities" className="py-24 gradient-subtle">
@@ -126,13 +135,31 @@ export function ActivitiesSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {pastActivities.map((activity) => (
-            <PastEventCard key={activity.id} activity={activity} />
-          ))}
-          {activeActivities.map((activity) => (
-            <ActiveEventCard key={activity.id} activity={activity} />
+          {visibleActivities.map((activity, index) => (
+            <div
+              key={activity.id}
+              className={index >= INITIAL_COUNT ? "animate-fade-in" : ""}
+            >
+              {activity.type === "active" ? (
+                <ActiveEventCard activity={activity} />
+              ) : (
+                <PastEventCard activity={activity} />
+              )}
+            </div>
           ))}
         </div>
+
+        {hasMore && (
+          <div className="mt-12 text-center">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="inline-flex items-center gap-2 px-8 py-3 font-body font-medium text-primary border-2 border-primary rounded-lg hover:bg-secondary hover:text-primary-foreground hover:border-secondary transition-all"
+            >
+              {showAll ? "Show Less" : "Show More"}
+              {showAll ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
