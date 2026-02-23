@@ -56,11 +56,11 @@ export function HeroSection() {
           </div>
 
           {/* Keywords Tags */}
-          <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.5s" }}>
+          <div className="mt-10 flex flex-wrap justify-center gap-3 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: "0.5s" }}>
             {siteInfo.keywords.map((keyword, index) => (
               <span
                 key={index}
-                className="flex items-center justify-center px-4 py-3 min-h-[48px] bg-primary-foreground/15 backdrop-blur-sm text-primary-foreground text-sm font-body rounded-full border border-primary-foreground/20 hover:bg-primary-foreground/25 transition-colors text-center"
+                className="inline-flex items-center justify-center h-10 px-5 whitespace-nowrap bg-primary-foreground/15 backdrop-blur-sm text-primary-foreground text-sm font-body rounded-full border border-primary-foreground/20 hover:bg-primary-foreground/25 transition-colors"
               >
                 {keyword}
               </span>
