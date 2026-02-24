@@ -59,7 +59,7 @@ function PastEventCard({ activity }: { activity: Activity }) {
 
 function ActiveEventCard({ activity }: { activity: Activity }) {
   return (
-    <article className="group bg-card rounded-xl overflow-hidden shadow-card border-2 border-secondary/50">
+    <article className="group bg-card rounded-xl overflow-hidden shadow-card border-2 border-secondary/50 h-full flex flex-col">
       {/* Research visual */}
       <div className="aspect-video relative overflow-hidden">
         {activity.image ? (
