@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 function PastEventCard({ activity }: { activity: Activity }) {
   return (
-    <article className="group bg-card rounded-xl overflow-hidden shadow-card border border-border">
+    <article className="group bg-card rounded-xl overflow-hidden shadow-card border border-border h-full flex flex-col">
       {/* Conference visual */}
       <div className="aspect-video relative overflow-hidden">
         {activity.image ? (
