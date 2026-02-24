@@ -43,7 +43,7 @@ function PastEventCard({ activity }: { activity: Activity }) {
           {activity.title}
         </h3>
 
-        <p className="mt-3 font-body text-sm text-muted-foreground leading-relaxed">
+        <p className="mt-3 font-body text-sm text-muted-foreground leading-relaxed flex-1">
           {activity.description}
         </p>
 
