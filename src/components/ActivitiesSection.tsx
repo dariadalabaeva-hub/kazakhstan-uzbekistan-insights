@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Calendar, MapPin, Presentation, Search, ChevronDown, ChevronUp } from "lucide-react";
 import { activities, Activity } from "@/data/siteData";
+import { Button } from "@/components/ui/button";
 
 function PastEventCard({ activity }: { activity: Activity }) {
   return (
@@ -151,13 +152,23 @@ export function ActivitiesSection() {
 
         {hasMore && (
           <div className="mt-12 text-center">
-            <button
+            <Button
+              variant="default"
               onClick={() => setShowAll(!showAll)}
-              className="inline-flex items-center gap-2 px-8 py-3 font-body font-medium text-primary border-2 border-primary rounded-lg hover:bg-secondary hover:text-primary-foreground hover:border-secondary transition-all"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
-              {showAll ? "Show Less" : "Show More"}
-              {showAll ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-            </button>
+              {showAll ? (
+                <>
+                  Show Less
+                  <ChevronUp className="ml-2 h-4 w-4" />
+                </>
+              ) : (
+                <>
+                  Show More ({allActivities.length - INITIAL_COUNT} more)
+                  <ChevronDown className="ml-2 h-4 w-4" />
+                </>
+              )}
+            </Button>
           </div>
         )}
       </div>
