@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Calendar, MapPin, Presentation, Search, ChevronDown, ChevronUp } from "lucide-react";
 import { activities, Activity } from "@/data/siteData";
+import { Button } from "@/components/ui/button";
 
 function PastEventCard({ activity }: { activity: Activity }) {
   return (
