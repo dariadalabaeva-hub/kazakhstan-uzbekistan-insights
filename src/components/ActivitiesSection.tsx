@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 function PastEventCard({ activity }: { activity: Activity }) {
   return (
-    <article className="group bg-card rounded-xl overflow-hidden shadow-card border border-border">
+    <article className="group bg-card rounded-xl overflow-hidden shadow-card border border-border h-full flex flex-col">
       {/* Conference visual */}
       <div className="aspect-video relative overflow-hidden">
         {activity.image ? (
@@ -25,7 +25,7 @@ function PastEventCard({ activity }: { activity: Activity }) {
       </div>
 
       {/* Content */}
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         <div className="flex flex-wrap items-center gap-4 text-sm">
           <div className="flex items-center gap-2 text-secondary">
             <Calendar size={14} />
@@ -43,7 +43,7 @@ function PastEventCard({ activity }: { activity: Activity }) {
           {activity.title}
         </h3>
 
-        <p className="mt-3 font-body text-sm text-muted-foreground leading-relaxed">
+        <p className="mt-3 font-body text-sm text-muted-foreground leading-relaxed flex-1">
           {activity.description}
         </p>
 
@@ -59,7 +59,7 @@ function PastEventCard({ activity }: { activity: Activity }) {
 
 function ActiveEventCard({ activity }: { activity: Activity }) {
   return (
-    <article className="group bg-card rounded-xl overflow-hidden shadow-card border-2 border-secondary/50">
+    <article className="group bg-card rounded-xl overflow-hidden shadow-card border-2 border-secondary/50 h-full flex flex-col">
       {/* Research visual */}
       <div className="aspect-video relative overflow-hidden">
         {activity.image ? (
@@ -79,7 +79,7 @@ function ActiveEventCard({ activity }: { activity: Activity }) {
       </div>
 
       {/* Content */}
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         <div className="flex flex-wrap items-center gap-4 text-sm">
           <div className="flex items-center gap-2 text-secondary">
             <Calendar size={14} />
@@ -97,7 +97,7 @@ function ActiveEventCard({ activity }: { activity: Activity }) {
           {activity.title}
         </h3>
 
-        <p className="mt-3 font-body text-sm text-muted-foreground leading-relaxed">
+        <p className="mt-3 font-body text-sm text-muted-foreground leading-relaxed flex-1">
           {activity.description}
         </p>
 
