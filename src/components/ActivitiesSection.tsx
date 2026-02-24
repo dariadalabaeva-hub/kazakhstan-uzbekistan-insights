@@ -159,12 +159,12 @@ export function ActivitiesSection() {
             >
               {showAll ? (
                 <>
-                  Show Less
+                  Show less
                   <ChevronUp className="ml-2 h-4 w-4" />
                 </>
               ) : (
                 <>
-                  Show More ({allActivities.length - INITIAL_COUNT} more)
+                  Show more ({allActivities.length - INITIAL_COUNT} more)
                   <ChevronDown className="ml-2 h-4 w-4" />
                 </>
               )}
