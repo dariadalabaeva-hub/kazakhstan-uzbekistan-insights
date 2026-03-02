@@ -89,6 +89,7 @@ export const teamMembers: TeamMember[] = [
     name: "Ayazhan Temirbolat",
     role: "Undergraduate Research Assistant",
     image: ayazhanImg,
+    linkedin: "https://www.linkedin.com/in/ayazhan-temirbolat-9086793b3/",
   },
   {
     id: 10,
