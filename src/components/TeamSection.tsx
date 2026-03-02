@@ -1,6 +1,7 @@
 import { teamMembers } from "@/data/siteData";
 import linkedinIcon from "@/assets/icons/linkedin.png";
 import researchNuIcon from "@/assets/icons/research-nu.png";
+import nurceIcon from "@/assets/icons/nurce-team.png";
 
 export function TeamSection() {
   const getInitials = (name: string) => {
@@ -56,8 +57,19 @@ export function TeamSection() {
               </div>
 
               {/* Social Links */}
-              {(member.researchPortal || member.linkedin) && (
+              {(member.nurce || member.researchPortal || member.linkedin) && (
                 <div className="flex items-center justify-center gap-3 mt-4 pt-3 border-t border-border">
+                  {member.nurce && (
+                    <a
+                      href={member.nurce}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="NURCE Profile"
+                      className="opacity-70 hover:opacity-100 hover:-translate-y-0.5 transition-all duration-200"
+                    >
+                      <img src={nurceIcon} alt="NURCE" className="h-5 w-auto" />
+                    </a>
+                  )}
                   {member.researchPortal && (
                     <a
                       href={member.researchPortal}

@@ -29,6 +29,7 @@ export interface TeamMember {
   image: string;
   linkedin?: string;
   researchPortal?: string;
+  nurce?: string;
 }
 
 export const teamMembers: TeamMember[] = [
@@ -39,6 +40,7 @@ export const teamMembers: TeamMember[] = [
     image: philippImg,
     researchPortal: "https://research.nu.edu.kz/en/persons/philipp-schroeder/",
     linkedin: "https://www.linkedin.com/in/philipp-schröder-84032b25/",
+    nurce: "https://nurce.kz/team/tpost/89d7epjoe1-phillipp-schroeder",
   },
   {
     id: 2,
@@ -47,6 +49,7 @@ export const teamMembers: TeamMember[] = [
     image: shumailaImg,
     researchPortal: "https://research.nu.edu.kz/en/persons/shumaila-yousafzai/",
     linkedin: "https://www.linkedin.com/in/shumaila-yousafzai-83ab021b3/",
+    nurce: "https://nurce.kz/team/tpost/735mfinid1-shumaila-yousafzai",
   },
   {
     id: 3,
@@ -62,6 +65,7 @@ export const teamMembers: TeamMember[] = [
     role: "Postdoctoral Researcher",
     image: indiraImg,
     linkedin: "https://www.linkedin.com/in/indira-alibayeva-phd-650a85123/",
+    nurce: "https://nurce.kz/team/tpost/yejrkx9dt1-indira-alibayeva",
   },
   {
     id: 6,
@@ -69,6 +73,7 @@ export const teamMembers: TeamMember[] = [
     role: "Postdoctoral Researcher",
     image: nurlykhanImg,
     linkedin: "https://www.linkedin.com/in/nurlykhan-aljanova-217a561a1/",
+    nurce: "https://nurce.kz/team/tpost/xvxivfyiv1-nurlykhan-aljanova",
   },
   {
     id: 7,
@@ -76,6 +81,7 @@ export const teamMembers: TeamMember[] = [
     role: "Doctoral Researcher",
     image: kholidaImg,
     linkedin: "https://www.linkedin.com/in/kholida-khaldarova-117792b3/",
+    nurce: "https://nurce.kz/team/tpost/kxrckfk8i1-kholida-khaldarova",
   },
   {
     id: 8,
@@ -83,6 +89,7 @@ export const teamMembers: TeamMember[] = [
     role: "Graduate Research Assistant",
     image: aitolkynImg,
     linkedin: "https://www.linkedin.com/in/aitolkyn-alzhanova-457b2b1b4/",
+    nurce: "https://nurce.kz/team/tpost/gjt6p6shb1-aitolkyn-alzhanova",
   },
   {
     id: 9,
@@ -90,6 +97,7 @@ export const teamMembers: TeamMember[] = [
     role: "Undergraduate Research Assistant",
     image: ayazhanImg,
     linkedin: "https://www.linkedin.com/in/ayazhan-temirbolat-9086793b3/",
+    nurce: "https://nurce.kz/team/tpost/gmakfhoi71-ayazhan-temirbolat",
   },
   {
     id: 10,
@@ -97,6 +105,7 @@ export const teamMembers: TeamMember[] = [
     role: "Graduate Research Assistant",
     image: dariyaImg,
     linkedin: "https://www.linkedin.com/in/dariya-dalabayeva-59501423b/",
+    nurce: "https://nurce.kz/team/tpost/skk60hj281-dariya-dalabayeva",
   },
   {
     id: 11,
@@ -104,6 +113,7 @@ export const teamMembers: TeamMember[] = [
     role: "Graduate Research Assistant",
     image: galiyaImg,
     linkedin: "https://www.linkedin.com/in/galiya-saktaganova-937815216/",
+    nurce: "https://nurce.kz/team/tpost/if4rb17xb1-galiya-saktaganova",
   },
   {
     id: 12,
@@ -111,6 +121,7 @@ export const teamMembers: TeamMember[] = [
     role: "Undergraduate Research Assistant",
     image: balgynImg,
     linkedin: "https://www.linkedin.com/in/balgyn-orazaly-1152002a9/",
+    nurce: "https://nurce.kz/team/tpost/1nb66b1hr1-balgyn-orazaly",
   },
 ];
 
