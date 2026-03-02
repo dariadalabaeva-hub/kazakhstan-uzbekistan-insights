@@ -29,6 +29,7 @@ export interface TeamMember {
   image: string;
   linkedin?: string;
   researchPortal?: string;
+  nurce?: string;
 }
 
 export const teamMembers: TeamMember[] = [

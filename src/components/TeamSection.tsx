@@ -1,6 +1,7 @@
 import { teamMembers } from "@/data/siteData";
 import linkedinIcon from "@/assets/icons/linkedin.png";
 import researchNuIcon from "@/assets/icons/research-nu.png";
+import nurceIcon from "@/assets/icons/nurce-team.png";
 
 export function TeamSection() {
   const getInitials = (name: string) => {
