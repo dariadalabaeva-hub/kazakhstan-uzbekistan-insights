@@ -80,7 +80,7 @@ export const teamMembers: TeamMember[] = [
     id: 13,
     name: "Kassymkhan Kapparov",
     role: "Research Fellow",
-    image: "",
+    image: kassymkhanImg,
     linkedin: "https://www.linkedin.com/in/kapparov/",
     nurce: "https://nurce.kz/team/tpost/zpaxebcji1-kassymkhan-kapparov",
   },
