@@ -76,6 +76,14 @@ export const teamMembers: TeamMember[] = [
     nurce: "https://nurce.kz/team/tpost/xvxivfyiv1-nurlykhan-aljanova",
   },
   {
+    id: 13,
+    name: "Kassymkhan Kapparov",
+    role: "Research Fellow",
+    image: "",
+    linkedin: "https://www.linkedin.com/in/kapparov/",
+    nurce: "https://nurce.kz/team/tpost/zpaxebcji1-kassymkhan-kapparov",
+  },
+  {
     id: 7,
     name: "Kholida Khaldarova",
     role: "Doctoral Researcher",
