@@ -22,6 +22,7 @@ import greenHydrogenImg from "@/assets/activities/Green_Hydrogen_Fieldwork.jpeg"
 import keynoteImg from "@/assets/activities/Keynote_Lecture_by_Philipp_Schroeder.jpg";
 import craftingIdentityImg from "@/assets/activities/Crafting_Identity_and_Nationhood.jpeg";
 import fieldworkImg from "@/assets/activities/fieldwork.jpg";
+import guestLectureGreenHydrogenImg from "@/assets/activities/Guest_Lecture_Green_Hydrogen.jpeg";
 
 export interface TeamMember {
   id: number;
