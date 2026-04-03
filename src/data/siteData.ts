@@ -22,6 +22,7 @@ import greenHydrogenImg from "@/assets/activities/Green_Hydrogen_Fieldwork.jpeg"
 import keynoteImg from "@/assets/activities/Keynote_Lecture_by_Philipp_Schroeder.jpg";
 import craftingIdentityImg from "@/assets/activities/Crafting_Identity_and_Nationhood.jpeg";
 import fieldworkImg from "@/assets/activities/fieldwork.jpg";
+import guestLectureGreenHydrogenImg from "@/assets/activities/Guest_Lecture_Green_Hydrogen.jpeg";
 
 export interface TeamMember {
   id: number;
@@ -173,6 +174,15 @@ export const activities: Activity[] = [
     image: fieldworkImg,
   },
   // 2. Past Events - Reverse chronological order (most recent first)
+  {
+    id: 8,
+    title: "Guest Lecture: \"Beyond the Technology: The Social and Institutional Reality of Green Hydrogen in Kazakhstan\"",
+    date: "April 2, 2026",
+    location: "Nazarbayev University",
+    description: "Nurlykhan Aljanova delivered a guest lecture for undergraduate students of the School of Humanities. The session was part of the \"Approaches to Global Development\" course taught by Philipp Schroeder. The lecture drew on findings from one of the most comprehensive qualitative studies of green hydrogen perceptions, conducted as part of a broader effort to establish the social and institutional baseline for prospective hydrogen development in western Kazakhstan.",
+    type: "past",
+    image: guestLectureGreenHydrogenImg,
+  },
   {
     id: 2,
     title: "Fieldwork on Green Hydrogen: Socio-Cultural Perceptions in Western Kazakhstan",
