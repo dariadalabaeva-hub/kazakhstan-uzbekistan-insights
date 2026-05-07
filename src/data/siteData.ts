@@ -186,6 +186,16 @@ export const activities: Activity[] = [
     image: guestLectureGreenHydrogenImg,
   },
   {
+    id: 9,
+    title: "High-Level Roundtable: Implementing Kazakhstan's National Hydrogen Development Concept",
+    date: "April 9, 2026",
+    location: "Hilton Garden Inn, Astana",
+    description: "The Ministry of Energy of the Republic of Kazakhstan and GIZ's H₂-diplo programme convened a high-level roundtable titled \"From Planning to Action.\" The event brought together vice-ministers of Energy and Industry, the German Ambassador to Kazakhstan, international financial institutions, academia, the private sector, and civil society to discuss the practical implementation of Kazakhstan's newly adopted Hydrogen Development Concept through 2040. The Concept sets out Kazakhstan's ambition to become a regional leader in green hydrogen production, low-carbon industry, and human capital development, with key milestones in 2030, 2035, and 2040.",
+    type: "past",
+    image: hydrogenRoundtableImg,
+    tag: "Policy Engagement",
+  },
+  {
     id: 2,
     title: "Fieldwork on Green Hydrogen: Socio-Cultural Perceptions in Western Kazakhstan",
     date: "November 2025",
