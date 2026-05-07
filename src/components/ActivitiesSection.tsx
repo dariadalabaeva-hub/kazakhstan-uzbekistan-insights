@@ -49,7 +49,7 @@ function PastEventCard({ activity }: { activity: Activity }) {
 
         <div className="mt-4">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">
-            Past Event
+            {activity.tag ?? "Past Event"}
           </span>
         </div>
       </div>
