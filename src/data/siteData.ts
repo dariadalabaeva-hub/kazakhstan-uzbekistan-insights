@@ -23,6 +23,7 @@ import keynoteImg from "@/assets/activities/Keynote_Lecture_by_Philipp_Schroeder
 import craftingIdentityImg from "@/assets/activities/Crafting_Identity_and_Nationhood.jpeg";
 import fieldworkImg from "@/assets/activities/fieldwork.jpg";
 import guestLectureGreenHydrogenImg from "@/assets/activities/Guest_Lecture_Green_Hydrogen.jpeg";
+import hydrogenRoundtableImg from "@/assets/activities/Green_Hydrogen_Concept_Round_table.jpeg";
 
 export interface TeamMember {
   id: number;
@@ -160,6 +161,7 @@ export interface Activity {
   description: string;
   type: "past" | "upcoming" | "active";
   image?: string;
+  tag?: string;
 }
 
 export const activities: Activity[] = [
