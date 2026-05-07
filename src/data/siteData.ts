@@ -24,6 +24,7 @@ import craftingIdentityImg from "@/assets/activities/Crafting_Identity_and_Natio
 import fieldworkImg from "@/assets/activities/fieldwork.jpg";
 import guestLectureGreenHydrogenImg from "@/assets/activities/Guest_Lecture_Green_Hydrogen.jpeg";
 import hydrogenRoundtableImg from "@/assets/activities/Green_Hydrogen_Concept_Round_table.jpeg";
+// import resExpoImg from "@/assets/activities/RES_2026_EXPO.jpeg"; // TODO: add when image is uploaded
 
 export interface TeamMember {
   id: number;
