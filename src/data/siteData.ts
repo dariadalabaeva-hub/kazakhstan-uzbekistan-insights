@@ -177,15 +177,6 @@ export const activities: Activity[] = [
   },
   // 2. Past Events - Reverse chronological order (most recent first)
   {
-    id: 8,
-    title: "Guest Lecture: \"Beyond the Technology: The Social and Institutional Reality of Green Hydrogen in Kazakhstan\"",
-    date: "April 2, 2026",
-    location: "Nazarbayev University",
-    description: "Nurlykhan Aljanova delivered a guest lecture for undergraduate students of the School of Humanities. The session was part of the \"Approaches to Global Development\" course taught by Philipp Schroeder. The lecture drew on findings from one of the most comprehensive qualitative studies of green hydrogen perceptions, conducted as part of a broader effort to establish the social and institutional baseline for prospective hydrogen development in western Kazakhstan.",
-    type: "past",
-    image: guestLectureGreenHydrogenImg,
-  },
-  {
     id: 9,
     title: "High-Level Roundtable: Implementing Kazakhstan's National Hydrogen Development Concept",
     date: "April 9, 2026",
@@ -194,6 +185,15 @@ export const activities: Activity[] = [
     type: "past",
     image: hydrogenRoundtableImg,
     tag: "Policy Engagement",
+  },
+  {
+    id: 8,
+    title: "Guest Lecture: \"Beyond the Technology: The Social and Institutional Reality of Green Hydrogen in Kazakhstan\"",
+    date: "April 2, 2026",
+    location: "Nazarbayev University",
+    description: "Nurlykhan Aljanova delivered a guest lecture for undergraduate students of the School of Humanities. The session was part of the \"Approaches to Global Development\" course taught by Philipp Schroeder. The lecture drew on findings from one of the most comprehensive qualitative studies of green hydrogen perceptions, conducted as part of a broader effort to establish the social and institutional baseline for prospective hydrogen development in western Kazakhstan.",
+    type: "past",
+    image: guestLectureGreenHydrogenImg,
   },
   {
     id: 2,
