@@ -24,7 +24,7 @@ import craftingIdentityImg from "@/assets/activities/Crafting_Identity_and_Natio
 import fieldworkImg from "@/assets/activities/fieldwork.jpg";
 import guestLectureGreenHydrogenImg from "@/assets/activities/Guest_Lecture_Green_Hydrogen.jpeg";
 import hydrogenRoundtableImg from "@/assets/activities/Green_Hydrogen_Concept_Round_table.jpeg";
-// import resExpoImg from "@/assets/activities/RES_2026_EXPO.jpeg"; // TODO: add when image is uploaded
+import resExpoImg from "@/assets/activities/RES_2026_EXPO.jpeg";
 
 export interface TeamMember {
   id: number;
@@ -185,6 +185,7 @@ export const activities: Activity[] = [
     description: "Nurlykhan Aljanova and Indira Alibayeva participated in the international exhibition RES 2026 EXPO, held as part of the Regional Environmental Summit of Central Asia. The exhibition served as an important professional platform for dialogue on sustainable development, green energy, decarbonization, water technologies, circular economy, climate solutions, ESG, and green finance. Bringing together representatives of government bodies, international organizations, business, financial institutions, academia, and the expert community, RES 2026 EXPO highlighted the growing role of Kazakhstan and Central Asia in advancing ecological transformation and sustainable innovation.",
     type: "past",
     tag: "Institutional Representation",
+    image: resExpoImg,
   },
   {
     id: 9,
