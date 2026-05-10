@@ -218,7 +218,7 @@ export const activities: Activity[] = [
   {
     id: 3,
     title: "Conference: \"Entrepreneurship, Heritage and Sustainability: Exploring the Nexus of Economy, Culture and Applied Research\"",
-    date: "24-26 September 2025",
+    date: "September 24-26, 2025",
     location: "Nazarbayev University",
     description: "This three-day event brought together academics from diverse disciplines and practitioners from the business, cultural, and sustainability sectors. The conference's mission was to provide a platform for the exchange of perspectives and the fostering of new partnerships between science, applied research, and professional domains.",
     type: "past",
@@ -227,7 +227,7 @@ export const activities: Activity[] = [
   {
     id: 4,
     title: "Keynote Lecture: \"Theorizing Entrepreneurship in Central Asia\"",
-    date: "22-23 July 2025",
+    date: "July 22-23, 2025",
     location: "FU Berlin, Germany",
     description: "Philipp Schroeder delivered a keynote lecture at the \"Workshop on Russian and East European Politics\" held at FU Berlin. The presentation focused on developing theoretical frameworks to better understand the unique entrepreneurial landscapes within the Central Asian region.",
     type: "past",
@@ -236,7 +236,7 @@ export const activities: Activity[] = [
   {
     id: 5,
     title: "Crafting Identity and Nationhood: The Multifaceted Role of Artisans in Uzbekistan's Contemporary Development",
-    date: "22 July 2025",
+    date: "July 22, 2025",
     location: "UCL, London, UK",
     description: "Indira Alibayeva presented her research, conducted in collaboration with Shumaila Yousafzai and Nurlykhan Aljanova, at the ICCEES XI World Congress hosted by University College London. The talk explored how artisans contribute to the complex interplay of cultural heritage, national identity, and economic development in modern Uzbekistan.",
     type: "past",
@@ -245,7 +245,7 @@ export const activities: Activity[] = [
   {
     id: 6,
     title: "Ethnographic Fieldwork: Green Entrepreneurs in Almaty",
-    date: "24 June – 2 July 2025",
+    date: "June 24 – July 2, 2025",
     location: "Almaty, Kazakhstan",
     description: "Indira Alibayeva conducted on-site research visiting workplaces and performing structured and semi-structured interviews. Initial analysis indicates that green entrepreneurs are predominantly driven by intrinsic motivation and ecological concerns rather than profit maximization.",
     type: "past",
