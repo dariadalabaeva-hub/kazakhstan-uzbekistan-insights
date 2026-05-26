@@ -185,7 +185,7 @@ export const activities: Activity[] = [
     location: "British Management University",
     description: "The Cambridge Central Asia Forum and the British Management University (BMU) Tashkent hosted a compelling talk by Dr. Philipp Schroeder, exploring how qualitative research can serve both academic and applied purposes in entrepreneurship studies across Central Asia. The talk opened with a case for the positive dual use of knowledge — the idea that rigorous fieldwork-based research need not choose between scholarly contribution and real-world utility. Drawing on long-term ethnographic work in the region, Dr. Schroeder moved from broader structural frameworks toward finer-grained accounts of how entrepreneurs actually operate on the ground.",
     type: "past",
-    tag: "Academic Dissemination",
+    tag: "Scholarly Engagement",
     image: bmuSeminarImg,
   },
   {
