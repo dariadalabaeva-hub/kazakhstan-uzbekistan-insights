@@ -179,6 +179,16 @@ export const activities: Activity[] = [
   },
   // 2. Past Events - Reverse chronological order (most recent first)
   {
+    id: 11,
+    title: "Seminar: \"Entrepreneurship in Practice: Qualitative Insights from Central Asia\"",
+    date: "May 22, 2026",
+    location: "British Management University",
+    description: "The Cambridge Central Asia Forum and the British Management University (BMU) Tashkent hosted a compelling talk by Dr. Philipp Schroeder, exploring how qualitative research can serve both academic and applied purposes in entrepreneurship studies across Central Asia. The talk opened with a case for the positive dual use of knowledge — the idea that rigorous fieldwork-based research need not choose between scholarly contribution and real-world utility. Drawing on long-term ethnographic work in the region, Dr. Schroeder moved from broader structural frameworks toward finer-grained accounts of how entrepreneurs actually operate on the ground.",
+    type: "past",
+    tag: "Academic Dissemination",
+    image: bmuSeminarImg,
+  },
+  {
     id: 10,
     title: "Strategic Participation in RES 2026 EXPO: Advancing Regional Sustainability",
     date: "April 22-24, 2026",
