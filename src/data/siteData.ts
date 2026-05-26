@@ -25,6 +25,7 @@ import fieldworkImg from "@/assets/activities/fieldwork.jpg";
 import guestLectureGreenHydrogenImg from "@/assets/activities/Guest_Lecture_Green_Hydrogen.jpeg";
 import hydrogenRoundtableImg from "@/assets/activities/Green_Hydrogen_Concept_Round_table.jpeg";
 import resExpoImg from "@/assets/activities/RES_2026_EXPO.jpeg";
+import bmuSeminarImg from "@/assets/activities/BMU_seminar.jpeg";
 
 export interface TeamMember {
   id: number;
