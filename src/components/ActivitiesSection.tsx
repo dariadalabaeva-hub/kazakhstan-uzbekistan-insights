@@ -26,7 +26,7 @@ function PastEventCard({ activity }: { activity: Activity }) {
 
       {/* Content */}
       <div className="p-6 flex flex-col flex-1">
-        <div className="flex flex-wrap items-center gap-4 text-sm">
+        <div className="flex flex-col items-start gap-1 text-sm">
           <div className="flex items-center gap-2 text-secondary">
             <Calendar size={14} />
             <span className="font-body font-medium">{activity.date}</span>
@@ -80,7 +80,7 @@ function ActiveEventCard({ activity }: { activity: Activity }) {
 
       {/* Content */}
       <div className="p-6 flex flex-col flex-1">
-        <div className="flex flex-wrap items-center gap-4 text-sm">
+        <div className="flex flex-col items-start gap-1 text-sm">
           <div className="flex items-center gap-2 text-secondary">
             <Calendar size={14} />
             <span className="font-body font-medium">{activity.date}</span>
