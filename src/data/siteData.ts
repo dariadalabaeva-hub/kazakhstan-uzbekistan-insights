@@ -26,6 +26,7 @@ import guestLectureGreenHydrogenImg from "@/assets/activities/Guest_Lecture_Gree
 import hydrogenRoundtableImg from "@/assets/activities/Green_Hydrogen_Concept_Round_table.jpeg";
 import resExpoImg from "@/assets/activities/RES_2026_EXPO.jpeg";
 import bmuSeminarImg from "@/assets/activities/BMU_seminar.jpeg";
+import cessConferenceImg from "@/assets/activities/CESS_conference.jpeg";
 
 export interface TeamMember {
   id: number;
@@ -178,6 +179,16 @@ export const activities: Activity[] = [
     image: fieldworkImg,
   },
   // 2. Past Events - Reverse chronological order (most recent first)
+  {
+    id: 12,
+    title: "CESS 2026 Panel: Applied Qualitative Studies and the Dual Use of Knowledge",
+    date: "June 17, 2026",
+    location: "Nazarbayev University",
+    description: "Philipp Schroeder and Nurlykhan Aljanova participated in the panel \"Research for Whom? Applied Qualitative Studies and the Positive Dual Use of Knowledge\" at the Central Eurasian Studies Society's 2026 Regional Conference. The panel explored how qualitative findings impact policy, practice, and organizational decision-making. Philipp presented \"Researching from the Inside: Applied Qualitative Knowledge Between Public Anthropology and Business Consultancy,\" examining his experience as an insider-researcher embedded in a cross-border entrepreneurial venture co-producing a digital cultural heritage platform for a Kazakhstani bank. Nurlykhan presented \"Governing the Hydrogen Frontier: Social Acceptance and Institutional Readiness in Fossil-Dependent Kazakhstan,\" drawing on findings from an empirical study in Aktau and Atyrau — 24 stakeholder interviews, 24 resident interviews, and 8 focus group discussions.",
+    type: "past",
+    tag: "Scholarly Dialogue",
+    image: cessConferenceImg,
+  },
   {
     id: 11,
     title: "Seminar: \"Entrepreneurship in Practice: Qualitative Insights from Central Asia\"",
