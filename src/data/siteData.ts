@@ -26,6 +26,7 @@ import guestLectureGreenHydrogenImg from "@/assets/activities/Guest_Lecture_Gree
 import hydrogenRoundtableImg from "@/assets/activities/Green_Hydrogen_Concept_Round_table.jpeg";
 import resExpoImg from "@/assets/activities/RES_2026_EXPO.jpeg";
 import bmuSeminarImg from "@/assets/activities/BMU_seminar.jpeg";
+import cessConferenceImg from "@/assets/activities/CESS_conference.jpeg";
 
 export interface TeamMember {
   id: number;
