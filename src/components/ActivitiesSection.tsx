@@ -48,25 +48,27 @@ function PastEventCard({ activity }: { activity: Activity }) {
       </div>
 
       {/* Content */}
-      <div className="p-6 flex flex-col flex-1">
-        <div className="flex flex-col items-start gap-1 text-sm">
-          <div className="flex items-center gap-2 text-secondary">
-            <Calendar size={14} />
-            <span className="font-body font-medium">{activity.date}</span>
-          </div>
-          {activity.location && (
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <MapPin size={14} />
-              <span className="font-body">{activity.location}</span>
+      <div className="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <div className="flex flex-col items-start gap-1 text-sm">
+            <div className="flex items-center gap-2 text-secondary">
+              <Calendar size={14} />
+              <span className="font-body font-medium">{activity.date}</span>
             </div>
-          )}
+            {activity.location && (
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <MapPin size={14} />
+                <span className="font-body">{activity.location}</span>
+              </div>
+            )}
+          </div>
+
+          <h3 className="mt-4 font-heading text-lg font-semibold text-foreground leading-snug">
+            {activity.title}
+          </h3>
+
+          <ExpandableDescription text={activity.description} />
         </div>
-
-        <h3 className="mt-4 font-heading text-lg font-semibold text-foreground leading-snug">
-          {activity.title}
-        </h3>
-
-        <ExpandableDescription text={activity.description} />
 
         <div className="mt-4">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">
