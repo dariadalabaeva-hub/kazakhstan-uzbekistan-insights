@@ -7,7 +7,7 @@ function ExpandableDescription({ text }: { text: string }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="mt-3 flex-1">
+    <div className="mt-3">
       <p
         className={`font-body text-sm text-muted-foreground leading-relaxed ${
           expanded ? "" : "line-clamp-4"
@@ -48,25 +48,27 @@ function PastEventCard({ activity }: { activity: Activity }) {
       </div>
 
       {/* Content */}
-      <div className="p-6 flex flex-col flex-1">
-        <div className="flex flex-col items-start gap-1 text-sm">
-          <div className="flex items-center gap-2 text-secondary">
-            <Calendar size={14} />
-            <span className="font-body font-medium">{activity.date}</span>
-          </div>
-          {activity.location && (
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <MapPin size={14} />
-              <span className="font-body">{activity.location}</span>
+      <div className="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <div className="flex flex-col items-start gap-1 text-sm">
+            <div className="flex items-center gap-2 text-secondary">
+              <Calendar size={14} />
+              <span className="font-body font-medium">{activity.date}</span>
             </div>
-          )}
+            {activity.location && (
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <MapPin size={14} />
+                <span className="font-body">{activity.location}</span>
+              </div>
+            )}
+          </div>
+
+          <h3 className="mt-4 font-heading text-lg font-semibold text-foreground leading-snug">
+            {activity.title}
+          </h3>
+
+          <ExpandableDescription text={activity.description} />
         </div>
-
-        <h3 className="mt-4 font-heading text-lg font-semibold text-foreground leading-snug">
-          {activity.title}
-        </h3>
-
-        <ExpandableDescription text={activity.description} />
 
         <div className="mt-4">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">
@@ -100,25 +102,27 @@ function ActiveEventCard({ activity }: { activity: Activity }) {
       </div>
 
       {/* Content */}
-      <div className="p-6 flex flex-col flex-1">
-        <div className="flex flex-col items-start gap-1 text-sm">
-          <div className="flex items-center gap-2 text-secondary">
-            <Calendar size={14} />
-            <span className="font-body font-medium">{activity.date}</span>
-          </div>
-          {activity.location && (
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <MapPin size={14} />
-              <span className="font-body">{activity.location}</span>
+      <div className="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <div className="flex flex-col items-start gap-1 text-sm">
+            <div className="flex items-center gap-2 text-secondary">
+              <Calendar size={14} />
+              <span className="font-body font-medium">{activity.date}</span>
             </div>
-          )}
+            {activity.location && (
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <MapPin size={14} />
+                <span className="font-body">{activity.location}</span>
+              </div>
+            )}
+          </div>
+
+          <h3 className="mt-4 font-heading text-lg font-semibold text-foreground leading-snug">
+            {activity.title}
+          </h3>
+
+          <ExpandableDescription text={activity.description} />
         </div>
-
-        <h3 className="mt-4 font-heading text-lg font-semibold text-foreground leading-snug">
-          {activity.title}
-        </h3>
-
-        <ExpandableDescription text={activity.description} />
 
         <div className="mt-4">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary/20 text-secondary">
@@ -154,11 +158,11 @@ export function ActivitiesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
           {visibleActivities.map((activity, index) => (
             <div
               key={activity.id}
-              className={index >= INITIAL_COUNT ? "animate-fade-in" : ""}
+              className={`h-full ${index >= INITIAL_COUNT ? "animate-fade-in" : ""}`}
             >
               {activity.type === "active" ? (
                 <ActiveEventCard activity={activity} />
