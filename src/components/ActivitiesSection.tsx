@@ -7,7 +7,7 @@ function ExpandableDescription({ text }: { text: string }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="mt-3 flex-1">
+    <div className="mt-3">
       <p
         className={`font-body text-sm text-muted-foreground leading-relaxed ${
           expanded ? "" : "line-clamp-4"
