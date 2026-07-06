@@ -3,6 +3,29 @@ import { Calendar, MapPin, Presentation, Search, ChevronDown, ChevronUp } from "
 import { activities, Activity } from "@/data/siteData";
 import { Button } from "@/components/ui/button";
 
+function ExpandableDescription({ text }: { text: string }) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <div className="mt-3 flex-1">
+      <p
+        className={`font-body text-sm text-muted-foreground leading-relaxed ${
+          expanded ? "" : "line-clamp-4"
+        }`}
+      >
+        {text}
+      </p>
+      <button
+        type="button"
+        onClick={() => setExpanded((v) => !v)}
+        className="mt-1 font-body text-sm font-semibold text-secondary hover:text-secondary/80 transition-colors"
+      >
+        {expanded ? "Show less" : "... Show full text"}
+      </button>
+    </div>
+  );
+}
+
 function PastEventCard({ activity }: { activity: Activity }) {
   return (
     <article className="group bg-card rounded-xl overflow-hidden shadow-card border border-border h-full flex flex-col">
@@ -43,9 +66,7 @@ function PastEventCard({ activity }: { activity: Activity }) {
           {activity.title}
         </h3>
 
-        <p className="mt-3 font-body text-sm text-muted-foreground leading-relaxed flex-1">
-          {activity.description}
-        </p>
+        <ExpandableDescription text={activity.description} />
 
         <div className="mt-4">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">
@@ -97,9 +118,7 @@ function ActiveEventCard({ activity }: { activity: Activity }) {
           {activity.title}
         </h3>
 
-        <p className="mt-3 font-body text-sm text-muted-foreground leading-relaxed flex-1">
-          {activity.description}
-        </p>
+        <ExpandableDescription text={activity.description} />
 
         <div className="mt-4">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary/20 text-secondary">
@@ -135,7 +154,7 @@ export function ActivitiesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
           {visibleActivities.map((activity, index) => (
             <div
               key={activity.id}
