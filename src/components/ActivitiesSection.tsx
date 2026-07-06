@@ -158,11 +158,11 @@ export function ActivitiesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
           {visibleActivities.map((activity, index) => (
             <div
               key={activity.id}
-              className={index >= INITIAL_COUNT ? "animate-fade-in" : ""}
+              className={`h-full ${index >= INITIAL_COUNT ? "animate-fade-in" : ""}`}
             >
               {activity.type === "active" ? (
                 <ActiveEventCard activity={activity} />
