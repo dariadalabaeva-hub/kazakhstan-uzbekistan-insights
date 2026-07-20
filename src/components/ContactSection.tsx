@@ -1,17 +1,19 @@
 import { Mail } from "lucide-react";
+import { useT } from "@/i18n/useT";
 
 export function ContactSection() {
   const email = "green-it.project@nu.edu.kz";
+  const t = useT();
 
   return (
     <section id="contact" className="py-24 bg-card">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground">
-            Get in Touch
+            {t("contact.title")}
           </h2>
           <p className="mt-4 font-body text-lg text-muted-foreground">
-            Interested in our research or collaboration opportunities? We'd love to hear from you.
+            {t("contact.subtitle")}
           </p>
 
           {/* Email CTA */}

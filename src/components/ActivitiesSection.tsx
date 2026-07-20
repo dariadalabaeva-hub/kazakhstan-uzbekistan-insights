@@ -1,10 +1,14 @@
 import { useState } from "react";
 import { Calendar, MapPin, Presentation, Search, ChevronDown, ChevronUp } from "lucide-react";
-import { activities, Activity } from "@/data/siteData";
+import { Activity } from "@/data/siteData";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { useT } from "@/i18n/useT";
+import { getActivities } from "@/i18n/content";
 
 function ExpandableDescription({ text }: { text: string }) {
   const [expanded, setExpanded] = useState(false);
+  const t = useT();
 
   return (
     <div className="mt-3">
@@ -20,20 +24,21 @@ function ExpandableDescription({ text }: { text: string }) {
         onClick={() => setExpanded((v) => !v)}
         className="mt-1 font-body text-sm font-semibold text-secondary hover:text-secondary/80 transition-colors"
       >
-        {expanded ? "Show less" : "... Show full text"}
+        {expanded ? t("activities.showLessText") : t("activities.showFullText")}
       </button>
     </div>
   );
 }
 
 function PastEventCard({ activity }: { activity: Activity }) {
+  const t = useT();
   return (
     <article className="group bg-card rounded-xl overflow-hidden shadow-card border border-border h-full flex flex-col">
       {/* Conference visual */}
       <div className="aspect-video relative overflow-hidden">
         {activity.image ? (
-          <img 
-            src={activity.image} 
+          <img
+            src={activity.image}
             alt={activity.title}
             className="w-full h-full object-cover"
           />
@@ -72,7 +77,7 @@ function PastEventCard({ activity }: { activity: Activity }) {
 
         <div className="mt-4">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">
-            {activity.tag ?? "Past Event"}
+            {activity.tag ?? t("activities.pastTag")}
           </span>
         </div>
       </div>
@@ -81,13 +86,14 @@ function PastEventCard({ activity }: { activity: Activity }) {
 }
 
 function ActiveEventCard({ activity }: { activity: Activity }) {
+  const t = useT();
   return (
     <article className="group bg-card rounded-xl overflow-hidden shadow-card border-2 border-secondary/50 h-full flex flex-col">
       {/* Research visual */}
       <div className="aspect-video relative overflow-hidden">
         {activity.image ? (
-          <img 
-            src={activity.image} 
+          <img
+            src={activity.image}
             alt={activity.title}
             className="w-full h-full object-cover"
           />
@@ -126,7 +132,7 @@ function ActiveEventCard({ activity }: { activity: Activity }) {
 
         <div className="mt-4">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary/20 text-secondary">
-            Active Research
+            {t("activities.activeTag")}
           </span>
         </div>
       </div>
@@ -137,6 +143,9 @@ function ActiveEventCard({ activity }: { activity: Activity }) {
 export function ActivitiesSection() {
   const [showAll, setShowAll] = useState(false);
   const INITIAL_COUNT = 6;
+  const { locale } = useLanguage();
+  const t = useT();
+  const activities = getActivities(locale);
 
   const allActivities = [
     ...activities.filter((a) => a.type === "active"),
@@ -151,10 +160,10 @@ export function ActivitiesSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground">
-            Research Activities
+            {t("activities.title")}
           </h2>
           <p className="mt-4 font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            Updates from our fieldwork, workshops, and collaborative events.
+            {t("activities.subtitle")}
           </p>
         </div>
 
@@ -182,12 +191,12 @@ export function ActivitiesSection() {
             >
               {showAll ? (
                 <>
-                  Show less
+                  {t("activities.showLess")}
                   <ChevronUp className="ml-2 h-4 w-4" />
                 </>
               ) : (
                 <>
-                  Show more ({allActivities.length - INITIAL_COUNT} more)
+                  {t("activities.showMore")} ({allActivities.length - INITIAL_COUNT} {t("activities.moreCount")})
                   <ChevronDown className="ml-2 h-4 w-4" />
                 </>
               )}

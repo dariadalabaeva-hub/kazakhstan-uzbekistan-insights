@@ -1,7 +1,13 @@
-import { siteInfo } from "@/data/siteData";
 import { Calendar, CheckCircle } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { useT } from "@/i18n/useT";
+import { getSiteInfo } from "@/i18n/content";
 
 export function HeroSection() {
+  const { locale } = useLanguage();
+  const t = useT();
+  const siteInfo = getSiteInfo(locale);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden">
       {/* Geometric pattern overlay */}
@@ -15,7 +21,7 @@ export function HeroSection() {
           <rect width="100%" height="100%" fill="url(#grid)" />
         </svg>
       </div>
-      
+
       {/* Decorative circles */}
       <div className="absolute top-20 right-10 w-64 h-64 rounded-full bg-secondary/20 blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-primary/20 blur-3xl" />
@@ -27,7 +33,7 @@ export function HeroSection() {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full border border-primary-foreground/20">
               <CheckCircle className="w-4 h-4 text-green-300" />
               <span className="font-body text-sm font-medium text-primary-foreground">
-                Status: {siteInfo.status}
+                {t("hero.status")}: {siteInfo.status}
               </span>
             </div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full border border-primary-foreground/20">
@@ -41,7 +47,7 @@ export function HeroSection() {
           <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-primary-foreground leading-tight text-balance animate-fade-in text-center" style={{ animationDelay: "0.2s" }}>
             {siteInfo.title}
           </h1>
-          
+
           <p className="mt-6 font-body text-base sm:text-lg text-primary-foreground/70 font-normal animate-fade-in text-center" style={{ animationDelay: "0.3s" }}>
             {siteInfo.grantInfo}
           </p>
@@ -72,13 +78,13 @@ export function HeroSection() {
               href="#team"
               className="inline-flex items-center justify-center px-8 py-3 font-body font-medium text-primary bg-primary-foreground rounded-lg hover:bg-primary-foreground/90 transition-all shadow-elevated"
             >
-              Meet the Team
+              {t("hero.meetTeam")}
             </a>
             <a
               href="#publications"
               className="inline-flex items-center justify-center px-8 py-3 font-body font-medium text-primary-foreground border-2 border-primary-foreground/30 rounded-lg hover:bg-primary-foreground/10 transition-all"
             >
-              View Publications
+              {t("hero.viewPublications")}
             </a>
           </div>
         </div>

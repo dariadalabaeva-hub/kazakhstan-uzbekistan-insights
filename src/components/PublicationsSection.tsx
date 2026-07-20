@@ -1,12 +1,17 @@
 import { useState } from "react";
 import { ExternalLink, Mail, ChevronDown, ChevronUp } from "lucide-react";
-import { publications } from "@/data/publicationsData";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { useT } from "@/i18n/useT";
+import { getPublications } from "@/i18n/content";
 
 const INITIAL_DISPLAY_COUNT = 5;
 
 export function PublicationsSection() {
   const [showAll, setShowAll] = useState(false);
+  const { locale } = useLanguage();
+  const t = useT();
+  const publications = getPublications(locale);
 
   const displayedPublications = showAll
     ? publications
@@ -17,10 +22,10 @@ export function PublicationsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground">
-            Publications and Outputs
+            {t("publications.title")}
           </h2>
           <p className="mt-4 font-body text-lg text-muted-foreground max-w-3xl mx-auto">
-            This section showcases selected publications by members of the project team on entrepreneurship. These works, including research produced prior to the current project, demonstrate the team's established engagement with the topic.
+            {t("publications.subtitle")}
           </p>
         </div>
 
@@ -51,7 +56,7 @@ export function PublicationsSection() {
                   >
                     {publication.linkType === "email" ? (
                       <a href={publication.link}>
-                        Request via Email
+                        {t("publications.requestEmail")}
                         <Mail className="ml-2 h-4 w-4" />
                       </a>
                     ) : (
@@ -60,7 +65,7 @@ export function PublicationsSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        View publication
+                        {t("publications.view")}
                         <ExternalLink className="ml-2 h-4 w-4" />
                       </a>
                     )}
@@ -80,12 +85,12 @@ export function PublicationsSection() {
             >
               {showAll ? (
                 <>
-                  Show less
+                  {t("publications.showLess")}
                   <ChevronUp className="ml-2 h-4 w-4" />
                 </>
               ) : (
                 <>
-                  Show more ({publications.length - INITIAL_DISPLAY_COUNT} more)
+                  {t("publications.showMore")} ({publications.length - INITIAL_DISPLAY_COUNT} {t("publications.moreCount")})
                   <ChevronDown className="ml-2 h-4 w-4" />
                 </>
               )}
