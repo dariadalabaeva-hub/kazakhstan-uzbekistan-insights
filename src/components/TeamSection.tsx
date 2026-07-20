@@ -1,9 +1,15 @@
-import { teamMembers } from "@/data/siteData";
 import linkedinIcon from "@/assets/icons/linkedin.png";
 import researchNuIcon from "@/assets/icons/research-nu.png";
 import nurceIcon from "@/assets/icons/nurce-team.png";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { useT } from "@/i18n/useT";
+import { getTeamMembers } from "@/i18n/content";
 
 export function TeamSection() {
+  const { locale } = useLanguage();
+  const t = useT();
+  const teamMembers = getTeamMembers(locale);
+
   const getInitials = (name: string) => {
     return name.split(" ").map(n => n[0]).join("");
   };
@@ -13,10 +19,10 @@ export function TeamSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground">
-            Our Team
+            {t("team.title")}
           </h2>
           <p className="mt-4 font-body text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Our team is composed of scholars from anthropology, sociology, political science, public policy, economics, and entrepreneurship, reflecting a strongly interdisciplinary approach.
+            {t("team.subtitle")}
           </p>
         </div>
 
@@ -64,7 +70,7 @@ export function TeamSection() {
                       href={member.nurce}
                       target="_blank"
                       rel="noopener noreferrer"
-                      title="NURCE Profile"
+                      title={t("team.nurce")}
                       className="opacity-70 hover:opacity-100 hover:-translate-y-0.5 transition-all duration-200"
                     >
                       <img src={nurceIcon} alt="NURCE" className="h-5 w-auto" />
@@ -75,7 +81,7 @@ export function TeamSection() {
                       href={member.researchPortal}
                       target="_blank"
                       rel="noopener noreferrer"
-                      title="NU Research Portal"
+                      title={t("team.researchPortal")}
                       className="opacity-70 hover:opacity-100 hover:-translate-y-0.5 transition-all duration-200"
                     >
                       <img src={researchNuIcon} alt="Research Portal" className="h-5 w-auto" />
@@ -86,7 +92,7 @@ export function TeamSection() {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      title="LinkedIn"
+                      title={t("team.linkedin")}
                       className="opacity-70 hover:opacity-100 hover:-translate-y-0.5 transition-all duration-200"
                     >
                       <img src={linkedinIcon} alt="LinkedIn" className="h-5 w-auto" />
