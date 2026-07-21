@@ -1,8 +1,11 @@
-import { siteInfo } from "@/data/siteData";
+import { getSiteInfo } from "@/i18n/content";
+import { useLanguage } from "@/i18n/LanguageContext";
 import { useT } from "@/i18n/useT";
 
 export function Footer() {
   const t = useT();
+  const { locale } = useLanguage();
+  const siteInfo = getSiteInfo(locale);
   return (
     <footer className="py-8 border-t border-border bg-background">
       <div className="container mx-auto px-4">
