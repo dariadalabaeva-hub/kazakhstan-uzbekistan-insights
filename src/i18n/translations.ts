@@ -76,6 +76,46 @@ export const uiStrings = {
     "hero.status": "Ғылыми жобаның статусы",
     "hero.meetTeam": "Біздің ұжым",
     "hero.viewPublications": "Ғылыми мақалаларды шолу",
+
+    // Team
+    "team.title": "Біздің Ұжым",
+    "team.subtitle":
+      "Біздің ұжым антропология, социология, саясаттану, мемлекеттік саясат, экономика және кәсіпкерлік сала мамандарынан құралып, зерттеу тақырыбына сәйкес пәнаралық сараптама ұсынады.",
+    "team.linkedin": "LinkedIn",
+    "team.researchPortal": "NU Research Portal",
+    "team.nurce": "NURCE профилі",
+
+    // Activities
+    "activities.title": "Зерттеу Жұмысымыз",
+    "activities.subtitle": "Далалық зерттеулер, семинарлар мен бірлескен іс-шаралар бойынша соңғы жаңалықтар.",
+    "activities.activeTag": "Жүргізіліп Жатқан Зерттеулер",
+    "activities.pastTag": "Өткен Іс-шара",
+    "activities.showMore": "Тағы көрсету",
+    "activities.showLess": "Азырақ көрсету",
+    "activities.moreCount": "тағы",
+    "activities.showFullText": "... толық мәтінді көрсету",
+    "activities.showLessText": "азырақ көрсету",
+
+    // Publications
+    "publications.title": "Ғылыми Мақалаларымыз",
+    "publications.subtitle":
+      "Бұл бөлімде жоба мүшелерінің кәсіпкерлік тақырыбындағы ғылыми басылымдары ұсынылған.",
+    "publications.view": "Мақаланың толық нұсқасын қарау",
+    "publications.requestEmail": "Мақаланың толық нұсқасын пошта арқылы сұрау",
+    "publications.showMore": "Тағы көрсету",
+    "publications.showLess": "Азырақ көрсету",
+    "publications.moreCount": "тағы",
+
+    // Partners
+    "partners.title": "Серіктестеріміз",
+
+    // Contact
+    "contact.title": "Байланысқа Шығу",
+    "contact.subtitle":
+      "Зерттеу жобаларымызға қызығасыз ба? Бірлескен жұмыс мүмкіндіктерін талқылауға дайынбыз.",
+
+    // Footer
+    "footer.rights": "Барлық құқықтар қорғалған.",
   } as Partial<Record<string, string>>,
 
 
