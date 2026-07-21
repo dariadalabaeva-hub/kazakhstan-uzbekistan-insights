@@ -45,11 +45,12 @@ const partners: Partner[] = [
 const partnerNameOverrides: Record<Locale, Record<string, string>> = {
   en: {},
   kk: {
-    // "nurce": "...",
+    "nurce": "Назарбаев Университетінің Кәсіпкерлікті Зерттеу Орталығы",
+    "cas-seminar": "Азия және Африка Зерттеулері Кафедрасы, Орталық Азия Семинары",
+    "isdc": "Берлин Халықаралық Қауіпсіздік және Даму Орталығы",
+    "bmu": "Ташкенттегі Британдық Менеджмент Университеті",
   },
-  ru: {
-    // "nurce": "...",
-  },
+  ru: {},
 };
 
 export function PartnersSection() {
