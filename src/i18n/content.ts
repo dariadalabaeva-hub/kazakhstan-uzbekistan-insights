@@ -187,6 +187,7 @@ type SiteInfoOverride = Partial<{
 const siteInfoOverrides: Record<Locale, SiteInfoOverride> = {
   en: {},
   kk: {
+    shortTitle: "ІТ және жасыл экономика зерттеу жобасы",
     title:
       "Қазақстан мен Өзбекстандағы IT және жасыл экономика кәсіпкерлігіне салыстырмалы, пәнаралық және қолданбалы этнологиялық көзқарас",
     grantInfo:
