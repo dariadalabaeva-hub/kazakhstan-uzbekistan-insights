@@ -63,8 +63,21 @@ export const uiStrings = {
 
   // Populate Kazakh translations here. Missing keys fall back to English.
   kk: {
-    // "nav.home": "Басты бет",
+    // Navigation
+    "nav.home": "Басты бет",
+    "nav.team": "Біздің ұжым",
+    "nav.activities": "Зерттеу жұмысымыз",
+    "nav.publications": "Ғылыми мақалаларымыз",
+    "nav.partners": "Серіктестеріміз",
+    "nav.contact": "Байланысқа шығу",
+    "nav.toggleMenu": "Мәзірді ашу/жабу",
+
+    // Hero
+    "hero.status": "Ғылыми жобаның статусы",
+    "hero.meetTeam": "Біздің ұжым",
+    "hero.viewPublications": "Ғылыми мақалаларды шолу",
   } as Partial<Record<string, string>>,
+
 
   // Populate Russian translations here. Missing keys fall back to English.
   ru: {
