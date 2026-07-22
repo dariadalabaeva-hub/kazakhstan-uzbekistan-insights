@@ -65,17 +65,17 @@ export const uiStrings = {
   kk: {
     // Navigation
     "nav.home": "Басты бет",
-    "nav.team": "Біздің ұжым",
-    "nav.activities": "Зерттеу жұмысымыз",
-    "nav.publications": "Ғылыми мақалаларымыз",
+    "nav.team": "Біздің Ұжым",
+    "nav.activities": "Зерттеу Жұмысымыз",
+    "nav.publications": "Ғылыми Мақалаларымыз",
     "nav.partners": "Серіктестеріміз",
-    "nav.contact": "Байланысқа шығу",
+    "nav.contact": "Байланысқа Шығу",
     "nav.toggleMenu": "Мәзірді ашу/жабу",
 
     // Hero
     "hero.status": "Ғылыми жобаның статусы",
-    "hero.meetTeam": "Біздің ұжым",
-    "hero.viewPublications": "Ғылыми мақалаларды шолу",
+    "hero.meetTeam": "Біздің Ұжым",
+    "hero.viewPublications": "Ғылыми Мақалаларды Шолу",
 
     // Team
     "team.title": "Біздің Ұжым",
@@ -100,8 +100,8 @@ export const uiStrings = {
     "publications.title": "Ғылыми Мақалаларымыз",
     "publications.subtitle":
       "Бұл бөлімде жоба мүшелерінің кәсіпкерлік тақырыбындағы ғылыми басылымдары ұсынылған.",
-    "publications.view": "Мақаланың толық нұсқасын қарау",
-    "publications.requestEmail": "Мақаланың толық нұсқасын пошта арқылы сұрау",
+    "publications.view": "Толық нұсқасын қарау",
+    "publications.requestEmail": "Пошта арқылы сұрау",
     "publications.showMore": "Тағы көрсету",
     "publications.showLess": "Азырақ көрсету",
     "publications.moreCount": "тағы",
