@@ -121,7 +121,59 @@ export const uiStrings = {
 
   // Populate Russian translations here. Missing keys fall back to English.
   ru: {
-    // "nav.home": "Главная",
+    // Navigation
+    "nav.home": "Главная",
+    "nav.team": "Команда",
+    "nav.activities": "Исследовательская Деятельность",
+    "nav.publications": "Публикации",
+    "nav.partners": "Партнёры",
+    "nav.contact": "Контакты",
+    "nav.toggleMenu": "Открыть/закрыть меню",
+
+    // Hero
+    "hero.status": "Статус",
+    "hero.meetTeam": "Познакомиться с Командой",
+    "hero.viewPublications": "Просмотреть Публикации",
+
+    // Team
+    "team.title": "Наша Команда",
+    "team.subtitle":
+      "Наша команда состоит из исследователей в области антропологии, социологии, политологии, государственной политики, экономики и предпринимательства, что отражает выраженный междисциплинарный подход.",
+    "team.linkedin": "LinkedIn",
+    "team.researchPortal": "NU Research Portal",
+    "team.nurce": "Профиль NURCE",
+
+    // Activities
+    "activities.title": "Исследовательская Деятельность",
+    "activities.subtitle": "Обновления с наших полевых исследований, семинаров и совместных мероприятий.",
+    "activities.activeTag": "Активное Исследование",
+    "activities.pastTag": "Прошедшее Мероприятие",
+    "activities.showMore": "Показать ещё",
+    "activities.showLess": "Скрыть",
+    "activities.moreCount": "ещё",
+    "activities.showFullText": "... Показать больше",
+    "activities.showLessText": "Показать меньше",
+
+    // Publications
+    "publications.title": "Публикации и Результаты",
+    "publications.subtitle":
+      "В этом разделе представлены избранные публикации членов исследовательской команды по теме предпринимательства. Эти работы, включая исследования, выполненные до начала текущего проекта, демонстрируют устойчивую вовлечённость команды в данную проблематику.",
+    "publications.view": "Просмотреть публикацию",
+    "publications.requestEmail": "Запросить по электронной почте",
+    "publications.showMore": "Показать ещё",
+    "publications.showLess": "Скрыть",
+    "publications.moreCount": "ещё",
+
+    // Partners
+    "partners.title": "Партнёры",
+
+    // Contact
+    "contact.title": "Связаться с Нами",
+    "contact.subtitle":
+      "Заинтересованы в наших исследованиях или возможностях сотрудничества? Мы будем рады вашему обращению.",
+
+    // Footer
+    "footer.rights": "Все права защищены.",
   } as Partial<Record<string, string>>,
 } as const;
 
