@@ -90,7 +90,7 @@ export const uiStrings = {
     "activities.subtitle": "Далалық зерттеулер, семинарлар мен бірлескен іс-шаралар бойынша соңғы жаңалықтар.",
     "activities.activeTag": "Жүргізіліп Жатқан Зерттеулер",
     "activities.pastTag": "Өткен Іс-шара",
-    "activities.showMore": "Барлығын көрсету",
+    "activities.showMore": "Барлығын көрсету (тағы 6)",
     "activities.showLess": "Азырақ көрсету",
     "activities.moreCount": "тағы",
     "activities.showFullText": "... толық мәтінді көрсету",
@@ -102,7 +102,7 @@ export const uiStrings = {
       "Бұл бөлімде жоба мүшелерінің кәсіпкерлік тақырыбындағы ғылыми басылымдары ұсынылған.",
     "publications.view": "Толық нұсқасын қарау",
     "publications.requestEmail": "Пошта арқылы сұрау",
-    "publications.showMore": "Барлығын көрсету",
+    "publications.showMore": "Барлығын көрсету (тағы 10)",
     "publications.showLess": "Азырақ көрсету",
     "publications.moreCount": "тағы",
 
