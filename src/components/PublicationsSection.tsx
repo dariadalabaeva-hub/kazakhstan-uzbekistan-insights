@@ -94,7 +94,7 @@ export function PublicationsSection() {
                     t("publications.showMore")
                   ) : (
                     <>
-                      {t("publications.showMore")} ({publications.length - INITIAL_DISPLAY_COUNT})
+                      {t("publications.showMore")} (+ {publications.length - INITIAL_DISPLAY_COUNT})
                     </>
                   )}
                   <ChevronDown className="ml-2 h-4 w-4" />
