@@ -64,7 +64,7 @@ export const uiStrings = {
   // Populate Kazakh translations here. Missing keys fall back to English.
   kk: {
     // Navigation
-    "nav.home": "Басты бет",
+    "nav.home": "Басты Бет",
     "nav.team": "Біздің Ұжым",
     "nav.activities": "Зерттеу Жұмысымыз",
     "nav.publications": "Ғылыми Мақалаларымыз",
