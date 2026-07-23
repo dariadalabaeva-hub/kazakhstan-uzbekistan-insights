@@ -11,6 +11,13 @@ export interface Publication {
 
 export const publications: Publication[] = [
   {
+    id: 16,
+    title: "Pitching from the inside: Valorization alignment and the sociomaterial artifact in entrepreneurial practice",
+    authors: "Schroeder, P.",
+    year: 2026,
+    link: "https://doi.org/10.1016/j.jbvi.2026.e00648",
+  },
+  {
     id: 1,
     title: "Leveraging the shift in the geocultural landscape towards internationalizing cultural entrepreneurship",
     authors: "Aljanova, N., Shakti, S., Bokebayev, N.",
