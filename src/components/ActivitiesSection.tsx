@@ -196,7 +196,7 @@ export function ActivitiesSection() {
                 </>
               ) : (
                 <>
-                  {t("activities.showMore")} ({t("activities.moreCount")} {allActivities.length - INITIAL_COUNT})
+                  {t("activities.showMore")} ({allActivities.length - INITIAL_COUNT})
                   <ChevronDown className="ml-2 h-4 w-4" />
                 </>
               )}
