@@ -90,7 +90,7 @@ export const uiStrings = {
     "activities.subtitle": "Далалық зерттеулер, семинарлар мен бірлескен іс-шаралар бойынша соңғы жаңалықтар.",
     "activities.activeTag": "Жүргізіліп Жатқан Зерттеулер",
     "activities.pastTag": "Өткен Іс-шара",
-    "activities.showMore": "Барлығын көрсету (6)",
+    "activities.showMore": "Барлығын көрсету (+ 6)",
     "activities.showLess": "Азырақ көрсету",
     "activities.moreCount": "тағы",
     "activities.showFullText": "... толық мәтінді көрсету",
