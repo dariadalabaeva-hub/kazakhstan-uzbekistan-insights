@@ -19,6 +19,8 @@ export const uiStrings = {
     "hero.status": "Status",
     "hero.meetTeam": "Meet the Team",
     "hero.viewPublications": "View Publications",
+    "hero.readAbstract": "Read Project Abstract",
+    "hero.hideAbstract": "Hide Abstract",
 
     // Team
     "team.title": "Our Team",
@@ -76,6 +78,8 @@ export const uiStrings = {
     "hero.status": "Ғылыми жобаның статусы",
     "hero.meetTeam": "Біздің Ұжым",
     "hero.viewPublications": "Ғылыми Мақалаларды Шолу",
+    "hero.readAbstract": "Жоба Аннотациясын оОқу",
+    "hero.hideAbstract": "Аннотацияны Жасыру",
 
     // Team
     "team.title": "Біздің Ұжым",
@@ -134,6 +138,8 @@ export const uiStrings = {
     "hero.status": "Статус",
     "hero.meetTeam": "Познакомиться с Командой",
     "hero.viewPublications": "Просмотреть Публикации",
+    "hero.readAbstract": "Читать Аннотацию Проекта",
+    "hero.hideAbstract": "Скрыть Аннотацию",
 
     // Team
     "team.title": "Наша Команда",
