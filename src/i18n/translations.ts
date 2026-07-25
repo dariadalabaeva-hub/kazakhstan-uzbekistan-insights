@@ -138,6 +138,8 @@ export const uiStrings = {
     "hero.status": "Статус",
     "hero.meetTeam": "Познакомиться с Командой",
     "hero.viewPublications": "Просмотреть Публикации",
+    "hero.readAbstract": "Читать Аннотацию Проекта",
+    "hero.hideAbstract": "Скрыть Аннотацию",
 
     // Team
     "team.title": "Наша Команда",
