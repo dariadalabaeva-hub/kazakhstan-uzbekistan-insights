@@ -78,7 +78,7 @@ export const uiStrings = {
     "hero.status": "Ғылыми жобаның статусы",
     "hero.meetTeam": "Біздің Ұжым",
     "hero.viewPublications": "Ғылыми Мақалаларды Шолу",
-    "hero.readAbstract": "Жоба Аннотациясын оОқу",
+    "hero.readAbstract": "Жоба Аннотациясын Оқу",
     "hero.hideAbstract": "Аннотацияны Жасыру",
 
     // Team
