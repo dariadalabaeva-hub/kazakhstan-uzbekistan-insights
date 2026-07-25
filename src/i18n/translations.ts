@@ -19,6 +19,8 @@ export const uiStrings = {
     "hero.status": "Status",
     "hero.meetTeam": "Meet the Team",
     "hero.viewPublications": "View Publications",
+    "hero.readAbstract": "Read Project Abstract",
+    "hero.hideAbstract": "Hide Abstract",
 
     // Team
     "team.title": "Our Team",
