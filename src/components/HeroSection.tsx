@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Calendar, CheckCircle, ChevronDown, ChevronUp } from "lucide-react";
+import { ResearchMap } from "./ResearchMap";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useT } from "@/i18n/useT";
 import { getSiteInfo } from "@/i18n/content";
@@ -33,7 +34,9 @@ export function HeroSection() {
       <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-primary/20 blur-3xl" />
 
       <div className="relative w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-32">
-        <div className="max-w-3xl text-left">
+        <div className="grid lg:grid-cols-5 gap-10 lg:gap-12 items-center">
+          <div className="lg:col-span-3 text-left">
+
           {/* Status & Duration Info Box */}
           <div className="flex flex-wrap items-center gap-4 mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full border border-primary-foreground/20">
@@ -112,8 +115,15 @@ export function HeroSection() {
               </div>
             </div>
           </div>
+          </div>
+
+          <div className="lg:col-span-2 animate-fade-in" style={{ animationDelay: "0.35s" }}>
+
+            <ResearchMap />
+          </div>
         </div>
       </div>
+
     </section>
   );
 }
