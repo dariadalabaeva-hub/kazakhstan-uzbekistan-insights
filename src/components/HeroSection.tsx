@@ -115,8 +115,10 @@ export function HeroSection() {
               </div>
             </div>
           </div>
+          </div>
 
           <div className="lg:col-span-2 animate-fade-in" style={{ animationDelay: "0.35s" }}>
+
             <ResearchMap />
           </div>
         </div>
