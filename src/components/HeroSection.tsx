@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Calendar, CheckCircle, ChevronDown, ChevronUp } from "lucide-react";
+import { ResearchMap } from "./ResearchMap";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useT } from "@/i18n/useT";
 import { getSiteInfo } from "@/i18n/content";
