@@ -1,4 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
+import mapAsset from "@/assets/central-asia-map.png.asset.json";
 
 const HEADER: Record<string, string> = {
   en: "Research Fieldwork Sites",
@@ -6,8 +7,75 @@ const HEADER: Record<string, string> = {
   ru: "Локации Полевых Исследований",
 };
 
+type CityKey = "astana" | "almaty" | "atyrau" | "aktau" | "tashkent";
+
+const CITY_LABELS: Record<string, Record<CityKey, string>> = {
+  en: {
+    astana: "Astana",
+    almaty: "Almaty",
+    atyrau: "Atyrau",
+    aktau: "Aktau",
+    tashkent: "Tashkent",
+  },
+  kk: {
+    astana: "Астана",
+    almaty: "Алматы",
+    atyrau: "Атырау",
+    aktau: "Ақтау",
+    tashkent: "Ташкент",
+  },
+  ru: {
+    astana: "Астана",
+    almaty: "Алматы",
+    atyrau: "Атырау",
+    aktau: "Актау",
+    tashkent: "Ташкент",
+  },
+};
+
+const CITY_TAGS: Record<string, Record<CityKey, string>> = {
+  en: {
+    astana: "Policy & Institutional Engagement",
+    almaty: "IT Ecosystem Interviews",
+    atyrau: "Green Hydrogen Fieldwork",
+    aktau: "Green Hydrogen Fieldwork",
+    tashkent: "IT Ecosystem Interviews",
+  },
+  kk: {
+    astana: "Саясат және Институционалдық Жұмыс",
+    almaty: "IT Экожүйесі Сұхбаттары",
+    atyrau: "Жасыл Сутегі Далалық Зерттеу",
+    aktau: "Жасыл Сутегі Далалық Зерттеу",
+    tashkent: "IT Экожүйесі Сұхбаттары",
+  },
+  ru: {
+    astana: "Политика и Институциональная Работа",
+    almaty: "Интервью в IT-Экосистеме",
+    atyrau: "Полевые Исследования Зелёного Водорода",
+    aktau: "Полевые Исследования Зелёного Водорода",
+    tashkent: "Интервью в IT-Экосистеме",
+  },
+};
+
+// Percent coordinates on the map image (KZ blue on top, UZ green below)
+const CITIES: Array<{
+  key: CityKey;
+  x: number;
+  y: number;
+  color: "gold" | "cyan";
+  labelSide: "left" | "right";
+}> = [
+  { key: "astana", x: 54, y: 32, color: "gold", labelSide: "right" },
+  { key: "almaty", x: 78, y: 62, color: "gold", labelSide: "left" },
+  { key: "atyrau", x: 14, y: 55, color: "gold", labelSide: "right" },
+  { key: "aktau", x: 7, y: 72, color: "gold", labelSide: "right" },
+  { key: "tashkent", x: 55, y: 88, color: "cyan", labelSide: "right" },
+];
+
 export function ResearchMap() {
   const { locale } = useLanguage();
+  const labels = CITY_LABELS[locale] ?? CITY_LABELS.en;
+  const tags = CITY_TAGS[locale] ?? CITY_TAGS.en;
 
   return (
     <div className="relative w-full rounded-2xl border border-primary-foreground/15 bg-primary-foreground/[0.06] backdrop-blur-md p-5 sm:p-6 shadow-elevated">
@@ -18,73 +86,64 @@ export function ResearchMap() {
         </h3>
       </div>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1000 650"
-        className="w-full h-auto max-h-[350px]"
-        role="img"
-        aria-label="Research fieldwork map of Central Asia"
-      >
-        {/* Kazakhstan Path */}
-        <path
-          id="KAZ"
-          name="Kazakhstan"
-          fill="#1e293b"
-          fillOpacity="0.6"
-          stroke="#94a3b8"
-          strokeWidth="1.5"
-          d="M135,398 L168,367 L172,319 L100,265 L108,235 L48,220 L68,175 L120,195 L144,142 L256,128 L305,172 L372,130 L452,148 L520,105 L602,112 L670,75 L738,135 L810,140 L855,198 L850,250 L915,258 L952,365 L920,402 L862,410 L860,452 L812,448 L780,410 L755,418 L738,368 L702,365 L668,390 L595,355 L570,392 L508,398 L475,445 L415,440 L385,410 L300,432 L215,435 L175,465 Z"
-          className="transition-colors hover:fill-slate-700"
+      <div className="relative w-full overflow-hidden rounded-lg">
+        <img
+          src={mapAsset.url}
+          alt="Map of Kazakhstan and Uzbekistan showing research fieldwork sites"
+          className="w-full h-auto block select-none pointer-events-none"
+          style={{
+            filter:
+              "brightness(0.55) contrast(1.15) saturate(0.75) hue-rotate(190deg)",
+            mixBlendMode: "screen",
+          }}
+          draggable={false}
         />
+        {/* Subtle dark gradient to blend with card background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-transparent to-primary/40 pointer-events-none" />
 
-        {/* Uzbekistan Path */}
-        <path
-          id="UZB"
-          name="Uzbekistan"
-          fill="#0f172a"
-          fillOpacity="0.8"
-          stroke="#38bdf8"
-          strokeWidth="1.5"
-          d="M215,435 L300,432 L385,410 L415,440 L475,445 L508,398 L570,392 L595,355 L668,390 L635,430 L580,460 L540,510 L490,520 L440,490 L390,515 L320,485 L260,495 Z"
-          className="transition-colors hover:fill-slate-800"
-        />
-
-        {/* City Pin Markers (Glowing Dots & Labels) */}
-        {/* Astana */}
-        <g className="group cursor-pointer">
-          <circle cx="520" cy="220" r="6" className="fill-amber-400 animate-pulse" />
-          <circle cx="520" cy="220" r="12" className="fill-amber-400/30" />
-          <text x="535" y="225" className="fill-slate-200 text-xs font-semibold">Astana</text>
-        </g>
-
-        {/* Almaty */}
-        <g className="group cursor-pointer">
-          <circle cx="760" cy="390" r="6" className="fill-amber-400 animate-pulse" />
-          <circle cx="760" cy="390" r="12" className="fill-amber-400/30" />
-          <text x="775" y="395" className="fill-slate-200 text-xs font-semibold">Almaty</text>
-        </g>
-
-        {/* Atyrau */}
-        <g className="group cursor-pointer">
-          <circle cx="160" cy="395" r="6" className="fill-amber-400 animate-pulse" />
-          <circle cx="160" cy="395" r="12" className="fill-amber-400/30" />
-          <text x="105" y="390" className="fill-slate-200 text-xs font-semibold">Atyrau</text>
-        </g>
-
-        {/* Aktau */}
-        <g className="group cursor-pointer">
-          <circle cx="140" cy="445" r="6" className="fill-amber-400 animate-pulse" />
-          <circle cx="140" cy="445" r="12" className="fill-amber-400/30" />
-          <text x="85" y="455" className="fill-slate-200 text-xs font-semibold">Aktau</text>
-        </g>
-
-        {/* Tashkent */}
-        <g className="group cursor-pointer">
-          <circle cx="585" cy="435" r="6" className="fill-sky-400 animate-pulse" />
-          <circle cx="585" cy="435" r="12" className="fill-sky-400/30" />
-          <text x="600" y="440" className="fill-sky-200 text-xs font-semibold">Tashkent</text>
-        </g>
-      </svg>
+        {/* City pin markers */}
+        {CITIES.map((city) => {
+          const dot =
+            city.color === "gold" ? "bg-amber-400" : "bg-sky-400";
+          const halo =
+            city.color === "gold" ? "bg-amber-400/30" : "bg-sky-400/30";
+          const labelColor =
+            city.color === "gold" ? "text-amber-100" : "text-sky-100";
+          return (
+            <div
+              key={city.key}
+              className="group absolute -translate-x-1/2 -translate-y-1/2"
+              style={{ left: `${city.x}%`, top: `${city.y}%` }}
+            >
+              <span
+                className={`absolute inset-0 -m-2 rounded-full ${halo} blur-sm animate-pulse`}
+                aria-hidden
+              />
+              <span
+                className={`relative block w-2.5 h-2.5 rounded-full ${dot} ring-2 ring-primary-foreground/40 shadow-[0_0_10px_rgba(255,255,255,0.35)]`}
+              />
+              <span
+                className={`absolute top-1/2 -translate-y-1/2 whitespace-nowrap text-[11px] font-semibold ${labelColor} drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] ${
+                  city.labelSide === "right" ? "left-4" : "right-4"
+                }`}
+              >
+                {labels[city.key]}
+              </span>
+              {/* Tooltip */}
+              <span
+                className={`pointer-events-none absolute z-10 top-1/2 -translate-y-1/2 ${
+                  city.labelSide === "right" ? "left-4" : "right-4"
+                } mt-6 translate-y-3 whitespace-nowrap rounded-md bg-slate-900/95 border border-primary-foreground/15 px-2.5 py-1.5 text-[11px] text-primary-foreground opacity-0 group-hover:opacity-100 transition-opacity shadow-lg`}
+              >
+                <span className="block font-semibold">{labels[city.key]}</span>
+                <span className="block text-primary-foreground/70">
+                  {tags[city.key]}
+                </span>
+              </span>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
