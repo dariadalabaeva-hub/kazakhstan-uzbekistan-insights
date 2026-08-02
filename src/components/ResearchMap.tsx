@@ -86,28 +86,19 @@ export function ResearchMap() {
         </h3>
       </div>
 
-      <div className="relative w-full overflow-hidden rounded-lg">
+      <div className="relative w-full">
         <img
           src={mapAsset.url}
           alt="Map of Kazakhstan and Uzbekistan showing research fieldwork sites"
           className="w-full h-auto object-contain block select-none pointer-events-none"
-          style={{
-            filter:
-              "invert(1) brightness(0.65) contrast(1.3) saturate(0.5) hue-rotate(180deg)",
-            mixBlendMode: "screen",
-          }}
           draggable={false}
         />
-        {/* Subtle dark gradient to blend with card background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-transparent to-primary/40 pointer-events-none" />
 
         {/* City pin markers */}
         {CITIES.map((city) => {
           const dotColor = city.color === "gold" ? "#fbbf24" : "#38bdf8";
           const haloColor =
             city.color === "gold" ? "rgba(251,191,36,0.35)" : "rgba(56,189,248,0.35)";
-          const labelColor =
-            city.color === "gold" ? "text-amber-100" : "text-sky-100";
           return (
             <div
               key={city.key}
@@ -127,9 +118,10 @@ export function ResearchMap() {
                 }}
               />
               <span
-                className={`absolute top-1/2 -translate-y-1/2 whitespace-nowrap text-xs font-semibold drop-shadow-md ${labelColor} ${
+                className={`absolute top-1/2 -translate-y-1/2 whitespace-nowrap text-xs font-bold drop-shadow-lg text-white ${
                   city.labelSide === "right" ? "left-4" : "right-4"
                 }`}
+                style={{ textShadow: "0 1px 3px rgba(0,0,0,0.9)" }}
               >
                 {labels[city.key]}
               </span>
