@@ -57,7 +57,7 @@ const CITY_TAGS: Record<string, Record<CityKey, string>> = {
   },
 };
 
-// Percent coordinates on the map image (KZ blue on top, UZ green below)
+// Percent coordinates on the uploaded clean map image
 const CITIES: Array<{
   key: CityKey;
   x: number;
@@ -65,11 +65,11 @@ const CITIES: Array<{
   color: "gold" | "cyan";
   labelSide: "left" | "right";
 }> = [
-  { key: "astana", x: 54, y: 32, color: "gold", labelSide: "right" },
-  { key: "almaty", x: 78, y: 62, color: "gold", labelSide: "left" },
-  { key: "atyrau", x: 14, y: 55, color: "gold", labelSide: "right" },
-  { key: "aktau", x: 7, y: 72, color: "gold", labelSide: "right" },
-  { key: "tashkent", x: 55, y: 88, color: "cyan", labelSide: "right" },
+  { key: "astana", x: 60, y: 22, color: "gold", labelSide: "right" },
+  { key: "almaty", x: 77, y: 65, color: "gold", labelSide: "right" },
+  { key: "atyrau", x: 15, y: 42, color: "gold", labelSide: "right" },
+  { key: "aktau", x: 12, y: 58, color: "gold", labelSide: "right" },
+  { key: "tashkent", x: 55, y: 72, color: "cyan", labelSide: "right" },
 ];
 
 export function ResearchMap() {
