@@ -94,7 +94,8 @@ export function ResearchMap() {
           className="w-full h-auto object-contain block select-none pointer-events-none"
           style={{
             filter:
-              "brightness(0.55) contrast(1.35) saturate(0.5) hue-rotate(195deg)",
+              "brightness(0.75) contrast(1.3) saturate(0.45) hue-rotate(190deg)",
+            mixBlendMode: "luminosity",
           }}
           draggable={false}
         />
