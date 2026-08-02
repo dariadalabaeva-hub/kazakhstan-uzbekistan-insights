@@ -103,10 +103,9 @@ export function ResearchMap() {
 
         {/* City pin markers */}
         {CITIES.map((city) => {
-          const dot =
-            city.color === "gold" ? "bg-amber-400" : "bg-sky-400";
-          const halo =
-            city.color === "gold" ? "bg-amber-400/30" : "bg-sky-400/30";
+          const dotColor = city.color === "gold" ? "#fbbf24" : "#38bdf8";
+          const haloColor =
+            city.color === "gold" ? "rgba(251,191,36,0.35)" : "rgba(56,189,248,0.35)";
           const labelColor =
             city.color === "gold" ? "text-amber-100" : "text-sky-100";
           return (
@@ -116,14 +115,19 @@ export function ResearchMap() {
               style={{ left: `${city.x}%`, top: `${city.y}%` }}
             >
               <span
-                className={`absolute inset-0 -m-2 rounded-full ${halo} blur-sm animate-pulse`}
+                className="absolute inset-0 -m-2 rounded-full blur-sm animate-pulse"
+                style={{ backgroundColor: haloColor }}
                 aria-hidden
               />
               <span
-                className={`relative block w-2.5 h-2.5 rounded-full ${dot} ring-2 ring-primary-foreground/40 shadow-[0_0_10px_rgba(255,255,255,0.35)]`}
+                className="relative block w-2.5 h-2.5 rounded-full ring-2 ring-primary-foreground/40"
+                style={{
+                  backgroundColor: dotColor,
+                  boxShadow: `0 0 10px ${dotColor}`,
+                }}
               />
               <span
-                className={`absolute top-1/2 -translate-y-1/2 whitespace-nowrap text-[11px] font-semibold ${labelColor} drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] ${
+                className={`absolute top-1/2 -translate-y-1/2 whitespace-nowrap text-xs font-semibold drop-shadow-md ${labelColor} ${
                   city.labelSide === "right" ? "left-4" : "right-4"
                 }`}
               >
