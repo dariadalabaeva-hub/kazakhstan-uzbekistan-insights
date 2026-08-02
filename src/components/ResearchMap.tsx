@@ -57,7 +57,7 @@ const CITY_TAGS: Record<string, Record<CityKey, string>> = {
   },
 };
 
-// Percent coordinates on the map image (KZ blue on top, UZ green below)
+// Percent coordinates on the uploaded clean map image
 const CITIES: Array<{
   key: CityKey;
   x: number;
@@ -65,11 +65,11 @@ const CITIES: Array<{
   color: "gold" | "cyan";
   labelSide: "left" | "right";
 }> = [
-  { key: "astana", x: 54, y: 32, color: "gold", labelSide: "right" },
-  { key: "almaty", x: 78, y: 62, color: "gold", labelSide: "left" },
-  { key: "atyrau", x: 14, y: 55, color: "gold", labelSide: "right" },
-  { key: "aktau", x: 7, y: 72, color: "gold", labelSide: "right" },
-  { key: "tashkent", x: 55, y: 88, color: "cyan", labelSide: "right" },
+  { key: "astana", x: 60, y: 22, color: "gold", labelSide: "right" },
+  { key: "almaty", x: 77, y: 65, color: "gold", labelSide: "right" },
+  { key: "atyrau", x: 15, y: 42, color: "gold", labelSide: "right" },
+  { key: "aktau", x: 12, y: 58, color: "gold", labelSide: "right" },
+  { key: "tashkent", x: 55, y: 72, color: "cyan", labelSide: "right" },
 ];
 
 export function ResearchMap() {
@@ -90,10 +90,10 @@ export function ResearchMap() {
         <img
           src={mapAsset.url}
           alt="Map of Kazakhstan and Uzbekistan showing research fieldwork sites"
-          className="w-full h-auto block select-none pointer-events-none"
+          className="w-full h-auto object-contain block select-none pointer-events-none"
           style={{
             filter:
-              "brightness(0.55) contrast(1.15) saturate(0.75) hue-rotate(190deg)",
+              "invert(1) brightness(0.65) contrast(1.3) saturate(0.5) hue-rotate(180deg)",
             mixBlendMode: "screen",
           }}
           draggable={false}
@@ -103,10 +103,9 @@ export function ResearchMap() {
 
         {/* City pin markers */}
         {CITIES.map((city) => {
-          const dot =
-            city.color === "gold" ? "bg-amber-400" : "bg-sky-400";
-          const halo =
-            city.color === "gold" ? "bg-amber-400/30" : "bg-sky-400/30";
+          const dotColor = city.color === "gold" ? "#fbbf24" : "#38bdf8";
+          const haloColor =
+            city.color === "gold" ? "rgba(251,191,36,0.35)" : "rgba(56,189,248,0.35)";
           const labelColor =
             city.color === "gold" ? "text-amber-100" : "text-sky-100";
           return (
@@ -116,14 +115,19 @@ export function ResearchMap() {
               style={{ left: `${city.x}%`, top: `${city.y}%` }}
             >
               <span
-                className={`absolute inset-0 -m-2 rounded-full ${halo} blur-sm animate-pulse`}
+                className="absolute inset-0 -m-2 rounded-full blur-sm animate-pulse"
+                style={{ backgroundColor: haloColor }}
                 aria-hidden
               />
               <span
-                className={`relative block w-2.5 h-2.5 rounded-full ${dot} ring-2 ring-primary-foreground/40 shadow-[0_0_10px_rgba(255,255,255,0.35)]`}
+                className="relative block w-2.5 h-2.5 rounded-full ring-2 ring-primary-foreground/40"
+                style={{
+                  backgroundColor: dotColor,
+                  boxShadow: `0 0 10px ${dotColor}`,
+                }}
               />
               <span
-                className={`absolute top-1/2 -translate-y-1/2 whitespace-nowrap text-[11px] font-semibold ${labelColor} drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] ${
+                className={`absolute top-1/2 -translate-y-1/2 whitespace-nowrap text-xs font-semibold drop-shadow-md ${labelColor} ${
                   city.labelSide === "right" ? "left-4" : "right-4"
                 }`}
               >
