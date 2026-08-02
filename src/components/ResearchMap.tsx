@@ -1,5 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
-import mapAsset from "@/assets/central-asia-map.png.asset.json";
+// import mapAsset from "@/assets/central-asia-map.png.asset.json";
+const mapAsset = { url: "/central-asia-map-verify.png" };
 
 const HEADER: Record<string, string> = {
   en: "Research Fieldwork Sites",
