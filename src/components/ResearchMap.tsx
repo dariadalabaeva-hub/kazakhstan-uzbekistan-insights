@@ -90,7 +90,7 @@ export function ResearchMap() {
         <img
           src={mapAsset.url}
           alt="Map of Kazakhstan and Uzbekistan showing research fieldwork sites"
-          className="w-full h-auto block select-none pointer-events-none"
+          className="w-full h-auto object-contain block select-none pointer-events-none"
           style={{
             filter:
               "brightness(0.55) contrast(1.15) saturate(0.75) hue-rotate(190deg)",
