@@ -65,11 +65,11 @@ const CITIES: Array<{
   color: "gold" | "cyan";
   labelSide: "left" | "right";
 }> = [
-  { key: "astana", x: 60, y: 22, color: "gold", labelSide: "right" },
-  { key: "almaty", x: 77, y: 65, color: "gold", labelSide: "right" },
-  { key: "atyrau", x: 15, y: 42, color: "gold", labelSide: "right" },
-  { key: "aktau", x: 12, y: 58, color: "gold", labelSide: "right" },
-  { key: "tashkent", x: 55, y: 72, color: "cyan", labelSide: "right" },
+  { key: "astana", x: 58, y: 26, color: "gold", labelSide: "right" },
+  { key: "almaty", x: 76, y: 68, color: "gold", labelSide: "right" },
+  { key: "atyrau", x: 18, y: 48, color: "gold", labelSide: "right" },
+  { key: "aktau", x: 17, y: 61, color: "gold", labelSide: "right" },
+  { key: "tashkent", x: 56, y: 74, color: "cyan", labelSide: "right" },
 ];
 
 export function ResearchMap() {
