@@ -1,5 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
-import mapAsset from "@/assets/maps-transparent.png.asset.json";
+import mapAsset from "@/assets/maps-without-background.png.asset.json";
 
 const HEADER: Record<string, string> = {
   en: "Research Fieldwork Sites",
