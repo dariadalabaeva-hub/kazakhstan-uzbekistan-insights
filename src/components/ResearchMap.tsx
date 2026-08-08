@@ -23,7 +23,7 @@ export function ResearchMap() {
         <img
           src={mapAsset.url}
           alt="Map of Kazakhstan and Uzbekistan showing research fieldwork sites"
-          className="w-full h-auto max-h-[420px] object-contain block select-none pointer-events-none mix-blend-multiply"
+          className="w-full h-auto max-h-[420px] object-contain block select-none pointer-events-none"
           draggable={false}
         />
       </div>
