@@ -1,5 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
-import mapAsset from "@/assets/maps-2.png.asset.json";
+import mapAsset from "@/assets/maps-transparent.png.asset.json";
 
 const HEADER: Record<string, string> = {
   en: "Research Fieldwork Sites",
@@ -23,7 +23,7 @@ export function ResearchMap() {
         <img
           src={mapAsset.url}
           alt="Map of Kazakhstan and Uzbekistan showing research fieldwork sites"
-          className="w-full h-auto max-h-[420px] object-contain block select-none pointer-events-none"
+          className="w-full h-auto max-h-[420px] object-contain block select-none pointer-events-none mix-blend-multiply"
           draggable={false}
         />
       </div>
