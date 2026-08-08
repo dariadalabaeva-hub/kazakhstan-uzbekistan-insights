@@ -69,7 +69,7 @@ const CITIES: Array<{
   { key: "almaty", x: 76, y: 68, color: "gold", labelSide: "right" },
   { key: "atyrau", x: 18, y: 48, color: "gold", labelSide: "right" },
   { key: "aktau", x: 17, y: 61, color: "gold", labelSide: "right" },
-  { key: "tashkent", x: 56, y: 74, color: "cyan", labelSide: "right" },
+  { key: "tashkent", x: 52, y: 78, color: "cyan", labelSide: "right" },
 ];
 
 export function ResearchMap() {
