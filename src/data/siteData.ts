@@ -27,6 +27,7 @@ import hydrogenRoundtableImg from "@/assets/activities/Green_Hydrogen_Concept_Ro
 import resExpoImg from "@/assets/activities/RES_2026_EXPO.jpeg";
 import bmuSeminarImg from "@/assets/activities/BMU_seminar.jpeg";
 import cessConferenceImg from "@/assets/activities/CESS_conference.jpeg";
+import aimccPosterImg from "@/assets/activities/AIMCC_2026_poster.jpg";
 
 export interface TeamMember {
   id: number;
@@ -179,6 +180,16 @@ export const activities: Activity[] = [
     image: fieldworkImg,
   },
   // 2. Past Events - Reverse chronological order (most recent first)
+  {
+    id: 13,
+    title: "AIM-CC 2026 Conference Presentation: AI Use in the Innovation Process of Kazakhstani IT Startups",
+    date: "August 8, 2026",
+    location: "Nazarbayev University",
+    description: "Dariya Dalabayeva participated in the poster session at the AI & Methods in Computational Communication (AIM-CC 2026) Young Scholar Conference & Research School. She presented her mixed-methods research titled \u00abAt the Intersection of Entrepreneurship, Innovation, and Artificial Intelligence: The Case of IT Startups from Kazakhstan\u00bb. Drawing on findings from an empirical study in Astana and Almaty, including 16 semi-structured interviews and digital ethnographic non-participant observations with elements of analysis using NLP, the research explores how the perception of innovation evolves when artificial intelligence is integrated into the ideation and opportunity-seeking processes of Kazakhstani IT startups.",
+    type: "past",
+    tag: "Scholarly Engagement",
+    image: aimccPosterImg,
+  },
   {
     id: 12,
     title: "CESS 2026 Panel: Applied Qualitative Studies and the Dual Use of Knowledge",
