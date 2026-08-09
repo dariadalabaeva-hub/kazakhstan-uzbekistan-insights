@@ -27,8 +27,7 @@ import hydrogenRoundtableImg from "@/assets/activities/Green_Hydrogen_Concept_Ro
 import resExpoImg from "@/assets/activities/RES_2026_EXPO.jpeg";
 import bmuSeminarImg from "@/assets/activities/BMU_seminar.jpeg";
 import cessConferenceImg from "@/assets/activities/CESS_conference.jpeg";
-import aimccPosterAsset from "@/assets/activities/AIMCC_2026_conference.jpg.asset.json";
-const aimccPosterImg = aimccPosterAsset.url;
+import aimccPosterImg from "@/assets/activities/AIMCC_2026_conference.jpg";
 
 export interface TeamMember {
   id: number;
