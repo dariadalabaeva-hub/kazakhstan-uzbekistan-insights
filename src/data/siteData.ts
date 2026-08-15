@@ -192,6 +192,16 @@ export const activities: Activity[] = [
     image: aimccPosterImg,
   },
   {
+    id: 14,
+    title: "Visit to Mama Pro: Researching Social Entrepreneurship and Care Networks",
+    date: "August, 2026",
+    location: "Almaty, Kazakhstan",
+    description: "As part of our ongoing research on Mama Pro, Nurlykhan Aljanova and Philipp Schroeder visited the foundation's Almaty office, led by Alena Kim and her team. They spent the day in conversation with the women who make this branch work — about their experience running programmes at Mama Pro, but also about their own paths into the organization: how they first found the community, what caring for a child with special needs has meant for their working lives, and what it changes to belong to a network of mothers who understand that reality without explanation. What came through most strongly was how difficult it is to separate the professional from the personal here, for many, Mama Pro is at once a workplace, a source of support, and a community they helped build. We are grateful to Alena and her colleagues for their openness and for the time they gave us.",
+    type: "past",
+    tag: "Fieldwork & Community Engagement",
+    image: mamaProImg,
+  },
+  {
     id: 12,
     title: "CESS 2026 Panel: Applied Qualitative Studies and the Dual Use of Knowledge",
     date: "June 17, 2026",
