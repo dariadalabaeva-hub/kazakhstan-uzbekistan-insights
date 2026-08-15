@@ -28,6 +28,7 @@ import resExpoImg from "@/assets/activities/RES_2026_EXPO.jpeg";
 import bmuSeminarImg from "@/assets/activities/BMU_seminar.jpeg";
 import cessConferenceImg from "@/assets/activities/CESS_conference.jpeg";
 import aimccPosterImg from "@/assets/activities/AIMCC_2026_conference.jpg";
+import mamaProImg from "@/assets/activities/Mama_Pro.jpg";
 
 export interface TeamMember {
   id: number;
