@@ -4,30 +4,23 @@ import nurceIcon from "@/assets/icons/nurce-team.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useT } from "@/i18n/useT";
 import { getTeamMembers } from "@/i18n/content";
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 export function TeamSection() {
   const { locale } = useLanguage();
   const t = useT();
-  const teamMembers = getTeamMembers(locale);
+  const allMembers = getTeamMembers(locale);
+  const [expanded, setExpanded] = useState(false);
+  const visibleMembers = allMembers.slice(0, allMembers.length - 3);
+  const hiddenMembers = allMembers.slice(allMembers.length - 3);
 
   const getInitials = (name: string) => {
     return name.split(" ").map(n => n[0]).join("");
   };
 
-  return (
-    <section id="team" className="py-24 gradient-subtle">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground">
-            {t("team.title")}
-          </h2>
-          <p className="mt-4 font-body text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            {t("team.subtitle")}
-          </p>
-        </div>
+  const renderCard = (member: ReturnType<typeof getTeamMembers>[number], index: number) => (
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {teamMembers.map((member, index) => (
             <div
               key={member.id}
               className="group bg-card rounded-xl p-6 shadow-card hover:shadow-elevated transition-all duration-300 border border-border hover:border-primary/20 flex flex-col"
@@ -101,8 +94,49 @@ export function TeamSection() {
                 </div>
               )}
             </div>
-          ))}
+  );
+
+  return (
+    <section id="team" className="py-24 gradient-subtle">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground">
+            {t("team.title")}
+          </h2>
+          <p className="mt-4 font-body text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            {t("team.subtitle")}
+          </p>
         </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          {visibleMembers.map(renderCard)}
+        </div>
+
+        {hiddenMembers.length > 0 && (
+          <>
+            <div
+              className={`grid overflow-hidden transition-all duration-500 ease-in-out ${
+                expanded ? "max-h-[3000px] opacity-100 mt-6" : "max-h-0 opacity-0"
+              } grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto`}
+              aria-hidden={!expanded}
+            >
+              {hiddenMembers.map(renderCard)}
+            </div>
+
+            <div className="flex justify-center mt-10">
+              <button
+                type="button"
+                onClick={() => setExpanded((v) => !v)}
+                className="inline-flex items-center gap-2 rounded-full border border-secondary/40 bg-card px-6 py-3 font-body text-sm font-semibold text-secondary shadow-card transition-all duration-300 hover:bg-secondary hover:text-secondary-foreground hover:shadow-elevated"
+              >
+                {expanded ? t("team.showLess") : t("team.showMore")}
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}
+                />
+              </button>
+            </div>
+          </>
+        )}
       </div>
     </section>
   );

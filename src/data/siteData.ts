@@ -13,6 +13,9 @@ import galiyaImg from "@/assets/team/Galiya_Saktaganova.jpeg";
 import dariyaImg from "@/assets/team/Dariya_Dalabayeva.jpeg";
 import balgynImg from "@/assets/team/Balgyn_Orazaly.jpeg";
 import kassymkhanImg from "@/assets/team/Kassymkhan_Kapparov.jpeg";
+import akzhanImg from "@/assets/team/Akzhan_Kairliyeva.jpeg";
+import gulimImg from "@/assets/team/Gulim_Madil.jpg";
+import tuganayImg from "@/assets/team/Tuganay_Nauryz.jpg";
 
 // Activity images
 import conferenceImg from "@/assets/activities/Entrepreneurship_Heritage_and_Sustainability.jpeg";
@@ -139,7 +142,29 @@ export const teamMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/balgyn-orazaly-1152002a9/",
     nurce: "https://nurce.kz/team/tpost/1nb66b1hr1-balgyn-orazaly",
   },
+  {
+    id: 14,
+    name: "Akzhan Kairliyeva",
+    role: "Undergraduate Research Assistant",
+    image: akzhanImg,
+    linkedin: "https://www.linkedin.com/in/akzhan-kairliyeva-339829221",
+  },
+  {
+    id: 15,
+    name: "Gulim Madil",
+    role: "Undergraduate Research Assistant",
+    image: gulimImg,
+    linkedin: "https://www.linkedin.com/in/gulim-madil",
+  },
+  {
+    id: 16,
+    name: "Tuganay Nauryz",
+    role: "Undergraduate Research Assistant",
+    image: tuganayImg,
+    linkedin: "https://www.linkedin.com/in/tuganay-nauryz-254447370/",
+  },
 ];
+
 
 export const publications = [
   {
