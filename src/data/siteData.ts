@@ -13,6 +13,9 @@ import galiyaImg from "@/assets/team/Galiya_Saktaganova.jpeg";
 import dariyaImg from "@/assets/team/Dariya_Dalabayeva.jpeg";
 import balgynImg from "@/assets/team/Balgyn_Orazaly.jpeg";
 import kassymkhanImg from "@/assets/team/Kassymkhan_Kapparov.jpeg";
+import akzhanImg from "@/assets/team/Akzhan_Kairliyeva.jpeg";
+import gulimImg from "@/assets/team/Gulim_Madil.jpg";
+import tuganayImg from "@/assets/team/Tuganay_Nauryz.jpg";
 
 // Activity images
 import conferenceImg from "@/assets/activities/Entrepreneurship_Heritage_and_Sustainability.jpeg";
