@@ -142,7 +142,29 @@ export const teamMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/balgyn-orazaly-1152002a9/",
     nurce: "https://nurce.kz/team/tpost/1nb66b1hr1-balgyn-orazaly",
   },
+  {
+    id: 14,
+    name: "Akzhan Kairliyeva",
+    role: "Undergraduate Research Assistant",
+    image: akzhanImg,
+    linkedin: "https://www.linkedin.com/in/akzhan-kairliyeva-339829221",
+  },
+  {
+    id: 15,
+    name: "Gulim Madil",
+    role: "Undergraduate Research Assistant",
+    image: gulimImg,
+    linkedin: "https://www.linkedin.com/in/gulim-madil",
+  },
+  {
+    id: 16,
+    name: "Tuganay Nauryz",
+    role: "Undergraduate Research Assistant",
+    image: tuganayImg,
+    linkedin: "https://www.linkedin.com/in/tuganay-nauryz-254447370/",
+  },
 ];
+
 
 export const publications = [
   {
