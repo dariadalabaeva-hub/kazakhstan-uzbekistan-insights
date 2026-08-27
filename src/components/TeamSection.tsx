@@ -127,7 +127,7 @@ export function TeamSection() {
               <button
                 type="button"
                 onClick={() => setExpanded((v) => !v)}
-                className="inline-flex items-center gap-2 rounded-full border border-secondary/40 bg-card px-6 py-3 font-body text-sm font-semibold text-secondary shadow-card transition-all duration-300 hover:bg-secondary hover:text-secondary-foreground hover:shadow-elevated"
+                className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white px-6 py-3 font-body text-sm font-semibold text-amber-500 shadow-sm transition-all duration-300 hover:bg-amber-50/50 hover:text-amber-600"
               >
                 {expanded ? t("team.showLess") : t("team.showMore")}
                 <ChevronDown
