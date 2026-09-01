@@ -90,8 +90,8 @@ export const uiStrings = {
     "team.linkedin": "LinkedIn",
     "team.researchPortal": "NU Research Portal",
     "team.nurce": "NURCE профилі",
-    "team.showMore": "Барлығын көрсету (+ 3)",
-    "team.showLess": "Азырақ көрсету",
+    "team.showMore": "Барлығын көрсету",
+    "team.showLess": "Жасыру",
 
     // Activities
     "activities.title": "Зерттеу Жұмысымыз",
@@ -99,7 +99,7 @@ export const uiStrings = {
     "activities.activeTag": "Жүргізіліп Жатқан Зерттеулер",
     "activities.pastTag": "Өткен Іс-шара",
     "activities.showMore": "Барлығын көрсету",
-    "activities.showLess": "Азырақ көрсету",
+    "activities.showLess": "Жасыру",
     "activities.moreCount": "тағы",
     "activities.showFullText": "... толық мәтінді көрсету",
     "activities.showLessText": "азырақ көрсету",
@@ -110,8 +110,8 @@ export const uiStrings = {
       "Бұл бөлімде жоба мүшелерінің кәсіпкерлік тақырыбындағы ғылыми басылымдары ұсынылған.",
     "publications.view": "Толық нұсқасын қарау",
     "publications.requestEmail": "Пошта арқылы сұрау",
-    "publications.showMore": "Барлығын көрсету (+ 11)",
-    "publications.showLess": "Азырақ көрсету",
+    "publications.showMore": "Барлығын көрсету",
+    "publications.showLess": "Жасыру",
     "publications.moreCount": "тағы",
 
     // Partners
@@ -152,7 +152,7 @@ export const uiStrings = {
     "team.linkedin": "LinkedIn",
     "team.researchPortal": "NU Research Portal",
     "team.nurce": "Профиль NURCE",
-    "team.showMore": "Показать ещё (+ 3)",
+    "team.showMore": "Показать больше",
     "team.showLess": "Скрыть",
 
     // Activities
@@ -160,7 +160,7 @@ export const uiStrings = {
     "activities.subtitle": "Обновления с наших полевых исследований, семинаров и совместных мероприятий.",
     "activities.activeTag": "Активное Исследование",
     "activities.pastTag": "Прошедшее Мероприятие",
-    "activities.showMore": "Показать ещё",
+    "activities.showMore": "Показать больше",
     "activities.showLess": "Скрыть",
     "activities.moreCount": "ещё",
     "activities.showFullText": "... Показать больше",
@@ -172,7 +172,7 @@ export const uiStrings = {
       "В этом разделе представлены избранные публикации членов исследовательской команды по теме предпринимательства. Эти работы, включая исследования, выполненные до начала текущего проекта, демонстрируют устойчивую вовлечённость команды в данную проблематику.",
     "publications.view": "Просмотреть публикацию",
     "publications.requestEmail": "Запросить по электронной почте",
-    "publications.showMore": "Показать ещё",
+    "publications.showMore": "Показать больше",
     "publications.showLess": "Скрыть",
     "publications.moreCount": "ещё",
 
