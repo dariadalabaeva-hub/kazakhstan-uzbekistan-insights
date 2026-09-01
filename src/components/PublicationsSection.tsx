@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { ExternalLink, Mail, ChevronDown, ChevronUp } from "lucide-react";
+import { ExternalLink, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ShowMoreButton } from "@/components/ShowMoreButton";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useT } from "@/i18n/useT";
 import { getPublications } from "@/i18n/content";
@@ -78,29 +79,13 @@ export function PublicationsSection() {
 
         {publications.length > INITIAL_DISPLAY_COUNT && (
           <div className="text-center mt-8">
-            <Button
-              variant="default"
-              onClick={() => setShowAll(!showAll)}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
-            >
-              {showAll ? (
-                <>
-                  {t("publications.showLess")}
-                  <ChevronUp className="ml-2 h-4 w-4" />
-                </>
-              ) : (
-                <>
-                  {locale === "kk" ? (
-                    t("publications.showMore")
-                  ) : (
-                    <>
-                      {t("publications.showMore")} (+ {publications.length - INITIAL_DISPLAY_COUNT})
-                    </>
-                  )}
-                  <ChevronDown className="ml-2 h-4 w-4" />
-                </>
-              )}
-            </Button>
+            <ShowMoreButton
+              expanded={showAll}
+              onToggle={() => setShowAll(!showAll)}
+              moreLabel={t("publications.showMore")}
+              lessLabel={t("publications.showLess")}
+              count={publications.length - INITIAL_DISPLAY_COUNT}
+            />
           </div>
         )}
       </div>
