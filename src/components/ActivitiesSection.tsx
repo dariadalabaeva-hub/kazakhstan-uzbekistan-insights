@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Calendar, MapPin, Presentation, Search, ChevronDown, ChevronUp } from "lucide-react";
+import { Calendar, MapPin, Presentation, Search } from "lucide-react";
 import { Activity } from "@/data/siteData";
-import { Button } from "@/components/ui/button";
+import { ShowMoreButton } from "@/components/ShowMoreButton";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useT } from "@/i18n/useT";
 import { getActivities } from "@/i18n/content";
@@ -184,23 +184,13 @@ export function ActivitiesSection() {
 
         {hasMore && (
           <div className="mt-12 text-center">
-            <Button
-              variant="default"
-              onClick={() => setShowAll(!showAll)}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
-            >
-              {showAll ? (
-                <>
-                  {t("activities.showLess")}
-                  <ChevronUp className="ml-2 h-4 w-4" />
-                </>
-              ) : (
-                <>
-                  {t("activities.showMore")} (+ {allActivities.length - INITIAL_COUNT})
-                  <ChevronDown className="ml-2 h-4 w-4" />
-                </>
-              )}
-            </Button>
+            <ShowMoreButton
+              expanded={showAll}
+              onToggle={() => setShowAll(!showAll)}
+              moreLabel={t("activities.showMore")}
+              lessLabel={t("activities.showLess")}
+              count={allActivities.length - INITIAL_COUNT}
+            />
           </div>
         )}
       </div>

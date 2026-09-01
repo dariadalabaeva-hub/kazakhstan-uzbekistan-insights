@@ -5,7 +5,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { useT } from "@/i18n/useT";
 import { getTeamMembers } from "@/i18n/content";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ShowMoreButton } from "@/components/ShowMoreButton";
 
 export function TeamSection() {
   const { locale } = useLanguage();
@@ -124,16 +124,13 @@ export function TeamSection() {
             </div>
 
             <div className="flex justify-center mt-10">
-              <button
-                type="button"
-                onClick={() => setExpanded((v) => !v)}
-                className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white px-6 py-3 font-body text-sm font-semibold text-amber-500 shadow-sm transition-all duration-300 hover:bg-amber-50/50 hover:text-amber-600"
-              >
-                {expanded ? t("team.showLess") : t("team.showMore")}
-                <ChevronDown
-                  className={`h-4 w-4 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}
-                />
-              </button>
+              <ShowMoreButton
+                expanded={expanded}
+                onToggle={() => setExpanded((v) => !v)}
+                moreLabel={t("team.showMore")}
+                lessLabel={t("team.showLess")}
+                count={hiddenMembers.length}
+              />
             </div>
           </>
         )}
