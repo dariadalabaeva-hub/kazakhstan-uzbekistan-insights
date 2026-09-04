@@ -29,8 +29,6 @@ export const uiStrings = {
     "team.linkedin": "LinkedIn",
     "team.researchPortal": "NU Research Portal",
     "team.nurce": "NURCE Profile",
-    "team.showMore": "Show more",
-    "team.showLess": "Show less",
 
     // Activities
     "activities.title": "Research Activities",
