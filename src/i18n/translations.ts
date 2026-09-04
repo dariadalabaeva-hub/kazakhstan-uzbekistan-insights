@@ -29,8 +29,6 @@ export const uiStrings = {
     "team.linkedin": "LinkedIn",
     "team.researchPortal": "NU Research Portal",
     "team.nurce": "NURCE Profile",
-    "team.showMore": "Show more",
-    "team.showLess": "Show less",
 
     // Activities
     "activities.title": "Research Activities",
@@ -90,8 +88,6 @@ export const uiStrings = {
     "team.linkedin": "LinkedIn",
     "team.researchPortal": "NU Research Portal",
     "team.nurce": "NURCE профилі",
-    "team.showMore": "Барлығын көрсету",
-    "team.showLess": "Жасыру",
 
     // Activities
     "activities.title": "Зерттеу Жұмысымыз",
@@ -152,8 +148,6 @@ export const uiStrings = {
     "team.linkedin": "LinkedIn",
     "team.researchPortal": "NU Research Portal",
     "team.nurce": "Профиль NURCE",
-    "team.showMore": "Показать больше",
-    "team.showLess": "Скрыть",
 
     // Activities
     "activities.title": "Исследовательская Деятельность",
