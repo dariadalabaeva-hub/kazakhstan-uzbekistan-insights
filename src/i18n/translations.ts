@@ -148,8 +148,6 @@ export const uiStrings = {
     "team.linkedin": "LinkedIn",
     "team.researchPortal": "NU Research Portal",
     "team.nurce": "Профиль NURCE",
-    "team.showMore": "Показать больше",
-    "team.showLess": "Скрыть",
 
     // Activities
     "activities.title": "Исследовательская Деятельность",
