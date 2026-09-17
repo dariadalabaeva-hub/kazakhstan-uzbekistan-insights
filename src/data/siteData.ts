@@ -211,7 +211,7 @@ export const activities: Activity[] = [
     id: 15,
     title: "Participation in the Third Regional Central Asian and European Decarbonisation Forum",
     date: "September 16, 2026",
-    location: "Astana, Kazakhstan",
+    location: "Astana, Kazakhstan",
     description: "Nurlykhan Aljanova participated in the Third Regional Central Asian and European Decarbonisation Forum held in Astana. The Forum brought together government representatives, international organisations, financial institutions, energy companies, and researchers to discuss Kazakhstan's energy transition—spanning energy security, renewable-energy integration, green hydrogen, regional R&D cooperation, the future of coal, just transition, and financing through the Kazakhstan Just Energy Transition Investment Platform (QaJET). The Forum was particularly relevant to the team's ongoing research on green hydrogen development and the social and institutional dimensions of Kazakhstan's energy transition. The discussions provided valuable policy and industry perspectives that complement this research and strengthen the connection between academic findings and Kazakhstan's evolving decarbonisation agenda.",
     type: "past",
     tag: "Policy Dialogue & Engagement",
