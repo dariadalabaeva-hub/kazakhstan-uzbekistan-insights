@@ -32,6 +32,7 @@ import bmuSeminarImg from "@/assets/activities/BMU_seminar.jpeg";
 import cessConferenceImg from "@/assets/activities/CESS_conference.jpeg";
 import aimccPosterImg from "@/assets/activities/AIMCC_2026_conference.jpg";
 import mamaProImg from "@/assets/activities/Mama_Pro.jpg";
+import decarbonizationForumImg from "@/assets/activities/Third_Regional_Decarbonization_Forum.jpeg";
 
 export interface TeamMember {
   id: number;
@@ -206,6 +207,16 @@ export const activities: Activity[] = [
     image: fieldworkImg,
   },
   // 2. Past Events - Reverse chronological order (most recent first)
+  {
+    id: 15,
+    title: "Participation in the Third Regional Central Asian and European Decarbonisation Forum",
+    date: "September 16, 2026",
+    location: "Astana, Kazakhstan",
+    description: "Nurlykhan Aljanova participated in the Third Regional Central Asian and European Decarbonisation Forum held in Astana. The Forum brought together government representatives, international organisations, financial institutions, energy companies, and researchers to discuss Kazakhstan's energy transition—spanning energy security, renewable-energy integration, green hydrogen, regional R&D cooperation, the future of coal, just transition, and financing through the Kazakhstan Just Energy Transition Investment Platform (QaJET). The Forum was particularly relevant to the team's ongoing research on green hydrogen development and the social and institutional dimensions of Kazakhstan's energy transition. The discussions provided valuable policy and industry perspectives that complement this research and strengthen the connection between academic findings and Kazakhstan's evolving decarbonisation agenda.",
+    type: "past",
+    tag: "Policy Dialogue & Engagement",
+    image: decarbonizationForumImg,
+  },
   {
     id: 13,
     title: "AIM-CC 2026 Conference Presentation: AI Use in the Innovation Process of Kazakhstani IT Startups",
