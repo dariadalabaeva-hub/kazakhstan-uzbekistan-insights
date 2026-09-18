@@ -33,6 +33,10 @@
     --accent: 43 70% 55%;
     --accent-foreground: 214 55% 20%;
 
+    /* Research case accordion */
+    --research-header: 215 51% 17%;
+    --research-accent: 46 64% 52%;
+
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 

@@ -9,6 +9,7 @@ export const uiStrings = {
     // Navigation
     "nav.home": "Home",
     "nav.team": "Team",
+    "nav.researchCases": "Research Cases",
     "nav.activities": "Activities",
     "nav.publications": "Publications",
     "nav.partners": "Partners",
@@ -29,6 +30,10 @@ export const uiStrings = {
     "team.linkedin": "LinkedIn",
     "team.researchPortal": "NU Research Portal",
     "team.nurce": "NURCE Profile",
+
+    // Research Cases
+    "researchCases.title": "Research Cases",
+    "researchCases.subtitle": "Empirical sub-projects and case studies conducted under the research grant.",
 
     // Activities
     "activities.title": "Research Activities",
@@ -68,6 +73,7 @@ export const uiStrings = {
     // Navigation
     "nav.home": "Басты Бет",
     "nav.team": "Біздің Ұжым",
+    "nav.researchCases": "Зерттеу Кейстеріміз",
     "nav.activities": "Зерттеу Жұмысымыз",
     "nav.publications": "Ғылыми Мақалаларымыз",
     "nav.partners": "Серіктестеріміз",
@@ -88,6 +94,10 @@ export const uiStrings = {
     "team.linkedin": "LinkedIn",
     "team.researchPortal": "NU Research Portal",
     "team.nurce": "NURCE профилі",
+
+    // Research Cases
+    "researchCases.title": "Зерттеу Кейстеріміз",
+    "researchCases.subtitle": "Гранттық зерттеу аясында жүзеге асырылып жатқан эмпирикалық жобалар мен кейстер.",
 
     // Activities
     "activities.title": "Зерттеу Жұмысымыз",
@@ -128,6 +138,7 @@ export const uiStrings = {
     // Navigation
     "nav.home": "Главная",
     "nav.team": "Команда",
+    "nav.researchCases": "Исследовательские Кейсы",
     "nav.activities": "Исследовательская Деятельность",
     "nav.publications": "Публикации",
     "nav.partners": "Партнёры",
@@ -148,6 +159,10 @@ export const uiStrings = {
     "team.linkedin": "LinkedIn",
     "team.researchPortal": "NU Research Portal",
     "team.nurce": "Профиль NURCE",
+
+    // Research Cases
+    "researchCases.title": "Исследовательские Кейсы",
+    "researchCases.subtitle": "Эмпирические подпроекты и кейсы, реализуемые в рамках грантового исследования.",
 
     // Activities
     "activities.title": "Исследовательская Деятельность",
