@@ -39,16 +39,16 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
         id: 1,
         title: "Supporting Kazakhstan’s Green Hydrogen Transition: Social Acceptance, Institutional Readiness and Workforce Development",
         tags: ["Active Policy Case", "Kazakhstan–Germany (H₂-diplo)"],
-        timeline: "October 2025 – April 2026 (Fieldwork: Nov 2025; Final Forum: Apr 2026; Dissemination: 2026)",
+          timeline: "October 2025 – April 2026 (Fieldwork: November 2025; Final Forum: April 2026; Dissemination: 2026)",
         researchers: [
           "Dr. Philipp Schroeder & Dr. Nurlykhan Aljanova (Nazarbayev University)",
-          "Supported through the H₂-diplo initiative, implemented by GIZ on behalf of the German Federal Foreign Office, financed by the International Climate Initiative (IKI).",
+          "\n",
         ],
         locations: [
           { name: "Astana", description: "Coordination, expert discussions, working-group meetings, and Green Hydrogen Concept Note preparation." },
-          { name: "Aktau & Mangystau Region", description: "Semi-structured interviews, focus group discussions, and regional stakeholder engagement." },
-          { name: "Atyrau & rural communities", description: "Field interviews, focus groups, and social impact assessment of the energy transition." },
-          { name: "Germany", description: "International institutional cooperation and programmatic support via GIZ / H₂-diplo." },
+          { name: "Aktau & communities in the Mangystau Region", description: "Semi-structured interviews, focus group discussions, and regional stakeholder engagement." },
+          { name: "Atyrau & surrounding rural communities", description: "Field interviews, focus groups, and assessment of the social consequences of the energy transition." },
+          { name: "Germany", description: "International institutional support through H₂-diplo, an initiative implemented by GIZ on behalf of the German Federal Foreign Office and financed by the International Climate Initiative." },
         ],
         methodology: [
           "The project contributed to Kazakhstan’s Green Hydrogen Concept by examining the social, institutional, and workforce conditions essential for a sustainable and just transition. Emphasizing that technological capacity alone cannot guarantee success, the research combined institutional interviews, regional fieldwork, and skills analysis.",
