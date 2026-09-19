@@ -30,7 +30,7 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
   en: {
     labels: {
       timeline: "Timeline",
-      researchers: "Researchers / Partners",
+      researchers: "Researchers",
       locations: "Countries and Locations",
       methodology: "Project Description & Methodology",
     },
@@ -42,7 +42,6 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
           timeline: "October 2025 – April 2026 (Fieldwork: November 2025; Final Forum: April 2026; Dissemination: 2026)",
         researchers: [
           "Dr. Philipp Schroeder & Dr. Nurlykhan Aljanova (Nazarbayev University)",
-          "\n",
         ],
         locations: [
           { name: "Astana", description: "Coordination, expert discussions, working-group meetings, and Green Hydrogen Concept Note preparation." },
@@ -51,8 +50,9 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
           { name: "Germany", description: "International institutional support through H₂-diplo, an initiative implemented by GIZ on behalf of the German Federal Foreign Office and financed by the International Climate Initiative." },
         ],
         methodology: [
-          "The project contributed to Kazakhstan’s Green Hydrogen Concept by examining the social, institutional, and workforce conditions essential for a sustainable and just transition. Emphasizing that technological capacity alone cannot guarantee success, the research combined institutional interviews, regional fieldwork, and skills analysis.",
-          "The qualitative-dominant empirical inquiry engaged 96 total participants: 24 institutional interviews across government, industry, academia, and civil society, alongside 24 in-depth interviews and 8 focus groups (48 participants) in Mangystau and Atyrau. The findings directly informed actionable recommendations for Kazakhstan's Green Hydrogen Concept Note.",
+          "The project contributed to the development of Kazakhstan’s Green Hydrogen Concept by examining the social, institutional and workforce conditions necessary for a sustainable and just hydrogen transition. While Kazakhstan possesses significant wind and solar resources, the study emphasized that technological potential alone cannot guarantee the successful development of green hydrogen.",
+          "The Nazarbayev University research team, represented by Dr Philipp Schroeder and Dr Nurlykhan Aljanova, conducted a qualitative-dominant study combining institutional stakeholder interviews, regional fieldwork and employment and education analysis. The research involved 24 interviews with representatives of government, industry, civil society and academia, as well as 24 interviews and eight focus groups involving 48 local participants in Mangystau and Atyrau. Altogether, the empirical study engaged 96 participants.",
+          "The research explored public awareness, environmental and social risks, institutional readiness, employment expectations, skills gaps, public trust and the conditions under which local communities would support green hydrogen development. The findings were translated into practical recommendations for the Green Hydrogen Concept Note.",
         ],
       },
       { id: 2, title: "Upcoming Case Study", tags: [], timeline: "", researchers: [], locations: [], methodology: [], placeholder: true },
@@ -62,7 +62,7 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
   kk: {
     labels: {
       timeline: "Мерзімі",
-      researchers: "Зерттеушілер мен серіктестер",
+      researchers: "Зерттеушілер",
       locations: "Өңірлер мен география",
       methodology: "Жобаның сипаттамасы мен әдістемесі",
     },
@@ -74,7 +74,6 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
         timeline: "Қазан 2025 – Сәуір 2026 (Далалық зерттеу: қараша 2025; Қорытынды форум: сәуір 2026)",
         researchers: [
           "Д-р Филипп Шрёдер, д-р Нұрлыхан Әлжанова (Назарбаев Университеті)",
-          "Германия Федералды Сыртқы істер министрлігінің атынан GIZ жүзеге асыратын және Халықаралық климаттық бастама (IKI) қаржыландыратын H₂-diplo бастамасы аясында.",
         ],
         locations: [
           { name: "Астана", description: "Үйлестіру, сараптамалық талқылаулар, жұмыс топтары және Жасыл сутек тұжырымдамасын әзірлеу." },
@@ -83,8 +82,9 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
           { name: "Германия", description: "GIZ / H₂-diplo арқылы халықаралық ынтымақтастық." },
         ],
         methodology: [
-          "Жоба әділ әрі тұрақты сутекке көшу үшін қажетті әлеуметтік, институционалдық және еңбек нарығы жағдайларын зерделей отырып, Қазақстанның Жасыл сутек тұжырымдамасына үлес қосты.",
-          "Сапалық әдіске негізделген эмпирикалық кезең 96 қатысушыны қамтыды: мемлекеттік орган, өндіріс және азаматтық сектор өкілдерімен 24 сұхбат, сондай-ақ Маңғыстау мен Атырауда 24 сұхбат және 8 фокус-топ (48 жергілікті тұрғын). Нәтижелер Тұжырымдама жобасына арналған нақты ұсынымдарға айналды.",
+          "Жоба тұрақты және әділ сутекке көшу үшін қажетті әлеуметтік, институционалдық және кадрлық жағдайларды зерделей отырып, Қазақстанның «Жасыл» сутек тұжырымдамасын әзірлеуге үлес қосты. Қазақстанның айтарлықтай жел және күн ресурстарына ие екеніне қарамастан, зерттеуде тек технологиялық әлеуеттің өзі жасыл сутектің сәтті дамуына кепіл бола алмайтыны атап өтілді.",
+          "Назарбаев Университетінің зерттеу тобы (д-р Филипп Шрёдер мен д-р Нұрлыхан Әлжанова) институционалдық мүдделі тараптармен сұхбаттарды, өңірлік далалық зерттеулерді және жұмыспен қамту мен білім беру саласын талдауды ұштастырған сапалық басым зерттеу жүргізді. Жұмыс барысында мемлекеттік органдар, өндіріс, азаматтық қоғам және академиялық орта өкілдерімен 24 сұхбат, сондай-ақ Маңғыстау мен Атырауда 24 сұхбат және 48 жергілікті тұрғынның қатысуымен сегіз фокус-топ өткізілді. Жалпы алғанда, эмпирикалық зерттеуге 96 қатысушы тартылды.",
+          "Зерттеу барысында халықтың хабардарлығы, экологиялық және әлеуметтік тәуекелдер, институционалдық дайындық, жұмыспен қамту күтулері, біліктілік тапшылығы, қоғамдық сенім және жергілікті қауымдастықтардың жасыл сутекті дамытуға қолдау көрсету шарттары қаралды. Зерттеу нәтижелері «Жасыл» сутек тұжырымдамасына арналған практикалық ұсынымдар түрінде ұсынылды.",
         ],
       },
       { id: 2, title: "Жақында", tags: [], timeline: "", researchers: [], locations: [], methodology: [], placeholder: true },
@@ -94,7 +94,7 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
   ru: {
     labels: {
       timeline: "Период",
-      researchers: "Исследователи и партнеры",
+      researchers: "Исследователи",
       locations: "География и локации",
       methodology: "Описание и методология",
     },
@@ -106,7 +106,6 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
         timeline: "Октябрь 2025 – Апрель 2026 (Полевой этап: ноябрь 2025; Финальный форум: апрель 2026)",
         researchers: [
           "Д-р Филипп Шрёдер, д-р Нурлыхан Альжанова (Назарбаев Университет)",
-          "Поддержано инициативой H₂-diplo, реализуемой GIZ от имени Федерального министерства иностранных дел Германии и финансируемой Международной климатической инициативой (IKI).",
         ],
         locations: [
           { name: "Астана", description: "Координация, экспертные обсуждения, рабочие группы и подготовка Концепции зеленого водорода." },
@@ -115,8 +114,9 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
           { name: "Германия", description: "Межинституциональное партнерство через GIZ / H₂-diplo." },
         ],
         methodology: [
-          "Проект внес вклад в разработку Концепции зеленого водорода Казахстана, изучив социальные, институциональные и кадровые предпосылки справедливого энергоперехода. Исследование показало, что технологического потенциала недостаточно без учета общественной поддержки.",
-          "Эмпирическая база охватила 96 участников: 24 экспертных интервью с представителями госорганов, индустрии и НПО, а также 24 глубинных интервью и 8 фокус-групп (48 участников) в Мангистау и Атырау. Результаты легли в основу практических рекомендаций для Концепции развития отрасли.",
+          "Проект внес вклад в разработку Концепции зеленого водорода Казахстана путем изучения социальных, институциональных и кадровых условий, необходимых для устойчивого и справедливого водородного перехода. Несмотря на то что Казахстан обладает значительными ветровыми и солнечными ресурсами, в исследовании подчеркивается, что один лишь технологический потенциал не может гарантировать успешное развитие отрасли зеленого водорода.",
+          "Исследовательская группа Назарбаев Университета в лице д-ра Филиппа Шрёдера и д-ра Нурлыхан Альжановой провела исследование с преобладанием качественных методов, объединившее интервью с институциональными стейкхолдерами, региональные полевые исследования, а также анализ занятости и образования. Исследование включило 24 интервью с представителями государственных органов, индустрии, гражданского общества и академических кругов, а также 24 интервью и восемь фокус-групп с участием 48 местных жителей в Мангистау и Атырау. В общей сложности в эмпирическом исследовании приняли участие 96 человек.",
+          "В рамках исследования изучались осведомленность общественности, экологические и социальные риски, институциональная готовность, ожидания в сфере занятости, дефицит навыков, общественное доверие и условия, при которых местные сообщества поддержат развитие зеленого водорода. Результаты были преобразованы в практические рекомендации для Концепции зеленого водорода.",
         ],
       },
       { id: 2, title: "Скоро", tags: [], timeline: "", researchers: [], locations: [], methodology: [], placeholder: true },
