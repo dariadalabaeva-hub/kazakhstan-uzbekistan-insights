@@ -18,7 +18,7 @@ function CaseDetails({ researchCase }: { researchCase: ResearchCase }) {
           {researchCase.tags.map((tag) => (
             <span
               key={tag}
-              className="inline-flex rounded-full bg-research-accent/15 px-3 py-1 font-body text-xs font-semibold text-primary"
+              className="inline-flex rounded-full bg-primary/10 px-3 py-1 font-body text-xs font-medium text-primary"
             >
               {tag}
             </span>
@@ -26,10 +26,10 @@ function CaseDetails({ researchCase }: { researchCase: ResearchCase }) {
         </div>
 
         <div>
-          <h4 className="font-body text-xs font-semibold uppercase text-muted-foreground">
+          <h4 className="font-body text-xs font-semibold uppercase tracking-wide text-muted-foreground">
             {labels.timeline}
           </h4>
-          <p className="mt-2 font-body text-base leading-relaxed text-foreground">
+          <p className="mt-2 font-body text-sm leading-relaxed text-muted-foreground">
             {researchCase.timeline}
           </p>
         </div>
@@ -40,8 +40,8 @@ function CaseDetails({ researchCase }: { researchCase: ResearchCase }) {
           </h4>
           <ul className="mt-3 space-y-3">
             {researchCase.researchers.map((researcher) => (
-              <li key={researcher} className="flex gap-3 font-body text-base leading-relaxed text-foreground">
-                <span aria-hidden="true" className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-research-accent" />
+              <li key={researcher} className="flex gap-3 font-body text-sm leading-relaxed text-muted-foreground">
+                <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-research-accent" />
                 <span>{researcher}</span>
               </li>
             ))}
@@ -56,7 +56,7 @@ function CaseDetails({ researchCase }: { researchCase: ResearchCase }) {
           </h4>
           <dl className="mt-3 space-y-3">
             {researchCase.locations.map((location) => (
-              <div key={location.name} className="font-body text-base leading-relaxed">
+              <div key={location.name} className="font-body text-sm leading-relaxed">
                 <dt className="inline font-semibold text-foreground">{location.name}: </dt>
                 <dd className="inline text-muted-foreground">{location.description}</dd>
               </div>
@@ -70,7 +70,7 @@ function CaseDetails({ researchCase }: { researchCase: ResearchCase }) {
           </h4>
           <div className="mt-3 space-y-4">
             {researchCase.methodology.map((paragraph) => (
-              <p key={paragraph} className="font-body text-base leading-relaxed text-muted-foreground">
+              <p key={paragraph} className="font-body text-sm leading-relaxed text-muted-foreground">
                 {paragraph}
               </p>
             ))}
@@ -111,8 +111,8 @@ export function ResearchCasesSection() {
               className="overflow-hidden rounded-xl border-0 shadow-card"
             >
               <AccordionPrimitive.Header className="flex">
-                <AccordionPrimitive.Trigger className="group flex min-h-20 w-full items-center justify-between gap-5 rounded-xl bg-research-header px-5 py-5 text-left text-primary-foreground transition-colors hover:bg-research-header/95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-research-accent focus-visible:ring-offset-2 data-[state=open]:rounded-b-none sm:px-7">
-                  <span className="font-heading text-base font-semibold leading-snug sm:text-lg lg:text-xl">
+                <AccordionPrimitive.Trigger className="group flex min-h-20 w-full items-center justify-between gap-5 rounded-xl bg-research-header px-5 py-5 text-left transition-colors hover:bg-research-header/95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-research-accent focus-visible:ring-offset-2 data-[state=open]:rounded-b-none sm:px-7">
+                  <span className="font-body text-lg font-semibold leading-snug text-primary-foreground">
                     {researchCase.title}
                   </span>
                   <span className="shrink-0 text-research-accent" aria-hidden="true">
