@@ -9,7 +9,8 @@ export interface ResearchCase {
   id: number;
   title: string;
   tags: string[];
-  timeline: string;
+  timeline: string[];
+  researchersIntro: string[];
   researchers: string[];
   locations: ResearchCaseLocation[];
   methodology: string[];
@@ -30,18 +31,34 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
   en: {
     labels: {
       timeline: "Timeline",
-      researchers: "Researchers",
+      researchers: "Collaborators",
       locations: "Countries and Locations",
-      methodology: "Project Description & Methodology",
+      methodology: "Project Description",
     },
     cases: [
       {
         id: 1,
         title: "Supporting Kazakhstan’s Green Hydrogen Transition: Social Acceptance, Institutional Readiness and Workforce Development",
         tags: ["Active Policy Case", "Kazakhstan–Germany (H₂-diplo)"],
-          timeline: "October 2025 – April 2026 (Fieldwork: November 2025; Final Forum: April 2026; Dissemination: 2026)",
+        timeline: [
+          "The specific research and Concept Note contribution described here was conducted primarily from October 2025 to April 2026.",
+          "The intensive regional fieldwork took place from 19 to 30 November 2025.",
+          "The main analytical reports were finalized in February 2026, followed by the final project forum and presentation of findings in April 2026.",
+          "Academic and educational dissemination continued during 2026.",
+        ],
+        researchersIntro: [
+          "The project was implemented within Kazakhstan–Germany cooperation under the H₂-diplo initiative.",
+          "The project involved collaboration and engagement with:",
+        ],
         researchers: [
-          "Dr. Philipp Schroeder & Dr. Nurlykhan Aljanova (Nazarbayev University)",
+          "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH and the H₂-diplo Office Kazakhstan;",
+          "Dr Philipp Schroeder and Dr Nurlykhan Aljanova, Nazarbayev University;",
+          "representatives of Kazakhstan’s national and regional public authorities;",
+          "energy, extractive-industry and private-sector organizations;",
+          "civil society and environmental organizations;",
+          "universities, researchers and technical experts;",
+          "regional educational institutions, including engagement with Yessenov University and the Kazakh-German Institute for Sustainable Engineering;",
+          "residents, workers, women, young people and rural and urban communities in Mangystau and Atyrau.",
         ],
         locations: [
           { name: "Astana", description: "Coordination, expert discussions, working-group meetings, and Green Hydrogen Concept Note preparation." },
@@ -55,25 +72,41 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
           "The research explored public awareness, environmental and social risks, institutional readiness, employment expectations, skills gaps, public trust and the conditions under which local communities would support green hydrogen development. The findings were translated into practical recommendations for the Green Hydrogen Concept Note.",
         ],
       },
-      { id: 2, title: "Upcoming Case Study", tags: [], timeline: "", researchers: [], locations: [], methodology: [], placeholder: true },
-      { id: 3, title: "Upcoming Case Study", tags: [], timeline: "", researchers: [], locations: [], methodology: [], placeholder: true },
+      { id: 2, title: "Upcoming Case Study", tags: [], timeline: [], researchersIntro: [], researchers: [], locations: [], methodology: [], placeholder: true },
+      { id: 3, title: "Upcoming Case Study", tags: [], timeline: [], researchersIntro: [], researchers: [], locations: [], methodology: [], placeholder: true },
     ],
   },
   kk: {
     labels: {
-      timeline: "Мерзімі",
-      researchers: "Зерттеушілер",
+      timeline: "Мерзімі мен кезеңдері",
+      researchers: "Серіктестер",
       locations: "Өңірлер мен география",
-      methodology: "Жобаның сипаттамасы мен әдістемесі",
+      methodology: "Жобаның сипаттамасы",
     },
     cases: [
       {
         id: 1,
         title: "Қазақстанның «жасыл» сутекке көшуін қолдау: әлеуметтік қабылдау, институционалдық дайындық және кадрлық әлеуетті дамыту",
         tags: ["Қолданбалы кейс", "Қазақстан–Германия (H₂-diplo)"],
-        timeline: "Қазан 2025 – Сәуір 2026 (Далалық зерттеу: қараша 2025; Қорытынды форум: сәуір 2026)",
+        timeline: [
+          "Мұнда сипатталған нақты зерттеу және Тұжырымдама жобасына қосқан үлес негізінен 2025 жылдың қазанынан 2026 жылдың сәуіріне дейін жүргізілді.",
+          "Қарқынды өңірлік далалық зерттеулер 2025 жылғы 19–30 қараша аралығында өтті.",
+          "Негізгі талдамалық есептер 2026 жылдың ақпанында аяқталып, одан кейін 2026 жылдың сәуірінде қорытынды жобалық форум мен нәтижелердің таныстырылымы ұйымдастырылды.",
+          "Академиялық және білім беру бағытындағы тарату жұмыстары 2026 жыл бойы жалғасты.",
+        ],
+        researchersIntro: [
+          "The project was implemented within Kazakhstan–Germany cooperation under the H₂-diplo initiative.",
+          "Жоба аясында төмендегі тараптармен ынтымақтастық пен өзара байланыс орнатылды:",
+        ],
         researchers: [
-          "Д-р Филипп Шрёдер, д-р Нұрлыхан Әлжанова (Назарбаев Университеті)",
+          "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH және Қазақстандағы H₂-diplo кеңсесі;",
+          "Д-р Филипп Шрёдер және д-р Нұрлыхан Әлжанова, Назарбаев Университеті;",
+          "Қазақстанның ұлттық және өңірлік мемлекеттік органдарының өкілдері;",
+          "Энергетика, өндіруші сала және жеке сектор ұйымдары;",
+          "Азаматтық қоғам және экологиялық ұйымдар;",
+          "Университеттер, зерттеушілер және техникалық сарапшылар;",
+          "Өңірлік білім беру мекемелері, соның ішінде Yessenov University және Тұрақты инженерия қазақ-неміс институты;",
+          "Маңғыстау мен Атыраудағы тұрғындар, жұмысшылар, әйелдер, жастар, сондай-ақ ауылдық және қалалық қауымдастықтар.",
         ],
         locations: [
           { name: "Астана", description: "Үйлестіру, сараптамалық талқылаулар, жұмыс топтары және Жасыл сутек тұжырымдамасын әзірлеу." },
@@ -87,25 +120,41 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
           "Зерттеу барысында халықтың хабардарлығы, экологиялық және әлеуметтік тәуекелдер, институционалдық дайындық, жұмыспен қамту күтулері, біліктілік тапшылығы, қоғамдық сенім және жергілікті қауымдастықтардың жасыл сутекті дамытуға қолдау көрсету шарттары қаралды. Зерттеу нәтижелері «Жасыл» сутек тұжырымдамасына арналған практикалық ұсынымдар түрінде ұсынылды.",
         ],
       },
-      { id: 2, title: "Жақында", tags: [], timeline: "", researchers: [], locations: [], methodology: [], placeholder: true },
-      { id: 3, title: "Жақында", tags: [], timeline: "", researchers: [], locations: [], methodology: [], placeholder: true },
+      { id: 2, title: "Жақында", tags: [], timeline: [], researchersIntro: [], researchers: [], locations: [], methodology: [], placeholder: true },
+      { id: 3, title: "Жақында", tags: [], timeline: [], researchersIntro: [], researchers: [], locations: [], methodology: [], placeholder: true },
     ],
   },
   ru: {
     labels: {
-      timeline: "Период",
-      researchers: "Исследователи",
+      timeline: "Хронология и сроки",
+      researchers: "Партнеры и сотрудничество",
       locations: "География и локации",
-      methodology: "Описание и методология",
+      methodology: "Описание проекта",
     },
     cases: [
       {
         id: 1,
         title: "Поддержка перехода Казахстана к зеленому водороду: социальное признание, институциональная готовность и развитие трудовых ресурсов",
         tags: ["Прикладной кейс", "Сотрудничество Казахстан–Германия (H₂-diplo)"],
-        timeline: "Октябрь 2025 – Апрель 2026 (Полевой этап: ноябрь 2025; Финальный форум: апрель 2026)",
+        timeline: [
+          "Описанные исследовательские мероприятия и вклад в разработку Концепции проводились преимущественно с октября 2025 года по апрель 2026 года.",
+          "Интенсивный этап региональных полевых исследований проходил с 19 по 30 ноября 2025 года.",
+          "Основные аналитические отчеты были завершены в феврале 2026 года, после чего в апреле 2026 года состоялись итоговый форум проекта и презентация результатов.",
+          "Академическое и образовательное распространение результатов продолжалось в течение 2026 года.",
+        ],
+        researchersIntro: [
+          "The project was implemented within Kazakhstan–Germany cooperation under the H₂-diplo initiative.",
+          "Проект включал сотрудничество и взаимодействие со следующими сторонами:",
+        ],
         researchers: [
-          "Д-р Филипп Шрёдер, д-р Нурлыхан Альжанова (Назарбаев Университет)",
+          "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH и Офис H₂-diplo в Казахстане;",
+          "Д-р Филипп Шрёдер и д-р Нурлыхан Альжанова, Назарбаев Университет;",
+          "Представители национальных и региональных органов государственной власти Казахстана;",
+          "Организации энергетического сектора, добывающей промышленности и частного бизнеса;",
+          "Организации гражданского общества и экологические объединения;",
+          "Университеты, исследователи и технические эксперты;",
+          "Региональные образовательные учреждения, включая взаимодействие с Yessenov University и Казахстанско-Немецким институтом устойчивой инженерии;",
+          "Жители, работники, женщины, молодежь, а также сельские и городские сообщества Мангистау и Атырау.",
         ],
         locations: [
           { name: "Астана", description: "Координация, экспертные обсуждения, рабочие группы и подготовка Концепции зеленого водорода." },
@@ -119,8 +168,8 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
           "В рамках исследования изучались осведомленность общественности, экологические и социальные риски, институциональная готовность, ожидания в сфере занятости, дефицит навыков, общественное доверие и условия, при которых местные сообщества поддержат развитие зеленого водорода. Результаты были преобразованы в практические рекомендации для Концепции зеленого водорода.",
         ],
       },
-      { id: 2, title: "Скоро", tags: [], timeline: "", researchers: [], locations: [], methodology: [], placeholder: true },
-      { id: 3, title: "Скоро", tags: [], timeline: "", researchers: [], locations: [], methodology: [], placeholder: true },
+      { id: 2, title: "Скоро", tags: [], timeline: [], researchersIntro: [], researchers: [], locations: [], methodology: [], placeholder: true },
+      { id: 3, title: "Скоро", tags: [], timeline: [], researchersIntro: [], researchers: [], locations: [], methodology: [], placeholder: true },
     ],
   },
 };
