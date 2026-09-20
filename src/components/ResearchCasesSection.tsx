@@ -29,15 +29,27 @@ function CaseDetails({ researchCase }: { researchCase: ResearchCase }) {
           <h4 className="font-body text-xs font-semibold uppercase tracking-wide text-muted-foreground">
             {labels.timeline}
           </h4>
-          <p className="mt-2 font-body text-sm leading-relaxed text-muted-foreground">
-            {researchCase.timeline}
-          </p>
+          <ul className="mt-3 space-y-3">
+            {researchCase.timeline.map((item) => (
+              <li key={item} className="flex gap-3 font-body text-sm leading-relaxed text-muted-foreground">
+                <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-research-accent" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div>
           <h4 className="font-body text-xs font-semibold uppercase text-muted-foreground">
             {labels.researchers}
           </h4>
+          <div className="mt-3 space-y-4">
+            {researchCase.researchersIntro.map((paragraph) => (
+              <p key={paragraph} className="font-body text-sm leading-relaxed text-muted-foreground">
+                {paragraph}
+              </p>
+            ))}
+          </div>
           <ul className="mt-3 space-y-3">
             {researchCase.researchers.map((researcher) => (
               <li key={researcher} className="flex gap-3 font-body text-sm leading-relaxed text-muted-foreground">
