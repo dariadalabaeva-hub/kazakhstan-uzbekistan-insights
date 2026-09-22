@@ -113,7 +113,6 @@ export function ResearchCasesSection() {
         <Accordion
           type="single"
           collapsible
-          defaultValue="case-1"
           className="mx-auto max-w-6xl space-y-4"
         >
           {cases.map((researchCase) => (
