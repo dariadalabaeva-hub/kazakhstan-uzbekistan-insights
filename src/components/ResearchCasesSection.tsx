@@ -29,32 +29,33 @@ function CaseDetails({ researchCase }: { researchCase: ResearchCase }) {
           <h4 className="font-body text-xs font-semibold uppercase tracking-wide text-muted-foreground">
             {labels.timeline}
           </h4>
-          <ul className="mt-3 space-y-3">
-            {researchCase.timeline.map((item) => (
-              <li key={item} className="flex gap-3 font-body text-sm leading-relaxed text-muted-foreground">
-                <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-research-accent" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+          <p className="mt-3 font-body text-sm leading-relaxed text-muted-foreground">
+            {researchCase.timeline}
+          </p>
         </div>
 
         <div>
           <h4 className="font-body text-xs font-semibold uppercase text-muted-foreground">
             {labels.researchers}
           </h4>
-          <div className="mt-3 space-y-4">
-            {researchCase.researchersIntro.map((paragraph) => (
-              <p key={paragraph} className="font-body text-sm leading-relaxed text-muted-foreground">
-                {paragraph}
-              </p>
-            ))}
-          </div>
           <ul className="mt-3 space-y-3">
             {researchCase.researchers.map((researcher) => (
-              <li key={researcher} className="flex gap-3 font-body text-sm leading-relaxed text-muted-foreground">
+              <li key={researcher.text} className="flex gap-3 font-body text-sm leading-relaxed text-muted-foreground">
                 <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-research-accent" />
-                <span>{researcher}</span>
+                <span>
+                  {researcher.href ? (
+                    <a
+                      href={researcher.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-research-accent/60 underline-offset-2 transition-colors hover:text-primary"
+                    >
+                      {researcher.text}
+                    </a>
+                  ) : (
+                    researcher.text
+                  )}
+                </span>
               </li>
             ))}
           </ul>
@@ -64,28 +65,30 @@ function CaseDetails({ researchCase }: { researchCase: ResearchCase }) {
       <div className="space-y-7 border-t border-border pt-7 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
         <div>
           <h4 className="font-body text-xs font-semibold uppercase text-muted-foreground">
-            {labels.locations}
-          </h4>
-          <dl className="mt-3 space-y-3">
-            {researchCase.locations.map((location) => (
-              <div key={location.name} className="font-body text-sm leading-relaxed">
-                <dt className="inline font-semibold text-foreground">{location.name}: </dt>
-                <dd className="inline text-muted-foreground">{location.description}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-
-        <div>
-          <h4 className="font-body text-xs font-semibold uppercase text-muted-foreground">
             {labels.methodology}
           </h4>
           <div className="mt-3 space-y-4">
-            {researchCase.methodology.map((paragraph) => (
-              <p key={paragraph} className="font-body text-sm leading-relaxed text-muted-foreground">
-                {paragraph}
-              </p>
-            ))}
+            {researchCase.methodology.map((block, index) =>
+              block.type === "paragraph" ? (
+                <p key={index} className="font-body text-sm leading-relaxed text-muted-foreground">
+                  {block.text}
+                </p>
+              ) : (
+                <ul key={index} className="space-y-3">
+                  {block.items.map((item) => (
+                    <li key={item.text} className="flex gap-3 font-body text-sm leading-relaxed text-muted-foreground">
+                      <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-research-accent" />
+                      <span>
+                        {item.lead && (
+                          <strong className="font-semibold text-foreground">{item.lead}: </strong>
+                        )}
+                        {item.text}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )
+            )}
           </div>
         </div>
       </div>
