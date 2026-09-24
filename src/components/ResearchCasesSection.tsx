@@ -73,16 +73,30 @@ function CaseDetails({ researchCase }: { researchCase: ResearchCase }) {
                 <p key={index} className="font-body text-sm leading-relaxed text-muted-foreground">
                   {block.text}
                 </p>
+              ) : block.type === "subheading" ? (
+                <p key={index} className="font-body text-sm font-semibold text-foreground">
+                  {block.text}
+                </p>
               ) : (
                 <ul key={index} className="space-y-3">
-                  {block.items.map((item) => (
-                    <li key={item.text} className="flex gap-3 font-body text-sm leading-relaxed text-muted-foreground">
+                  {block.items.map((item, itemIndex) => (
+                    <li key={itemIndex} className="flex gap-3 font-body text-sm leading-relaxed text-muted-foreground">
                       <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-research-accent" />
                       <span>
                         {item.lead && (
                           <strong className="font-semibold text-foreground">{item.lead}: </strong>
                         )}
                         {item.text}
+                        {item.subItems && (
+                          <ul className="mt-3 space-y-3">
+                            {item.subItems.map((sub, subIndex) => (
+                              <li key={subIndex} className="flex gap-3 font-body text-sm leading-relaxed text-muted-foreground">
+                                <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full border border-research-accent" />
+                                <span>{sub}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
                       </span>
                     </li>
                   ))}
