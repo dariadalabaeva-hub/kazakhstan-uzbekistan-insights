@@ -43,7 +43,7 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
       {
         id: 1,
         title: "Supporting Kazakhstan’s Green Hydrogen Transition: Social Acceptance, Institutional Readiness and Workforce Development",
-        tags: ["Active Policy Case", "Kazakhstan–Germany (H₂-diplo)"],
+        tags: ["Green Hydrogen", "Kazakhstan–Germany (H₂-diplo)"],
         timeline: "October 2025 – April 2026",
         researchers: [
           {
@@ -92,7 +92,7 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
       {
         id: 1,
         title: "Қазақстанның «жасыл» сутекке көшуін қолдау: әлеуметтік қабылдау, институционалдық дайындық және кадрлық әлеуетті дамыту",
-        tags: ["Қолданбалы кейс", "Қазақстан–Германия (H₂-diplo)"],
+        tags: ["Жасыл сутек", "Қазақстан–Германия (H₂-diplo)"],
         timeline: "Қазан 2025 – Сәуір 2026",
         researchers: [
           {
@@ -141,7 +141,7 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
       {
         id: 1,
         title: "Поддержка перехода Казахстана к зеленому водороду: социальное признание, институциональная готовность и развитие трудовых ресурсов",
-        tags: ["Прикладной кейс", "Сотрудничество Казахстан–Германия (H₂-diplo)"],
+        tags: ["Зеленый водород", "Сотрудничество Казахстан–Германия (H₂-diplo)"],
         timeline: "Октябрь 2025 – Апрель 2026",
         researchers: [
           {
