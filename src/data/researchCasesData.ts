@@ -17,7 +17,6 @@ export interface ResearchCase {
   timeline: string;
   researchers: ResearcherEntry[];
   methodology: MethodologyBlock[];
-  placeholder?: boolean;
 }
 
 export interface ResearchCasesContent {
