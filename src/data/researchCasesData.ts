@@ -78,8 +78,6 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
           },
         ],
       },
-      { id: 2, title: "Upcoming Case Study", tags: [], timeline: "", researchers: [], methodology: [], placeholder: true },
-      { id: 3, title: "Upcoming Case Study", tags: [], timeline: "", researchers: [], methodology: [], placeholder: true },
     ],
   },
   kk: {
@@ -127,8 +125,6 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
           },
         ],
       },
-      { id: 2, title: "Жақында", tags: [], timeline: "", researchers: [], methodology: [], placeholder: true },
-      { id: 3, title: "Жақында", tags: [], timeline: "", researchers: [], methodology: [], placeholder: true },
     ],
   },
   ru: {
@@ -176,8 +172,6 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
           },
         ],
       },
-      { id: 2, title: "Скоро", tags: [], timeline: "", researchers: [], methodology: [], placeholder: true },
-      { id: 3, title: "Скоро", tags: [], timeline: "", researchers: [], methodology: [], placeholder: true },
     ],
   },
 };
