@@ -9,8 +9,6 @@ function CaseDetails({ researchCase }: { researchCase: ResearchCase }) {
   const { locale } = useLanguage();
   const { labels } = researchCasesContent[locale];
 
-  if (researchCase.placeholder) return null;
-
   return (
     <div className="grid gap-8 p-5 sm:p-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:p-10">
       <div className="space-y-7">
