@@ -38,6 +38,13 @@ export function PublicationsSection() {
             >
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
                 <div className="flex-1 min-w-0">
+                  {publication.category && (
+                    <div className="mb-3">
+                      <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 font-body text-xs font-medium text-primary">
+                        {publication.category}
+                      </span>
+                    </div>
+                  )}
                   <h3 className="font-heading text-lg font-semibold text-foreground leading-snug mb-2">
                     {publication.title}
                   </h3>
