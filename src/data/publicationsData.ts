@@ -5,6 +5,7 @@ export interface Publication {
   title: string;
   authors: string;
   year: number;
+  category?: string;
   link: string;
   linkType?: "external" | "email";
 }
@@ -16,6 +17,24 @@ export const publications: Publication[] = [
     authors: "Schroeder, P.",
     year: 2026,
     link: "https://doi.org/10.1016/j.jbvi.2026.e00648",
+  },
+  {
+    id: 17,
+    category: "Research Paper / Working Paper",
+    title: "The impact of neoliberalism on shaping entrepreneurial identity among youth: A case-study of student tutors in Kazakhstan",
+    authors: "Ayazhan Temirbolat",
+    year: 2026,
+    link: "mailto:green-it.project@nu.edu.kz?subject=Publication%20Request:%20The%20impact%20of%20neoliberalism%20on%20shaping%20entrepreneurial%20identity%20among%20youth",
+    linkType: "email",
+  },
+  {
+    id: 18,
+    category: "Research Paper / Working Paper",
+    title: "Why formalization policies miss micro and small entrepreneurs: Institutional trust, regulatory uncertainty and SME governance in Kazakhstan",
+    authors: "Ayazhan Temirbolat",
+    year: 2026,
+    link: "mailto:green-it.project@nu.edu.kz?subject=Publication%20Request:%20Why%20formalization%20policies%20miss%20micro%20and%20small%20entrepreneurs",
+    linkType: "email",
   },
   {
     id: 1,
