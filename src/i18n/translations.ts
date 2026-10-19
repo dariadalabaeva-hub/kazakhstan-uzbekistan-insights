@@ -115,7 +115,7 @@ export const uiStrings = {
     "publications.subtitle":
       "Бұл бөлімде жоба мүшелерінің кәсіпкерлік тақырыбындағы ғылыми басылымдары ұсынылған.",
     "publications.view": "Толық нұсқасын қарау",
-    "publications.requestEmail": "Электрондық пошта арқылы сұрату",
+    "publications.requestEmail": "Пошта арқылы сұрау",
     "publications.showMore": "Барлығын көрсету",
     "publications.showLess": "Жасыру",
     "publications.moreCount": "тағы",
