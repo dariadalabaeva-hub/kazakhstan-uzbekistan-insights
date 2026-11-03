@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import nuLogo from "@/assets/nu-logo.png";
+import nuLogo from "@/assets/nu-horizontal-logo.png";
 import { useT } from "@/i18n/useT";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
@@ -30,7 +30,7 @@ export function Navigation() {
             <img
               src={nuLogo}
               alt="Nazarbayev University"
-              className="h-10 lg:h-12 w-auto"
+              className="h-9 lg:h-11 w-auto object-contain"
             />
           </a>
 
