@@ -19,7 +19,7 @@ export function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-soft">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
@@ -40,7 +40,7 @@ export function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="font-body text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className="font-body text-sm font-medium text-slate-700 hover:text-primary transition-colors"
               >
                 {link.label}
               </a>
@@ -70,7 +70,7 @@ export function Navigation() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="font-body text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+                  className="font-body text-base font-medium text-slate-700 hover:text-primary transition-colors"
                 >
                   {link.label}
                 </a>
