@@ -22,16 +22,14 @@ export const publications: Publication[] = [
     title: "The impact of neoliberalism on shaping entrepreneurial identity among youth: A case-study of student tutors in Kazakhstan",
     authors: "Temirbolat, A.",
     year: 2026,
-    link: "mailto:green-it.project@nu.edu.kz?subject=Publication%20Request:%20The%20impact%20of%20neoliberalism%20on%20shaping%20entrepreneurial%20identity%20among%20youth",
-    linkType: "email",
+    link: "https://nur.nu.edu.kz/handle/123456789/19796",
   },
   {
     id: 18,
     title: "Why formalization policies miss micro and small entrepreneurs: Institutional trust, regulatory uncertainty and SME governance in Kazakhstan",
     authors: "Temirbolat, A.",
     year: 2026,
-    link: "mailto:green-it.project@nu.edu.kz?subject=Publication%20Request:%20Why%20formalization%20policies%20miss%20micro%20and%20small%20entrepreneurs",
-    linkType: "email",
+    link: "https://nur.nu.edu.kz/handle/123456789/19801",
   },
   {
     id: 1,
