@@ -1,4 +1,5 @@
-import { MinusCircle, PlusCircle } from "lucide-react";
+import { Download, MinusCircle, PlusCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { Accordion, AccordionContent, AccordionItem } from "@/components/ui/accordion";
 import { researchCasesContent, ResearchCase } from "@/data/researchCasesData";
@@ -57,6 +58,26 @@ function CaseDetails({ researchCase }: { researchCase: ResearchCase }) {
               </li>
             ))}
           </ul>
+        </div>
+        <div>
+          <h4 className="font-body text-xs font-semibold uppercase text-muted-foreground">
+            {labels.researchOutput}
+          </h4>
+          <Button
+            asChild
+            variant="researchOutput"
+            className="mt-3 h-auto max-w-full justify-start whitespace-normal px-4 py-2.5 font-body text-left"
+          >
+            <a
+              href="/H2-diplo_Green_Hydrogen_Social_Perception_in_Kazakhstan.pdf"
+              download="H2-diplo_Green_Hydrogen_Social_Perception_in_Kazakhstan.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Download aria-hidden="true" className="text-research-accent" />
+              <span>{labels.downloadReport}</span>
+            </a>
+          </Button>
         </div>
       </div>
 

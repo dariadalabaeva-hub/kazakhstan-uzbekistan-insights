@@ -24,6 +24,8 @@ export interface ResearchCasesContent {
     timeline: string;
     researchers: string;
     methodology: string;
+    researchOutput: string;
+    downloadReport: string;
   };
   cases: ResearchCase[];
 }
@@ -37,6 +39,8 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
       timeline: "Timeline",
       researchers: "Collaborators",
       methodology: "Project Description",
+      researchOutput: "RESEARCH OUTPUT",
+      downloadReport: "Download Research Report (PDF)",
     },
     cases: [
       {
@@ -84,6 +88,8 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
       timeline: "Мерзімі мен кезеңдері",
       researchers: "Серіктестер",
       methodology: "Жобаның сипаттамасы",
+      researchOutput: "ЗЕРТТЕУ НӘТИЖЕЛЕРІ",
+      downloadReport: "Зерттеу есебін жүктеу (PDF)",
     },
     cases: [
       {
@@ -131,6 +137,8 @@ export const researchCasesContent: Record<Locale, ResearchCasesContent> = {
       timeline: "Хронология и сроки",
       researchers: "Партнеры и сотрудничество",
       methodology: "Описание проекта",
+      researchOutput: "РЕЗУЛЬТАТЫ ИССЛЕДОВАНИЯ",
+      downloadReport: "Скачать отчет исследования (PDF)",
     },
     cases: [
       {

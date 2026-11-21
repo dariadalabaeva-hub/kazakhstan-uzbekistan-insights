@@ -36,6 +36,9 @@
     /* Research case accordion */
     --research-header: 215 51% 17%;
     --research-accent: 46 64% 52%;
+    --research-output: 214 51% 17%;
+    --research-output-hover: 214 52% 25%;
+    --research-output-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;

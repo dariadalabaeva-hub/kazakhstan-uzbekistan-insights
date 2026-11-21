@@ -46,6 +46,9 @@ export default {
         research: {
           header: "hsl(var(--research-header))",
           accent: "hsl(var(--research-accent))",
+          output: "hsl(var(--research-output))",
+          "output-hover": "hsl(var(--research-output-hover))",
+          "output-foreground": "hsl(var(--research-output-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
