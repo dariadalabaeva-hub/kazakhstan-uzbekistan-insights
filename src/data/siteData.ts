@@ -33,6 +33,7 @@ import cessConferenceImg from "@/assets/activities/CESS_conference.jpeg";
 import aimccPosterImg from "@/assets/activities/AIMCC_2026_conference.jpg";
 import mamaProImg from "@/assets/activities/Mama_Pro.jpg";
 import decarbonizationForumImg from "@/assets/activities/Third_Regional_Decarbonization_Forum.jpeg";
+import casibConferenceImg from "@/assets/activities/CASIB_conference.jpeg";
 
 export interface TeamMember {
   id: number;
@@ -207,6 +208,17 @@ export const activities: Activity[] = [
     image: fieldworkImg,
   },
   // 2. Past Events - Reverse chronological order (most recent first)
+  {
+    id: 16,
+    title:
+      "CASIB Regional Conference: Workshop on \"Transforming Scientific Knowledge into Economic Value\"",
+    date: "18 November, 2026",
+    location: "QAIRU, Astana, Kazakhstan",
+    description:
+      "Philipp Schroeder presented at the CASIB Regional Conference in Astana during the workshop \"Transforming Scientific Knowledge into Economic Value,\" moderated by Dr. Franziska Fink and Patrick Jahn (Kompetenzkolleg Partizipationsforschung KPTG). Drawing on our Nazarbayev University research project on entrepreneurship in the IT and green economy sectors of Kazakhstan and Uzbekistan, Philipp Schroeder discussed how a single anthropological field study can generate dual value for both scholarship and industry. By starting with a firm's core challenge, designing tailored academic methodologies around it, and translating the findings back into practical insights, applied anthropology bridges academic rigor and real-world decision-making. We thank the Central Asia Sustainable Innovation Bureau (CASIB) for the invitation and an engaging program.",
+    type: "past",
+    image: casibConferenceImg,
+  },
   {
     id: 15,
     title: "Participation in the Third Regional Central Asian and European Decarbonisation Forum",
