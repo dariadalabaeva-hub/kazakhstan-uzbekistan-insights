@@ -212,7 +212,7 @@ export const activities: Activity[] = [
     id: 16,
     title:
       "CASIB Regional Conference: Workshop on \"Transforming Scientific Knowledge into Economic Value\"",
-    date: "18 November, 2026",
+    date: "November 18, 2026",
     location: "QAIRU, Astana, Kazakhstan",
     description:
       "Philipp Schroeder presented at the CASIB Regional Conference in Astana during the workshop \"Transforming Scientific Knowledge into Economic Value,\" moderated by Dr. Franziska Fink and Patrick Jahn (Kompetenzkolleg Partizipationsforschung KPTG). Drawing on our Nazarbayev University research project on entrepreneurship in the IT and green economy sectors of Kazakhstan and Uzbekistan, Philipp Schroeder discussed how a single anthropological field study can generate dual value for both scholarship and industry. By starting with a firm's core challenge, designing tailored academic methodologies around it, and translating the findings back into practical insights, applied anthropology bridges academic rigor and real-world decision-making. We thank the Central Asia Sustainable Innovation Bureau (CASIB) for the invitation and an engaging program.",
